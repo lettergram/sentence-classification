@@ -14,6 +14,23 @@ This was developed for applications at [Metacortex](https://metacortex.me) and i
 
 Please, feel free to add PRs to update, improve, and use freely!
 
+---------------------
+
+## Supplemental Material
+
+This repository was created in conjunction with a guide titled[]Nueral Networks to Production, From an Engineer](https://austingwalters.com/neural-networks-to-production-from-an-engineer/).
+
+Below is the guides table of contents:
+
+* [Acquiring & formatting data for deep learning applications](https://austingwalters.com/data-acquisition-and-formatting-for-deep-learning-applications/)
+* [Word embedding and data splitting](https://austingwalters.com/word-embedding-and-data-splitting/)
+* [Bag-of-words to classify sentence types (Dictionary)](https://austingwalters.com/bag-of-words-to-classify-sentence-types/)
+* [Classify sentences via a multilayer perceptron (MLP)](https://austingwalters.com/classify-sentences-via-a-multilayer-perceptron-mlp/)
+* [Classify sentences via a recurrent neural network (LSTM)](https://austingwalters.com/classify-sentences-via-a-recurrent-neural-network-lstm/)
+* [Convolutional neural networks to classify sentences (CNN)](https://austingwalters.com/convolutional-neural-networks-cnn-to-classify-sentences/)
+* [FastText for sentence classification (FastText)](https://austingwalters.com/fasttext-for-sentence-classification/)
+* [Hyperparameter tuning for sentence classification](https://austingwalters.com/hyperparameter-tuning-for-sentence-classification/)
+
 
 ---------------------
 
