@@ -8,7 +8,13 @@ The goal of this project is to classify sentences, based on type:
 - Exclamation (Exclamatory Sentence)
 - Command (Imperative Sentence)
 
-Each of the above can be expanded and can be made more indepth. However, this is just several examples.
+Each of the above broad sentence categories can be expanded and can be made more indepth.
+
+This was developed for a guide on [austingwalters.com](https://austingwalters.com). Feel free to add PRs to update, improve, etc.
+
+---------------------
+
+## Dataset
 
 The dataset is created from parsing out the [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/) dataset and combining it with the [SPAADIA](http://martinweisser.org/index.html#Amex_a) dataset. 
 
@@ -19,6 +25,8 @@ The samples in the dataset:
 * Question 131219
 
 Note: Questions in this case are only one sentence, statements are a single sentence or more. They are classified correctly, but don't include sentences prior to questions. 
+
+## Results
 
 With the above, we are able to get the following accuracy:
 
@@ -45,6 +53,7 @@ With some hyperparameter tuning:
 Cofiguration, GTX 1080, 32 Gb RAM, 12x 3.6 Ghz cores, Arch Linux, up to date on 12/16/2018
 
 ## CNN Hyperparameter tuning
+
 | Accuracy | Speed | Batch Size | Embedding Dims | Filters | Kernel | Hidden Dims | Epochs |
 |--------|------------|------|-----|-----|----|-----|---|
 | 99.40% | 26 μs/step |   64 |  75 | 100 |  5 | 350 | 7 |                        
