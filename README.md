@@ -1,4 +1,4 @@
-Sentance Classifcation
+Sentence Classifcation
 ======================
 
 The goal of this project is to classify sentences, based on type:
