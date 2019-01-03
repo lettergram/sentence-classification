@@ -1,4 +1,4 @@
-Sentence Classifcation
+Sentence Classification
 ======================
 
 The goal of this project is to classify sentences, based on type:
@@ -70,7 +70,12 @@ With some hyperparameter tuning:
 | FastText (2-gram)| 95.59% | Fast (196 μs/step) | **Very Fast (26 μs/step)** |
 | RNN (LSTM) | **98.49%** | Very Slow (7000 μs/step) | Very Slow (1000 μs/step)|
 
-Cofiguration, GTX 1080, 32 Gb RAM, 12x 3.6 Ghz cores, Arch Linux, up to date on 12/16/2018
+#### Computer Configuration:
+
+* GTX 1080
+* 32 Gb RAM
+* 12x 3.6 Ghz cores (AMD)
+* Arch Linux, up to date on 12/16/2018
 
 ## CNN Hyperparameter tuning
 
