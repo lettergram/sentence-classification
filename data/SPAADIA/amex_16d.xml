@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<dialogue corpus="amex" lang="en" id="16d">
+<turn n="1" speaker="agent_A">
+<frag n="1" sp-act="refer" polarity="positive" mode="frag">
+Express <punc type="level" />
+</frag>
+<decl n="2" sp-act="identifySelf" polarity="positive" mode="decl">
+this is A <punc type="stop" />
+</decl>
+</turn>
+<turn n="2" speaker="caller">
+<address n="3" sp-act="echo-refer" polarity="positive" mode="frag">
+A <punc type="level" />
+</address>
+<decl n="4" sp-act="identifySelf" polarity="positive" mode="decl">
+i'm BB CC <punc type="stop" />
+</decl>
+</turn>
+<turn n="3" speaker="agent_A">
+<frag n="5" sp-act="greet" mode="greet-opening">
+hi <punc type="stop" />
+</frag>
+</turn>
+<turn n="4" speaker="caller">
+<decl n="6" sp-act="state" polarity="positive" topic="day" mode="decl">
+EE FF would like to book those tickets for th... coming in this Thursday <punc type="stop" />
+</decl>
+</turn>
+<turn n="5" speaker="agent_A">
+<dm n="7" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="8" sp-act="approve">
+great
+</dm>
+<dm n="9" sp-act="init">
+so
+</dm>
+<imp n="10" sp-act="reqConfirm" polarity="positive" mode="decl">
+go ahead with that <punc type="query" />
+</imp>
+</turn>
+<turn n="6" speaker="caller">
+<dm n="11" sp-act="confirm-agree">
+all righty <punc type="stop" />
+</dm>
+</turn>
+<turn n="7" speaker="caller">
+<frag n="12" sp-act="thank" polarity="positive" mode="thank-decl">
+thank you <punc type="stop" />
+</frag>
+</turn>
+<turn n="8" speaker="caller">
+<dm n="13" sp-act="exclaim">
+oh
+</dm>
+<dm n="14" sp-act="add">
+also
+</dm>
+<dm n="15" sp-act="exclaim">
+oh
+</dm>
+<decl n="16" sp-act="state" polarity="negative" mode="constrain-decl">
+we didn't need a TA <punc type="stop" />
+</decl>
+<decl n="17" sp-act="apologise" polarity="positive" mode="regret-frag">
+i'm sorry <punc type="level" />
+</decl>
+<decl n="18" sp-act="state" polarity="positive" mode="decl">
+that was somebody else <punc type="stop" />
+</decl>
+<decl n="19" sp-act="state" polarity="positive" mode="decl">
+he's going on personal travel <punc type="stop" />
+</decl>
+<decl n="20" sp-act="expressOpinion" polarity="positive" mode="report-opinion-constrain-decl">
+i thought we needed a travel advance from you <punc type="stop" />
+</decl>
+</turn>
+<turn n="9" speaker="agent_A">
+<no n="21" sp-act="negate">
+no
+</no>
+<no n="22" sp-act="negate">
+no
+</no>
+<no n="23" sp-act="negate">
+no <overlap type="start" />
+</no>
+</turn>
+<turn n="10" speaker="caller">
+<decl n="24" sp-act="state-abandon" polarity="positive" mode="interruption">
+and i'm still <punc type="incomplete" />
+</decl>
+</turn>
+<turn n="11" speaker="agent_A">
+<decl n="25" sp-act="state" polarity="positive" topic="time" mode="decl">
+it's been a busy <overlap type="end" /> morning <punc type="stop" />
+</decl>
+</turn>
+<turn n="12" speaker="caller">
+<frag n="26" sp-act="state" polarity="positive" topic="problem" mode="decl">
+trying to find out on that other for GGG <punc type="stop" />
+</frag>
+</turn>
+<turn n="13" speaker="agent_A">
+<dm n="27" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="28" sp-act="approve">
+great
+</dm>
+</turn>
+<turn n="14" speaker="caller">
+<dm n="29" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<frag n="30" sp-act="thank" polarity="positive" mode="thank">
+thank you
+</frag>
+</turn>
+<turn n="15" speaker="agent_A">
+<dm n="31" sp-act="agree">
+sure
+</dm>
+<frag n="32" sp-act="thank" mode="thank">
+thanks
+</frag>
+<address n="33" sp-act="refer" polarity="positive">
+BB <overlap type="start" />
+</address>
+<frag n="34" sp-act="bye" mode="farewell-closing">
+bye bye <punc type="stop" />
+</frag>
+</turn>
+<turn n="16" speaker="caller">
+<frag n="35" sp-act="echo-bye" mode="farewell-closing">
+bye bye <punc type="stop" />
+</frag>
+</turn>
+</dialogue>

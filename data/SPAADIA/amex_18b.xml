@@ -1,0 +1,320 @@
+<?xml version="1.0"?>
+<dialogue corpus="amex" lang="en" id="18b">
+<turn n="1" speaker="agent_A">
+<frag n="1" sp-act="refer" polarity="positive" mode="partial-frag">
+American Express <punc type="level" />
+</frag>
+<q-yn n="2" sp-act="offer" polarity="positive" mode="closed-query">
+may i help you <punc type="query" />
+</q-yn>
+</turn>
+<turn n="2" speaker="caller">
+<yes n="3" sp-act="acknowledge">
+yes
+</yes>
+<address n="4" sp-act="refer" polarity="positive" mode="decl">
+A <punc type="stop" />
+</address>
+<decl n="5" sp-act="identifySelf" polarity="positive" mode="decl">
+this is B <punc type="stop" />
+</decl>
+<decl n="6" sp-act="state" polarity="positive" mode="decl">
+i'm calling about a trip for C D <punc type="stop" />
+</decl>
+</turn>
+<turn n="3" speaker="caller">
+<dm n="7" sp-act="init" mode="tag">
+all right
+</dm>
+<dm n="8" sp-act="init">
+now
+</dm>
+<decl n="9" sp-act="state" polarity="positive" topic="location_int">
+this is his Montreal trip
+</decl>
+<decl n="10" sp-act="state" polarity="positive" topic="day" mode="decl">
+and that's on Monday <punc type="stop" />
+</decl>
+</turn>
+<turn n="4" speaker="agent_A">
+<dm n="11" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="12" sp-act="state" mode="awareness">
+i see it here <punc type="stop" />
+</decl>
+<dm n="13" sp-act="acknowledge">
+aha
+</dm>
+</turn>
+<turn n="5" speaker="caller">
+<dm n="14" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="15" sp-act="state" polarity="positive" topic="to-location_int" mode="constrain-decl">
+and he needs to go to Montreal <punc type="stop" />
+</decl>
+</turn>
+<turn n="6" speaker="agent_A">
+<dm n="16" sp-act="acknowledge" mode="backchannel">
+mhm
+</dm>
+</turn>
+<turn n="7" speaker="caller">
+<decl n="17" sp-act="expressOpinion" polarity="positive" mode="awareness-frag">
+and i understand another group has made the reservations <punc type="level" />
+</decl>
+<decl n="18" sp-act="state" polarity="positive" mode="report-constrain-decl">
+so i need to get the information on that <punc type="stop" />
+</decl>
+</turn>
+<turn n="8" speaker="agent_A">
+<decl n="19" sp-act="reqInfo" polarity="positive" mode="query">
+just the information about what we have <punc type="query" />
+</decl>
+</turn>
+<turn n="9" speaker="caller">
+<yes n="20" sp-act="answer-acknowledge">
+yes
+</yes>
+<dm n="21" sp-act="acknowledge">
+aha
+</dm>
+</turn>
+<turn n="10" speaker="agent_A">
+<dm n="22" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="23" sp-act="state" polarity="positive" topic="enum" mode="decl">
+he's on American flight 2 6 2 <punc type="stop" />
+</decl>
+</turn>
+<turn n="11" speaker="caller">
+<frag n="24" sp-act="echo-refer" polarity="positive" topic="enum" mode="decl">
+2 6 2 <punc type="stop" />
+</frag>
+</turn>
+<turn n="12" speaker="agent_A">
+<frag n="25" sp-act="refer" polarity="positive" topic="location_US-time-enum" mode="decl">
+out of San Francisco at 11:55 p m <punc type="stop" />
+</frag>
+</turn>
+<turn n="13" speaker="caller">
+<dm n="26" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="14" speaker="agent_A">
+<frag n="27" sp-act="state" polarity="positive" topic="location_US-time-enum-arrival" mode="partial-decl">
+arriving Chicago at 5:56 a m on the 25th <punc type="stop" />
+</frag>
+</turn>
+<turn n="15" speaker="caller">
+<frag n="28" sp-act="echo-refer-abandon" polarity="positive" mode="abandon-partial-abandon">
+on the tw... <punc type="incomplete" />
+</frag>
+<decl n="29" sp-act="apologise" polarity="positive" topic="time" mode="regret-decl">
+i'm sorry <punc type="stop" />
+</decl>
+<frag n="30" sp-act="reqInfo" polarity="positive" topic="time" mode="query">
+the time again <punc type="query" /> 
+</frag>
+</turn>
+<turn n="16" speaker="agent_A">
+<frag n="31" sp-act="answer-refer" polarity="positive" topic="enum" mode="decl">
+5:56 a m <punc type="stop" />
+</frag>
+</turn>
+<turn n="17" speaker="caller">
+<frag n="32" sp-act="echo-refer" polarity="positive">
+5:56
+</frag>
+</turn>
+<turn n="18" speaker="agent_A">
+<frag n="33" sp-act="refer" polarity="positive" topic="month" mode="partial-decl">
+on the 25h of July <punc type="stop" />
+</frag>
+</turn>
+<turn n="19" speaker="caller">
+<dm n="34" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="20" speaker="agent_A">
+<frag n="35" sp-act="state" polarity="positive" topic="enum-to" mode="decl">
+connecting to American flight 6 9 6 <punc type="stop" />
+</frag>
+<decl n="36" sp-act="state" polarity="positive" topic="location_US-time-enum" mode="frag">
+that's out of Chicago at 7:10 a m <punc type="level" />
+</decl>
+<frag n="37" sp-act="state" polarity="positive" topic="time-enum-location_int-arrival" mode="decl">
+and arrives Montreal at 10:08 a m <punc type="stop" />
+</frag>
+</turn>
+<turn n="21" speaker="caller">
+<dm n="38" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="22" speaker="agent_A">
+<frag n="39" sp-act="refer" polarity="positive" mode="partial">
+on his return
+</frag>
+<decl n="40" sp-act="state" polarity="positive" topic="day" mode="decl">
+it's Tuesday the 25th <punc type="stop" />
+</decl>
+</turn>
+<turn n="23" speaker="caller">
+<dm n="41" sp-act="acknowledge">
+aha
+</dm>
+</turn>
+<turn n="24" speaker="agent_A">
+<frag n="42" sp-act="refer" polarity="positive" topic="enum" mode="partial-decl">
+American flight 1 4 3 <punc type="stop" />
+</frag>
+</turn>
+<turn n="25" speaker="caller">
+<dm n="43" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="26" speaker="agent_A">
+<frag n="44" sp-act="refer" polarity="positive" topic="time-enum-location_int" mode="decl">
+out of Montreal at 8:03 p m <punc type="stop" />
+</frag>
+</turn>
+<turn n="27" speaker="caller">
+<imp n="45" sp-act="hold" polarity="positive" topic="time" mode="hold-frag">
+wait a minute <punc type="level" />
+</imp>
+<decl n="46" sp-act="reqInfo" polarity="positive" mode="query">
+that's an American flight out of <punc type="query" />
+</decl>
+</turn>
+<turn n="28" speaker="agent_A">
+<dm n="47" sp-act="answer-acknowledge" mode="backchannel">
+mhm
+</dm>
+</turn>
+<turn n="29" speaker="caller">
+<decl n="48" sp-act="state" polarity="positive" mode="report-decl">
+i missed <punc type="stop" />
+</decl>
+<decl n="49" sp-act="reqConfirm" polarity="positive" mode="query">
+these are all <overlap type="start" /> American <punc type="query" />
+</decl>
+</turn>
+<turn n="30" speaker="agent_A">
+<decl n="50" sp-act="confirm-state" polarity="positive" mode="decl">
+these are all American <punc type="stop" />
+</decl>
+</turn>
+<turn n="31" speaker="caller">
+<yes n="51" sp-act="acknowledge">
+yeah
+</yes>
+</turn>
+<turn n="32" speaker="agent_A">
+<dm n="52" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<frag n="53" sp-act="refer" polarity="positive" topic="time-enum-location_int" mode="decl">
+out of Montreal at 8:03 p m <punc type="stop" />
+</frag>
+</turn>
+<turn n="33" speaker="caller">
+<frag n="54" sp-act="echo-refer" polarity="positive" topic="enum" mode="decl">
+3 <punc type="stop" />
+</frag>
+<dm n="55" sp-act="acknowledge">
+aha
+</dm>
+</turn>
+<turn n="34" speaker="agent_A">
+<frag n="56" sp-act="state" polarity="positive" topic="location_US-time-enum-arrival" mode="decl">
+arrives Chicago at 9:13 p m <punc type="stop" />
+</frag>
+</turn>
+<turn n="35" speaker="caller">
+<dm n="57" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="36" speaker="agent_A">
+<frag n="58" sp-act="state" polarity="positive" topic="enum" mode="decl">
+and connects to flight 4 5 7 <punc type="stop" />
+</frag>
+</turn>
+<turn n="37" speaker="caller">
+<dm n="59" sp-act="acknowledge" mode="backchannel">
+mhm
+</dm>
+</turn>
+<turn n="38" speaker="caller">
+<decl n="60" sp-act="state" polarity="positive" topic="location_US-time-enum" mode="decl">
+that's out of Chicago at 9:50 p m <punc type="stop" />
+</decl>
+</turn>
+<turn n="39" speaker="agent_A">
+<dm n="61" sp-act="acknowledge" mode="backchannel">
+mhm
+</dm>
+</turn>
+<turn n="40" speaker="agent_A">
+<frag n="62" sp-act="state" polarity="positive" topic="location_US-time-enum-arrival" mode="frag">
+and arrives San Francisco at 12:23 a m on the 26th <punc type="level" />
+</frag>
+<frag n="63" sp-act="refer" polarity="positive" topic="time" mode="partial-decl">
+so just after midnight <punc type="stop" />
+</frag>
+</turn>
+<turn n="41" speaker="caller">
+<dm n="64" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="65" sp-act="approve">
+good
+</dm>
+</turn>
+<turn n="42" speaker="agent_A">
+<q-yn n="66" sp-act="reqInfo" polarity="positive" mode="closed-query">
+and are we going to be doing the ticketing on these then <punc type="query" />
+</q-yn>
+<q-yn n="67" sp-act="reqInfo" polarity="positive" mode="alternative-closed-query">
+or is someone else going to be ticketing it <punc type="query" />
+</q-yn>
+</turn>
+<turn n="43" speaker="caller">
+<frag n="68" sp-act="answer-state" mode="thank">
+thanks very much
+</frag>
+<address n="69" sp-act="elab" polarity="positive" mode="decl">
+A <punc type="stop" />
+</address>
+</turn>
+<turn n="44" speaker="agent_A">
+<dm n="70" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<frag n="71" sp-act="thank" polarity="positive" mode="thank-decl">
+thank <overlap type="start" /> you <punc type="stop" />
+</frag>
+</turn>
+<turn n="45" speaker="caller">
+<dm n="72" sp-act="acknowledge" mode="tag">
+ok <overlap type="end" />
+</dm>
+<frag n="73" sp-act="bye" mode="farewell-closing">
+bye bye
+</frag>
+</turn>
+<turn n="46" speaker="caller">
+<dm n="74" sp-act="acknowledge" mode="backchannel">
+mhm
+</dm>
+<frag n="75" sp-act="bye" mode="farewell-closing">
+bye bye
+</frag>
+</turn>
+</dialogue>

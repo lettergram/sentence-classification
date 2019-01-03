@@ -1,0 +1,331 @@
+<?xml version="1.0"?>
+<dialogue corpus="amex" lang="en" id="13e">
+<turn n="1" speaker="caller">
+<frag n="1" sp-act="greet" mode="greet-opening">
+good morning <punc type="level" />
+</frag>
+<address n="2" sp-act="refer" polarity="positive" mode="decl">
+A <punc type="stop" />
+</address>
+</turn>
+<turn n="2" speaker="agent_A">
+<frag n="3" sp-act="greet" mode="greet-opening">
+good morning
+</frag>
+<address n="4" sp-act="refer" polarity="positive" mode="decl">
+Mr B <punc type="stop" />
+</address>
+<decl n="5" sp-act="state" polarity="positive" mode="decl">
+this is A with American Express returning your call <punc type="stop" />
+</decl>
+</turn>
+<turn n="3" speaker="caller">
+<dm n="6" sp-act="hesitate">
+uh
+</dm>
+<decl n="7" sp-act="stateConstraint" polarity="positive" mode="report-constrain-decl">
+i need to know some prices uh to compare against subcontract <punc type="stop" />
+</decl>
+</turn>
+<turn n="4" speaker="agent_A">
+<dm n="8" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="5" speaker="caller">
+<dm n="9" sp-act="hesitate">
+uh
+</dm>
+<decl n="10" sp-act="stateConstraint" polarity="positive" topic="location_US-to-from-district_US" mode="report-constrain-decl">
+i need to go in from San Francisco to Wild Wood New Jersey and return <punc type="stop" />
+</decl>
+</turn>
+<turn n="6" speaker="agent_A">
+<dm n="11" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<imp n="12" sp-act="hold" polarity="positive" topic="location_US-location-verify" mode="hold-decl">
+let me check where Wild Wood is here <punc type="stop" />
+</imp>
+</turn>
+<turn n="7" speaker="caller">
+<decl n="13" sp-act="state" polarity="positive" topic="location_US" mode="decl">
+that's near Atlantic City <punc type="stop" />
+</decl>
+</turn>
+<turn n="8" speaker="agent_A">
+<dm n="14" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="15" sp-act="hold">
+one second <punc type="stop" />
+</dm>
+<dm n="16" sp-act="init" mode="tag">
+ok
+</dm>
+<yes n="17" sp-act="acknowledge">
+yeah
+</yes>
+<decl n="18" sp-act="state" polarity="negative" topic="airport_US-location_US-month" mode="decl">
+we don't have commercial flights going into Wild Wood Cape May <punc type="stop" />
+</decl>
+<decl n="19" sp-act="state" polarity="positive" topic="location_US">
+what would be the closest would be Atlantic City <punc type="stop" />
+</decl>
+</turn>
+<turn n="9" speaker="caller">
+<dm n="20" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="10" speaker="agent_A">
+<imp n="21" sp-act="hold" polarity="positive" mode="decl">
+and let me see <punc type="stop" />
+</imp>
+</turn>
+<turn n="11" speaker="caller">
+<decl n="22" sp-act="state" polarity="positive" mode="report-constrain-decl">
+i need a full coach <punc type="stop" />
+</decl>
+</turn>
+<turn n="12" speaker="agent_A">
+<frag n="23" sp-act="echo-state" polarity="positive" mode="decl">
+full coach <punc type="stop" />
+</frag>
+<dm n="24" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="25" sp-act="hold">
+one second <punc type="stop" />
+</dm>
+<dm n="26" sp-act="init" mode="tag">
+ok
+</dm>
+<decl n="27" sp-act="state" polarity="positive" topic="enum" mode="decl">
+full coach would be 586 each direction <punc type="stop" />
+</decl>
+</turn>
+<turn n="13" speaker="caller">
+<dm n="28" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="29" sp-act="state" polarity="positive" topic="to-number-location-district_US" mode="decl">
+next one is simple from  <backchannel content="mhm" /> SFO to Washington DC and return <punc type="stop" />
+</decl>
+</turn>
+<turn n="14" speaker="agent_A">
+<dm n="30" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="31" sp-act="state" polarity="positive" topic="enum" mode="decl">
+again full coach would be 531 dollars each direction <punc type="stop" />
+</decl>
+</turn>
+<turn n="15" speaker="caller">
+<dm n="32" sp-act="acknowledge" mode="tag">
+ok <punc type="stop" />
+</dm>
+<frag n="33" sp-act="refer" polarity="positive" topic="number" mode="frag">
+and last one <punc type="level" />
+</frag>
+<decl n="34" sp-act="state" polarity="positive" mode="decl">
+you got me exactly where it is <punc type="stop" />
+</decl>
+<decl n="35" sp-act="state" polarity="positive" topic="location_US-district_US" mode="decl">
+it's Tok Alaska <punc type="stop" />
+</decl>
+<frag n="36" sp-act="refer" polarity="positive" mode="decl">
+T O K <punc type="stop" />
+</frag>
+</turn>
+<turn n="16" speaker="agent_A">
+<frag n="37" sp-act="echo-reqConfirm" polarity="positive" mode="query">
+T O K <punc type="query" />
+</frag>
+</turn>
+<turn n="17" speaker="caller">
+<yes n="38" sp-act="confirm-acknowledge">
+yeah
+</yes>
+<frag n="39" sp-act="expressOpinion" polarity="positive" mode="alternative-decl">
+my guess is it's near the <unclear /> or Juno <punc type="stop" />
+</frag>
+</turn>
+<turn n="18" speaker="agent_A">
+<decl n="40" sp-act="reqInfo" polarity="positive" topic="time" mode="query">
+it's in the same time zone as Juno's in <punc type="query" />
+</decl>
+</turn>
+<turn n="19" speaker="caller">
+<dm n="41" sp-act="answer-acknowledge" mode="tag">
+ok
+</dm>
+<q-wh n="42" sp-act="suggest-abandon" polarity="negative" mode="tag-closed-abandon">
+then why don't you give me the uh the price for uh <punc type="incomplete" />
+</q-wh>
+<dm n="43" sp-act="exclaim">
+oh
+</dm>
+<decl n="44" sp-act="state" polarity="positive" topic="location_US-enum" mode="decl">
+it's 208 miles southeast of Fairbanks <punc type="stop" />
+</decl>
+</turn>
+<turn n="20" speaker="agent_A">
+<dm n="45" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="46" sp-act="hold">
+one second
+</dm>
+</turn>
+<turn n="21" speaker="caller">
+<frag n="47" sp-act="refer" polarity="positive" mode="partial-decl">
+for me <punc type="stop" />
+</frag>
+<decl n="48" sp-act="expressOpinion" polarity="positive" topic="location_US" mode="opinion-constrain-decl">
+so i guess what we've got to do is uh figure into Fairbanks <punc type="stop" />
+</decl>
+</turn>
+<turn n="22" speaker="agent_A">
+<imp n="49" sp-act="hold" polarity="positive" topic="location" mode="decl">
+let me look there <punc type="stop" />
+</imp>
+<imp n="50" sp-act="hold" polarity="positive" mode="hold-decl">
+hold on just a second <punc type="stop" />
+</imp>
+</turn>
+<turn n="23" speaker="caller">
+<decl n="51" sp-act="reqInfo" polarity="positive" mode="query">
+now you know <overlap type="start" /> where it is <punc type="query" />
+</decl>
+</turn>
+<turn n="24" speaker="agent_A">
+<yes n="52" sp-act="answer-acknowledge">
+yeah
+</yes>
+<decl n="53" sp-act="elab-state" polarity="positive" mode="awareness-decl-disflu">
+i <overlap type="end" /> i know where it should be <punc type="stop" />
+</decl>
+<decl n="54" sp-act="state" polarity="positive" mode="decl">
+but i mean it's on this in this atlas <punc type="stop" />
+</decl>
+<decl n="55" sp-act="state" polarity="positive" topic="location_US-enum" mode="decl">
+and em 208 miles southeast of Fairbanks puts it right in the middle of nowhere <punc type="stop" />
+</decl>
+<decl n="56" sp-act="state" polarity="positive" topic="location_US" mode="decl">
+Fairbanks would be the closest for it <punc type="stop" />
+</decl>
+</turn>
+<turn n="25" speaker="caller">
+<dm n="57" sp-act="init" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="26" speaker="agent_A">
+<dm n="58" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="59" sp-act="hold">
+one second <punc type="stop" />
+</dm>
+</turn>
+<turn n="27" speaker="caller">
+<frag n="60" sp-act="refer" polarity="positive" mode="partial">
+from the sound of it
+</frag>
+<decl n="61" sp-act="state" polarity="positive">
+that's about where it belongs
+</decl>
+</turn>
+<turn n="28" speaker="agent_A">
+<frag n="62" sp-act="state-abandon" polarity="positive" topic="enum" mode="interruption">
+full Y would be 495 07 each direction for uh to get him up to uh <punc type="incomplete" />
+</frag>
+</turn>
+<turn n="29" speaker="caller">
+<frag n="63" sp-act="complete-refer" polarity="positive" topic="to-location_US" mode="partial-decl">
+to Fairbanks <punc type="stop" />
+</frag>
+</turn>
+<turn n="30" speaker="agent_A">
+<frag n="64" sp-act="abandon" polarity="positive" mode="abandon">
+Fa...  <punc type="incomplete" />
+</frag>
+<dm n="65" sp-act="expressSurprise" mode="exclaim">
+whoops
+</dm>
+<dm n="66" sp-act="hold">
+one second
+</dm>
+<frag n="67" sp-act="uninterpretable" polarity="positive">
+<overlap type="start" /> <unclear />
+</frag>
+</turn>
+<turn n="31" speaker="caller">
+<decl n="68" sp-act="state" polarity="positive" mode="disflu">
+that does <overlap type="end" /> that sounds low <punc type="stop" />
+</decl>
+</turn>
+<turn n="32" speaker="agent_A">
+<yes n="69" sp-act="acknowledge">
+yeah
+</yes>
+<frag n="70" sp-act="refer" polarity="positive" topic="location_US" mode="decl">
+Anchorage <punc type="stop" />
+</frag>
+<dm n="71" sp-act="pardon" mode="regret">
+sorry
+</dm>
+<dm n="72" sp-act="hold">
+one second <punc type="stop" />
+</dm>
+</turn>
+<turn n="33" speaker="agent_A">
+<frag n="73" sp-act="refer" polarity="positive" topic="enum" mode="decl">
+734 63 each direction <punc type="stop" />
+</frag>
+</turn>
+<turn n="34" speaker="caller">
+<decl n="74" sp-act="state" polarity="positive" mode="decl">
+that sounds more like it <punc type="stop" />
+</decl>
+</turn>
+<turn n="35" speaker="agent_A">
+<yes n="75" sp-act="acknowledge">
+yeah
+</yes>
+</turn>
+<turn n="36" speaker="caller">
+<dm n="76" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="37" speaker="agent_A">
+<dm n="77" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="38" speaker="caller">
+<frag n="78" sp-act="thank" polarity="positive" mode="thank-decl">
+thank you very much <punc type="stop" />
+</frag>
+</turn>
+<turn n="39" speaker="agent_A">
+<decl n="79" sp-act="state" polarity="positive" mode="decl">
+you're quite welcome <punc type="stop" />
+</decl>
+</turn>
+<turn n="40" speaker="caller">
+<frag n="80" sp-act="bye" mode="farewell-closing">
+bye
+</frag>
+</turn>
+<turn n="41" speaker="agent_A">
+<dm n="81" sp-act="acknowledge" mode="backchannel">
+mhm
+</dm>
+<frag n="82" sp-act="bye" mode="farewell-closing">
+bye now
+</frag>
+</turn>
+</dialogue>

@@ -1,0 +1,689 @@
+<?xml version="1.0"?>
+<dialogue corpus="amex" lang="en" id="13a">
+<turn n="1" speaker="caller">
+<frag n="1" sp-act="greet" polarity="positive" mode="greet-frag">
+hey <punc type="level" />
+</frag>
+<address n="2" sp-act="refer">
+A
+</address>
+<decl n="3" sp-act="reqInfo" polarity="positive" mode="report-poss2-doubt-condition-query">
+i was wondering if you could handle some some reservations for me <punc type="query" />
+</decl>
+</turn>
+<turn n="2" speaker="agent_A">
+<dm n="4" sp-act="answer-acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="3" speaker="caller">
+<dm n="5" sp-act="init">
+so um
+</dm>
+<decl n="6" sp-act="state" polarity="positive" mode="frag-disflu">
+i it's it's um for my own my own flight <punc type="level" />
+</decl>
+<decl n="7" sp-act="stateIntent" polarity="positive" topic="location_US-to-from" mode="intent-preference1-decl">
+i want to fly from San Francisco to Syracuse New York <punc type="stop" />
+</decl>
+</turn>
+<turn n="4" speaker="agent_A">
+<dm n="8" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<q-wh n="9" sp-act="reqInfo" polarity="positive" topic="name" mode="open-query">
+and what's your last name <punc type="query" />
+</q-wh>
+</turn>
+<turn n="5" speaker="caller">
+<dm n="10" sp-act="hesitate">
+uh
+</dm>
+<frag n="11" sp-act="answer-state" polarity="positive" mode="decl">
+C <punc type="stop" />
+</frag>
+</turn>
+<turn n="6" speaker="agent_A">
+<dm n="12" sp-act="exclaim">
+oh
+</dm>
+<decl n="13" sp-act="reqInfo" polarity="positive" mode="query">
+this is B B <punc type="query" />
+</decl>
+</turn>
+<turn n="7" speaker="caller">
+<no n="14" sp-act="answer-negate">
+no
+</no>
+<frag n="15" sp-act="correct" polarity="positive">
+D
+</frag>
+</turn>
+<turn n="8" speaker="agent_A">
+<decl n="16" sp-act="reqInfo" polarity="positive" topic="day" mode="preference2-query">
+and you want to travel ag... again on what day now <punc type="query" />
+</decl>
+</turn>
+<turn n="9" speaker="caller">
+<dm n="17" sp-act="hesitate">
+um
+</dm>
+<decl n="18" sp-act="answer-state" polarity="positive" topic="time" mode="decl">
+it depends on on when the flights are <punc type="stop" />
+</decl>
+<decl n="19" sp-act="elab-expressPossibility" polarity="positive" topic="time-day" mode="poss1-frag-disflu">
+i i i could leave late Friday after work <punc type="level" />
+</decl>
+<dm n="20" sp-act="hesitate">
+um
+</dm>
+<frag n="21" sp-act="refer" polarity="positive" topic="month-date" mode="partial-decl">
+on the 8th of September <punc type="stop" />
+</frag>
+<decl n="22" sp-act="stateCondition" polarity="negative" mode="condition-frag">
+and if that doesn't work out <punc type="level" />
+</decl>
+<decl n="23" sp-act="expressPossibility" polarity="positive" topic="time-month-date" mode="poss1-decl-disflu">
+then i i could go the morning of the 9th of September <punc type="stop" />
+</decl>
+</turn>
+<turn n="10" speaker="agent_A">
+<dm n="24" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="25" sp-act="reqConfirm" polarity="positive" topic="location_US-to" mode="intent-decl">
+we're going San Francisco to Syracuse <punc type="stop" />
+</decl>
+<decl n="26" sp-act="greet" polarity="positive" mode="report-query">
+it's just going to be a simple round trip <punc type="query" />
+</decl>
+</turn>
+<turn n="11" speaker="caller">
+<dm n="27" sp-act="confirm-acknowledge">
+right
+</dm>
+<dm n="28" sp-act="acknowledge">
+aha
+</dm>
+</turn>
+<turn n="12" speaker="agent_A">
+<decl n="29" sp-act="reqInfo" polarity="positive" topic="availability" mode="preference2-query">
+and you want the lowest fare available <punc type="query" />
+</decl>
+</turn>
+<turn n="13" speaker="caller">
+<yes n="30" sp-act="answer-acknowledge">
+yes
+</yes>
+<decl n="31" sp-act="elab-state" polarity="positive" topic="time" mode="decl-disflu">
+that's that's really what i'm i'm after <punc type="stop" />
+</decl>
+</turn>
+<turn n="14" speaker="agent_A">
+<dm n="32" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<q-yn n="33" sp-act="reqInfo" polarity="positive" mode="constrain-closed-query">
+and do you have a preference as to airlines <punc type="query" />
+</q-yn>
+<decl n="34" sp-act="predict" polarity="positive" topic="time" mode="predict-decl">
+it's going to be wide open on all of them at th... this far in advance <punc type="stop" />
+</decl>
+</turn>
+<turn n="15" speaker="caller">
+<dm n="35" sp-act="hesitate">
+um
+</dm>
+<decl n="36" sp-act="answer-negate" polarity="negative">
+i don't
+</decl>
+<decl n="37" sp-act="elab-negate" polarity="negative" topic="" mode="">
+i don't <punc type="stop" />
+</decl>
+<decl n="38" sp-act="state" polarity="positive" topic="to-location_US-location-airline" mode="awareness-frag">
+i know Delta airlines flies to Rochester <punc type="level" />
+</decl>
+<decl n="39" sp-act="expressOpinion" polarity="negative" topic="to-location_US" mode="report-opinion-constrain-decl">
+but i don't think it goes to Syracuse <punc type="stop" />
+</decl>
+<decl n="40" sp-act="state" polarity="positive" topic="airline" mode="decl">
+i like Delta airlines <punc type="stop" />
+</decl>
+<dm n="41" sp-act="hesitate">
+um
+</dm>
+<no n="42" sp-act="negate" mode="constrain">
+but no
+</no>
+<frag n="43" sp-act="refer" polarity="positive">
+outside of that
+</frag>
+<decl n="44" sp-act="expressOpinion" polarity="positive" mode="opinion-decl">
+i... it's American US Air i think are our <punc type="stop" />
+</decl>
+</turn>
+<turn n="16" speaker="agent_A">
+<dm n="45" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="17" speaker="caller">
+<decl n="46" sp-act="state" polarity="positive" mode="decl">
+they have a lot of flights too <punc type="stop" />
+</decl>
+</turn>
+<turn n="18" speaker="agent_A">
+<dm n="47" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="48" sp-act="hold">
+one second <punc type="stop" />
+</dm>
+<dm n="49" sp-act="init">
+okay
+</dm>
+<decl n="50" sp-act="reqConfirm" polarity="positive" topic="time-day" mode="predict-query">
+you're looking at something that's going to be uh after work on Friday <punc type="query" />
+</decl>
+</turn>
+<turn n="19" speaker="caller">
+<yes n="51" sp-act="confirm-acknowledge">
+yeah
+</yes>
+</turn>
+<turn n="20" speaker="agent_A">
+<dm n="52" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="53" sp-act="state" polarity="positive" topic="time-enum" mode="decl">
+the last flight out is going to be at 1:47 p m on TWA <punc type="stop" />
+</decl>
+<frag n="54" sp-act="refer" polarity="positive" mode="predict">
+in terms of something <punc type="level" />
+</frag>
+<decl n="55" sp-act="predict" polarity="positive" topic="location-day" mode="predict">
+that will get you there the same day
+</decl>
+<decl n="56" sp-act="predict" polarity="positive" topic="time" mode="decl">
+that would get in at just about midnight <punc type="stop" />
+</decl>
+</turn>
+<turn n="21" speaker="caller">
+<dm n="57" sp-act="acknowledge" mode="backchannel">
+mhm
+</dm>
+</turn>
+<turn n="22" speaker="agent_A">
+<frag n="58" sp-act="refer" polarity="positive" topic="time" mode="partial">
+after that
+</frag>
+<decl n="59" sp-act="state" polarity="positive">
+it becomes red eye flights
+</decl>
+</turn>
+<turn n="23" speaker="caller">
+<dm n="60" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="61" sp-act="stateIntent" polarity="negative" mode="intent-report-preference1-nonawareness-condition-frag">
+i don't know if i want to want to to do a red eye <punc type="level" />
+</decl>
+<q-wh n="62" sp-act="suggest" polarity="negative" topic="time-day" mode="closed-query">
+why don't we look at uh Saturday morning <punc type="query" />
+</q-wh>
+</turn>
+<turn n="24" speaker="agent_A">
+<frag n="63" sp-act="echo-reqConfirm" polarity="positive" topic="time-day" mode="partial-query">
+Saturday morning <punc type="query" />
+</frag>
+</turn>
+<turn n="25" speaker="caller">
+<dm n="64" sp-act="confirm-acknowledge">
+aha
+</dm>
+</turn>
+<turn n="26" speaker="agent_A">
+<q-wh n="65" sp-act="reqDirect" polarity="positive" topic="time" mode="preference2-open-query">
+and how early would you like to get to the airport <punc type="query" />
+</q-wh>
+<decl n="66" sp-act="state" polarity="positive" topic="time-enum" mode="decl">
+we have flights starting at 6:15 a m <punc type="stop" />
+</decl>
+</turn>
+<turn n="27" speaker="caller">
+<dm n="67" sp-act="exclaim">
+oh um
+</dm>
+</turn>
+<turn n="28" speaker="agent_A">
+<decl n="68" sp-act="predict" polarity="positive" topic="time-number-location">
+that would get you there at 4 o'clock
+</decl>
+</turn>
+<turn n="29" speaker="caller">
+<frag n="69" sp-act="echo" polarity="positive" topic="number-time">
+4 o'clock
+</frag>
+</turn>
+<turn n="30" speaker="agent_A">
+<dm n="70" sp-act="acknowledge" mode="backchannel">
+mhm
+</dm>
+</turn>
+<turn n="31" speaker="caller">
+<decl n="71" sp-act="reqConfirm" polarity="positive" topic="enum" mode="query">
+and it's 6:15 a m <punc type="query" />
+</decl>
+</turn>
+<turn n="32" speaker="agent_A">
+<yes n="72" sp-act="confirm-acknowledge">
+yes
+</yes>
+</turn>
+<turn n="33" speaker="caller">
+<dm n="73" sp-act="acknowledge" mode="backchannel">
+mhm <unclear />
+</dm>
+<frag n="74" sp-act="refer" polarity="positive" topic="time">
+that early
+</frag>
+<dm n="75" sp-act="hesitate">
+uh
+</dm>
+<q-wh n="76" sp-act="reqInfo" polarity="positive" topic="number" mode="open-query-disflu">
+and what's what's the next one <punc type="query" />
+</q-wh>
+</turn>
+<turn n="34" speaker="agent_A">
+<dm n="77" sp-act="answer-acknowledge" mode="tag">
+ok
+</dm>
+<decl n="78" sp-act="elab-state" polarity="positive" topic="time-number-location-enum" mode="decl">
+then we have one at 6:40 a m which would get you there at 4:36 <punc type="stop" />
+</decl>
+</turn>
+<turn n="35" speaker="caller">
+<dm n="79" sp-act="acknowledge" mode="backchannel">
+mhm
+</dm>
+</turn>
+<turn n="36" speaker="agent_A">
+<dm n="80" sp-act="hesitate">
+um
+</dm>
+<frag n="81" sp-act="state" polarity="positive" topic="time" mode="frag">
+couple right around that time period <punc type="level" />
+</frag>
+<frag n="82" sp-act="state" polarity="positive" topic="enum" mode="frag">
+and then it jumps to 7:40 a m <punc type="level" />
+</frag>
+<frag n="83" sp-act="state" polarity="positive" topic="location-time" mode="decl">
+getting you there at 5:11 <punc type="stop" />
+</frag>
+</turn>
+<turn n="37" speaker="caller">
+<dm n="84" sp-act="acknowledge" mode="backchannel">
+mhm
+</dm>
+<dm n="85" sp-act="init" mode="tag">
+ok
+</dm>
+<q-wh n="86" sp-act="suggest" polarity="negative" topic="enum" mode="closed-query">
+why don't why don't we take the7:40 flight <punc type="query" />
+</q-wh>
+</turn>
+<turn n="38" speaker="agent_A">
+<dm n="87" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="39" speaker="caller">
+<q-wh n="88" sp-act="reqInfo" polarity="positive" mode="open-query-disflu">
+which which carrier is that <punc type="query" />
+</q-wh>
+</turn>
+<turn n="40" speaker="agent_A">
+<decl n="89" sp-act="answer-state" polarity="positive" mode="decl">
+that is US Air <punc type="stop" />
+</decl>
+</turn>
+<turn n="41" speaker="caller">
+<dm n="90" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<q-yn n="91" sp-act="reqInfo" polarity="positive" mode="alternative-closed-query">
+is it uh non-stop or <punc type="query" />
+</q-yn>
+</turn>
+<turn n="42" speaker="agent_A">
+<no n="92" sp-act="answer-negate">
+no
+</no>
+<decl n="93" sp-act="elab-state" polarity="positive" mode="decl">
+all of these are going to be connecting flights <punc type="stop" />
+</decl>
+</turn>
+<turn n="43" speaker="caller">
+<frag n="94" sp-act="reqInfo" polarity="positive" topic="location_US" mode="partial-query">
+through Pittsburg <punc type="query" />
+</frag>
+</turn>
+<turn n="44" speaker="agent_A">
+<dm n="95" sp-act="hesitate">
+uh
+</dm>
+<decl n="96" sp-act="answer-state" polarity="positive" topic="location_US-number" mode="decl">
+this particular one connects through Cleveland <punc type="stop" />
+</decl>
+</turn>
+<turn n="45" speaker="caller">
+<dm n="97" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="46" speaker="agent_A">
+<frag n="98" sp-act="reqInfo" polarity="positive" topic="date" mode="open-query">
+and returning on what date <punc type="query" />
+</frag>
+</turn>
+<turn n="47" speaker="caller">
+<dm n="99" sp-act="hesitate">
+um
+</dm>
+<frag n="100" sp-act="answer-refer" polarity="positive" topic="month-date-day" mode="partial-decl">
+on uh Sunday the 17th of September <punc type="stop" />
+</frag>
+</turn>
+<turn n="48" speaker="agent_A">
+<frag n="101" sp-act="reqInfo" polarity="positive" topic="time" mode="alternative-query">
+and morning or afternoon <punc type="query" />
+</frag>
+</turn>
+<turn n="49" speaker="caller">
+<dm n="102" sp-act="hesitate">
+um
+</dm>
+<frag n="103" sp-act="answer-refer" polarity="positive" topic="time" mode="decl">
+early morning <punc type="stop" />
+</frag>
+</turn>
+<turn n="50" speaker="agent_A">
+<dm n="104" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="105" sp-act="state" polarity="positive" topic="time-enum" mode="decl">
+US Air flight has a flight at 7:55 a m <punc type="stop" />
+</decl>
+</turn>
+<turn n="51" speaker="caller">
+<dm n="106" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="52" speaker="agent_A">
+<frag n="107" sp-act="state" polarity="positive" topic="location_US" mode="decl">
+connecting through Pittsburg <punc type="stop" />
+</frag>
+<decl n="108" sp-act="state" polarity="positive" topic="location_US-time-enum" mode="decl">
+it gets you back into San Francisco at 11:53 a m <punc type="stop" />
+</decl>
+</turn>
+<turn n="53" speaker="caller">
+<dm n="109" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="110" sp-act="approve">
+that sounds fine <punc type="stop" />
+</dm>
+</turn>
+<turn n="54" speaker="agent_A">
+<dm n="111" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="112" sp-act="hold">
+one second <punc type="stop" />
+</dm>
+</turn>
+<turn n="55" speaker="caller">
+<decl n="113" sp-act="reqConfirm" polarity="positive" topic="location_US" mode="query">
+and that's through Pittsburg <punc type="query" />
+</decl>
+</turn>
+<turn n="56" speaker="agent_A">
+<dm n="114" sp-act="confirm-agree">
+that's correct <punc type="stop" />
+</dm>
+</turn>
+<turn n="57" speaker="caller">
+<dm n="115" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="58" speaker="agent_A">
+<dm n="116" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="117" sp-act="state" polarity="positive" topic="location-enum" mode="decl">
+we're getting a fare here of 398 dollars round trip <punc type="stop" />
+</decl>
+<frag n="118" sp-act="state" polarity="positive" mode="decl">
+has a hundred percent penalty on it <punc type="stop" />
+</frag>
+<frag n="119" sp-act="state" polarity="negative" topic="number" mode="decl">
+no changes once the uh ticket is issued <punc type="stop" />
+</frag>
+</turn>
+<turn n="59" speaker="caller">
+<dm n="120" sp-act="answer-acknowledge" mode="tag">
+ok
+</dm>
+<dm n="121" sp-act="approve" mode="reassurance">
+that's fine <punc type="stop" />
+</dm>
+</turn>
+<turn n="60" speaker="agent_A">
+<dm n="122" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="123" sp-act="state" polarity="positive" topic="enum" mode="frag">
+it is telling us that it has to be ticketed within 24 hours of making the reservation <punc type="level" />
+</decl>
+<decl n="124" sp-act="state" polarity="positive" topic="day" mode="decl">
+that means tomorrow <punc type="stop" />
+</decl>
+</turn>
+<turn n="61" speaker="caller">
+<dm n="125" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="62" speaker="agent_A">
+<decl n="126" sp-act="stateCondition" polarity="positive" mode="preference2-condition-decl">
+if you want to keep this reservation <punc type="stop" />
+</decl>
+</turn>
+<turn n="63" speaker="agent_A">
+<dm n="127" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="128" sp-act="state" polarity="positive" topic="enum" mode="decl">
+we have you on US Air flight 1 1 6 <punc type="stop" />
+</decl>
+</turn>
+<turn n="64" speaker="caller">
+<dm n="129" sp-act="acknowledge" mode="backchannel">
+mhm
+</dm>
+</turn>
+<turn n="65" speaker="agent_A">
+<frag n="130" sp-act="refer" polarity="positive" topic="location_US-time-month-date-enum" mode="partial-frag">
+on the 9th of September out of San Francisco at 7:40 a m <punc type="level" />
+</frag>
+<frag n="131" sp-act="refer" polarity="positive" topic="location_US-time-enum" mode="partial-decl">
+into Cleveland at 3:19 p m <punc type="stop" />
+</frag>
+</turn>
+<turn n="66" speaker="caller">
+<dm n="132" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="67" speaker="agent_A">
+<dm n="133" sp-act="hesitate">
+uh
+</dm>
+<decl n="134" sp-act="state" polarity="positive" topic="enum-location" mode="frag">
+you're connecting there with US Air flight 5 9 3 <overlap type="start" /> <punc type="level" />
+</decl>
+<frag n="135" sp-act="state-abandon" polarity="positive" mode="interruption">
+leaving <punc type="incomplete" />
+</frag>
+</turn>
+<turn n="68" speaker="caller">
+<frag n="136" sp-act="echo-reqConfirm" polarity="positive" topic="enum" mode="query">
+5 <overlap type="end" /> 5 9 3 <punc type="query" />
+</frag>
+</turn>
+<turn n="69" speaker="agent_A">
+<dm n="137" sp-act="confirm-acknowledge">
+aha
+</dm>
+</turn>
+<turn n="70" speaker="caller">
+<frag n="138" sp-act="reqInfo" polarity="positive" topic="location_US" mode="partial-query">
+leaving Cleveland <punc type="query" />
+</frag>
+</turn>
+<turn n="71" speaker="agent_A">
+<frag n="139" sp-act="answer-refer" polarity="positive" topic="location_US-time-enum" mode="partial-decl">
+leaving Cleveland at 4:10 p m <punc type="stop" />
+</frag>
+</turn>
+<turn n="72" speaker="caller">
+<dm n="140" sp-act="acknowledge" mode="backchannel">
+mhm
+</dm>
+</turn>
+<turn n="73" speaker="agent_A">
+<frag n="141" sp-act="state" polarity="positive" topic="location_US-time-enum" mode="decl">
+and getting into Syracuse at 5:11 p m <punc type="stop" />
+</frag>
+</turn>
+<turn n="74" speaker="caller">
+<dm n="142" sp-act="acknowledge" mode="tag">
+<unclear /> ok
+</dm>
+</turn>
+<turn n="75" speaker="agent_A">
+<decl n="143" sp-act="state" polarity="positive" topic="enum-month-date" mode="decl">
+we have you returning on the 17th of September on US Air flight 5 0 7 <punc type="stop" />
+</decl>
+</turn>
+<turn n="76" speaker="caller">
+<dm n="144" sp-act="acknowledge" mode="backchannel">
+mhm
+</dm>
+</turn>
+<turn n="77" speaker="agent_A">
+<frag n="145" sp-act="refer" polarity="positive" topic="location_US-time-enum" mode="frag">
+out of Syracuse at 7:55 a m <punc type="level" />
+</frag>
+<frag n="146" sp-act="refer" polarity="positive" topic="location_US-time-enum" mode="partial-decl">
+into Pittsburg at 9:05 a m <punc type="stop" />
+</frag>
+</turn>
+<turn n="78" speaker="caller">
+<dm n="147" sp-act="acknowledge" mode="backchannel">
+mhm
+</dm>
+</turn>
+<turn n="79" speaker="agent_A">
+<frag n="148" sp-act="state" polarity="positive" topic="enum" mode="decl">
+connecting to US Air flight 3 0 1 <punc type="stop" />
+</frag>
+</turn>
+<turn n="80" speaker="caller">
+<dm n="149" sp-act="acknowledge" mode="backchannel">
+mhm
+</dm>
+</turn>
+<turn n="81" speaker="agent_A">
+<frag n="150" sp-act="state" polarity="positive" topic="location_US-time-enum" mode="partial-decl">
+leaving Pittsburg at 9:55 a m <punc type="stop" />
+</frag>
+</turn>
+<turn n="82" speaker="caller">
+<dm n="151" sp-act="acknowledge" mode="backchannel">
+mhm
+</dm>
+</turn>
+<turn n="83" speaker="agent_A">
+<frag n="152" sp-act="state" polarity="positive" topic="location_US-time-enum" mode="decl">
+and getting into San Francisco at 11:53 a m <punc type="stop" />
+</frag>
+</turn>
+<turn n="84" speaker="caller">
+<dm n="153" sp-act="init" mode="tag">
+all right
+</dm>
+<dm n="154" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="155" sp-act="approve">
+that's good <punc type="stop" />
+</dm>
+</turn>
+<turn n="85" speaker="agent_A">
+<frag n="156" sp-act="state" polarity="positive" topic="enum" mode="decl">
+fare on this is 398 dollars <punc type="stop" />
+</frag>
+</turn>
+<turn n="86" speaker="caller">
+<dm n="157" sp-act="acknowledge" mode="backchannel">
+mhm
+</dm>
+</turn>
+<turn n="87" speaker="agent_A">
+<decl n="158" sp-act="state" polarity="positive" mode="decl">
+it is totally non-refundable <punc type="stop" />
+</decl>
+</turn>
+<turn n="88" speaker="caller">
+<dm n="159" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="160" sp-act="approve">
+great
+</dm>
+<dm n="161" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="162" sp-act="init" mode="tag">
+ok
+</dm>
+<decl n="163" sp-act="reqConfirm" polarity="positive" mode="opinion-tag-decl">
+i think we're all set right <punc type="stop" />
+</decl>
+<dm n="164" sp-act="init" mode="tag">
+ok
+</dm>
+<frag n="165" sp-act="thank" polarity="positive" mode="thank">
+thank you
+</frag>
+</turn>
+<turn n="89" speaker="agent_A">
+<dm n="166" sp-act="confirm-agree">
+sure thing <punc type="stop" />
+</dm>
+</turn>
+<turn n="90" speaker="caller">
+<frag n="167" sp-act="bye" mode="farewell-closing">
+bye bye
+</frag>
+</turn>
+<turn n="91" speaker="agent_A">
+<frag n="168" sp-act="echo-bye" mode="farewell-closing">
+bye now
+</frag>
+</turn>
+</dialogue>

@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<dialogue corpus="amex" lang="en" id="20c">
+<turn n="1" speaker="agent_A">
+<frag n="1" sp-act="refer" polarity="positive" mode="partial">
+American Express
+</frag>
+<frag n="2" sp-act="identifySelf" polarity="positive" mode="intro-decl">
+A speaking <punc type="stop" />
+</frag>
+</turn>
+<turn n="2" speaker="caller">
+<yes n="3" sp-act="acknowledge">
+yes
+</yes>
+<decl n="4" sp-act="state" polarity="positive" mode="report-constrain-decl">
+i need some round trip air fares <punc type="stop" />
+</decl>
+</turn>
+<turn n="3" speaker="agent_A">
+<decl n="5" sp-act="reqInfo" polarity="positive" mode="query">
+and this is just for a quote <punc type="query" />
+</decl>
+</turn>
+<turn n="4" speaker="caller">
+<yes n="6" sp-act="answer-acknowledge">
+yeah
+</yes>
+<frag n="7" sp-act="elab-state" polarity="positive" mode="decl">
+full coach <punc type="stop" />
+</frag>
+</turn>
+<turn n="5" speaker="agent_A">
+<dm n="8" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="6" speaker="caller">
+<decl n="9" sp-act="state" polarity="positive" topic="location_US-from" mode="decl">
+and all departing from San Francisco <punc type="stop" />
+</decl>
+</turn>
+<turn n="7" speaker="agent_A">
+<dm n="10" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<q-wh n="11" sp-act="reqInfo" polarity="positive" mode="open-query">
+what's the first destination <punc type="query" />
+</q-wh>
+</turn>
+<turn n="8" speaker="caller">
+<dm n="12" sp-act="hesitate">
+uh
+</dm>
+<frag n="13" sp-act="answer-refer" polarity="positive" mode="partial-decl">
+West Palm Beach <punc type="stop" />
+</frag>
+</turn>
+<turn n="9" speaker="agent_A">
+<dm n="14" sp-act="hold">
+one second <punc type="stop" />
+</dm>
+</turn>
+<turn n="10" speaker="agent_A">
+<decl n="15" sp-act="state" polarity="positive" topic="enum" mode="decl">
+that would be 4 88 each direction <punc type="stop" />
+</decl>
+<dm n="16" sp-act="expressSurprise" mode="exclaim">
+oops
+</dm>
+<imp n="17" sp-act="hold" polarity="positive" mode="hold-frag">
+w... wait a second <punc type="level" />
+</imp>
+<imp n="18" sp-act="hold" polarity="positive" mode="hold-frag">
+hold on a second <punc type="level" />
+</imp>
+<dm n="19" sp-act="apologise" mode="regret">
+sorry about that <punc type="stop" />
+</dm>
+<decl n="20" sp-act="state" polarity="positive" topic="enum" mode="decl">
+that is 5 96 each direction <punc type="stop" />
+</decl>
+</turn>
+<turn n="11" speaker="caller">
+<dm n="21" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<frag n="22" sp-act="reqInfo" polarity="positive" topic="location_US" mode="query">
+Phoenix <punc type="query" />
+</frag>
+</turn>
+<turn n="12" speaker="agent_A">
+<decl n="23" sp-act="answer-predict" polarity="positive" topic="enum" mode="decl">
+that would be 2 95 each direction <punc type="stop" />
+</decl>
+</turn>
+<turn n="13" speaker="caller">
+<frag n="24" sp-act="reqInfo" polarity="positive" topic="location_US" mode="query">
+Cleveland <punc type="query" />
+</frag>
+</turn>
+<turn n="14" speaker="agent_A">
+<frag n="25" sp-act="answer-refer" polarity="positive" topic="enum" mode="decl">
+4 98 each direction <punc type="stop" />
+</frag>
+</turn>
+<turn n="15" speaker="caller">
+<frag n="26" sp-act="reqInfo" polarity="positive" topic="location_US" mode="query">
+Louisville <punc type="query" />
+</frag>
+</turn>
+<turn n="16" speaker="agent_A">
+<frag n="27" sp-act="answer-refer" polarity="positive" topic="enum" mode="decl">
+5 15 each direction <punc type="stop" />
+</frag>
+</turn>
+<turn n="17" speaker="caller">
+<frag n="28" sp-act="reqInfo" polarity="positive" topic="location_US" mode="query">
+Columbus <punc type="query" />
+</frag>
+</turn>
+<turn n="18" speaker="agent_A">
+<decl n="29" sp-act="reqConfirm" polarity="positive" topic="location_US-district_US" mode="query">
+and we are talking Columbus Ohio correct <punc type="query" />
+</decl>
+</turn>
+<turn n="19" speaker="caller">
+<yes n="30" sp-act="confirm-acknowledge">
+yes
+</yes>
+</turn>
+<turn n="20" speaker="agent_A">
+<frag n="31" sp-act="refer" polarity="positive" topic="enum" mode="decl">
+500 each direction <punc type="stop" />
+</frag>
+</turn>
+<turn n="21" speaker="caller">
+<frag n="32" sp-act="reqInfo" polarity="positive" topic="location_US" mode="query">
+Tulsa <punc type="query" />
+</frag>
+</turn>
+<turn n="22" speaker="agent_A">
+<frag n="33" sp-act="answer-refer" polarity="positive" topic="enum" mode="decl">
+2 42 each direction <punc type="stop" />
+</frag>
+</turn>
+<turn n="23" speaker="caller">
+<frag n="34" sp-act="reqInfo" polarity="positive" topic="location_US-district_US" mode="query">
+Indianapolis <punc type="query" />
+</frag>
+</turn>
+<turn n="24" speaker="agent_A">
+<decl n="35" sp-act="state" polarity="positive" mode="decl">
+you got a lot of projects going <punc type="stop" />
+</decl>
+<dm n="36" sp-act="hesitate">
+uh
+</dm>
+<frag n="37" sp-act="enumeration" polarity="positive" topic="enum" mode="decl">
+4 78 each direction <punc type="stop" />
+</frag>
+</turn>
+<turn n="25" speaker="caller">
+<frag n="38" sp-act="reqInfo" polarity="positive" topic="location_US" mode="query">
+Milwaukee <punc type="query" />
+</frag>
+</turn>
+<turn n="26" speaker="agent_A">
+<frag n="39" sp-act="answer-refer" polarity="positive" topic="enum" mode="decl">
+4 88 each direction <punc type="stop" />
+</frag>
+</turn>
+<turn n="27" speaker="caller">
+<decl n="40" sp-act="reqInfo" polarity="positive" topic="number-district_US" mode="decl">
+and the last one is Oklahoma City <punc type="stop" />
+</decl>
+</turn>
+<turn n="28" speaker="agent_A">
+<decl n="41" sp-act="answer-state" polarity="positive" topic="enum" mode="decl">
+and that's 4 0 2 each direction <punc type="stop" />
+</decl>
+</turn>
+<turn n="29" speaker="caller">
+<dm n="42" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<frag n="43" sp-act="thank" mode="thank">
+thanks a lot <punc type="stop" />
+</frag>
+</turn>
+<turn n="30" speaker="agent_A">
+<decl n="44" sp-act="state" polarity="positive" mode="decl">
+you're welcome <punc type="stop" />
+</decl>
+</turn>
+<turn n="31" speaker="caller">
+<frag n="45" sp-act="bye" mode="farewell-closing">
+bye bye
+</frag>
+</turn>
+<turn n="32" speaker="agent_A">
+<frag n="46" sp-act="echo-bye" mode="farewell-closing">
+bye now
+</frag>
+</turn>
+</dialogue>

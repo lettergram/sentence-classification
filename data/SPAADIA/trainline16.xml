@@ -1,0 +1,882 @@
+<?xml version="1.0"?>
+<dialogue corpus="trainline" lang="en" id="16">
+<turn n="1" speaker="A">
+<frag n="1" sp-act="greet" mode="greet-opening">
+good afternoon <punc type="stop" />
+</frag>
+<frag n="2" sp-act="refer" polarity="positive" mode="frag">
+Virgin Trainlines <punc type="level" />
+</frag>
+<frag n="3" sp-act="identifySelf" polarity="positive" mode="intro-partial-decl">
+Sandra speaking <punc type="stop" />
+</frag>
+<q-wh n="4" sp-act="reqDirect" polarity="positive" topic="journey" mode="preference2-open-query">
+for which journey do you wish to purchase a ticket <punc type="query" />
+</q-wh>
+</turn>
+<turn n="2" speaker="B">
+<dm n="5" sp-act="hesitate">
+erm <pause /> 
+</dm>
+<decl n="6" sp-act="direct-expressWisht" polarity="positive" topic="journey-month-date" mode="intent-preference1-decl">
+i want to purchase a ticket for the erm the 6th of October <punc type="stop" />
+</decl>
+<dm n="7" sp-act="hesitate">
+erm
+</dm>
+<decl n="8" sp-act="state" polarity="positive" topic="location-from-enum" mode="decl">
+the 7 a m from Derby <punc type="stop" />
+</decl>
+</turn>
+<turn n="3" speaker="A">
+<dm n="9" sp-act="acknowledge">
+<pause /> aha <punc type="stop" />
+</dm>
+</turn>
+<turn n="4" speaker="B">
+<frag n="10" sp-act="state" polarity="positive" topic="time-arrival" mode="decl">
+arriving at St Pancreas 8:50 <punc type="stop" />
+</frag>
+<decl n="11" sp-act="state" polarity="positive" topic="to-location-from-enum" mode="decl">
+and the 17:30 from St Pancreas to Derby <punc type="stop" />
+</decl>
+</turn>
+<turn n="5" speaker="A">
+<dm n="12" sp-act="init">
+now <punct type="level" />
+</dm>
+<q-yn n="13" sp-act="reqInfo" polarity="positive" topic="creditcard" mode="alternative-closed-query">
+do you hold a current debit or credit card <punc type="query" />
+</q-yn>
+</turn>
+<turn n="6" speaker="B">
+<decl n="14" sp-act="answer-state" polarity="positive" topic="creditcard" mode="exists-decl">
+i've got a <pause /> i'm using a credit card to pay for this <punc type="stop" />
+</decl>
+</turn>
+<turn n="7" speaker="A">
+<dm n="15" sp-act="acknowledge" mode="tag">
+ok <punc type="stop" />
+</dm>
+</turn>
+<turn n="8" speaker="B">
+<dm n="16" sp-act="hesitate">
+erm
+</dm>
+<decl n="17" sp-act="reqInfo" polarity="positive" topic="fare-availability" mode="doubt-exists-condition-query">
+i'm wondering if there's any erm seats available on the Super Saver <punc type="query" />
+</decl>
+</turn>
+<turn n="9" speaker="A">
+<dm n="18" sp-act="init">
+<pause /> now <punct type="level" />
+</dm>
+<q-yn n="19" sp-act="reqInfo" polarity="positive" topic="railcard" mode="closed-query">
+do you hold a railcard at all <punc type="query" />
+</q-yn>
+</turn>
+<turn n="10" speaker="B">
+<dm n="20" sp-act="pardon" mode="regret">
+sorry <punc type="query" />
+</dm>
+</turn>
+<turn n="11" speaker="A">
+<q-yn n="21" sp-act="reqInfo" polarity="positive" topic="railcard" mode="closed-query">
+do you hold a railcard <punc type="query" />
+</q-yn>
+</turn>
+<turn n="12" speaker="B">
+<no n="22" sp-act="answer-negate">
+no <punc type="stop" />
+</no>
+</turn>
+<turn n="13" speaker="A">
+<q-yn n="23" sp-act="reqInfo" polarity="positive" topic="number" mode="closed-query">
+is it just for one <punc type="query" />
+</q-yn>
+</turn>
+<turn n="14" speaker="B">
+<yes n="24" sp-act="answer-acknowledge">
+yeah <punc type="stop" />
+</yes>
+</turn>
+<turn n="15" speaker="A">
+<dm n="25" sp-act="init">
+so <punc type="level" />
+</dm>
+<decl n="26" sp-act="reqConfirm" polarity="positive" topic="to-location-from" mode="query">
+it's going from <pause /> Derby <pause /> to St Pancreas <punc type="query" />
+</decl>
+</turn>
+<turn n="16" speaker="B">
+<dm n="27" sp-act="confirm-acknowledge">
+aha <punc type="stop" />
+</dm>
+</turn>
+<turn n="17" speaker="A">
+<frag n="28" sp-act="reqInfo" polarity="positive" topic="month-date" mode="partial-query">
+on the 6th of October <punc type="query" />
+</frag>
+</turn>
+<turn n="18" speaker="B">
+<yes n="29" sp-act="answer-acknowledge">
+yeah <punc type="stop" />
+</yes>
+</turn>
+<turn n="19" speaker="A">
+<frag n="30" sp-act="reqInfo" polarity="positive" topic="time-departure" mode="open-query">
+<pause length="2s" /> departing what time in the morning <punc type="query" />
+</frag>
+</turn>
+<turn n="20" speaker="B">
+<frag n="31" sp-act="answer-refer" polarity="positive" topic="enum" mode="decl">
+7 a m <punc type="stop" />
+</frag>
+<frag n="32" sp-act="elab-refer" polarity="positive" topic="enum" mode="decl">
+7 a m <punc type="stop" />
+</frag>
+</turn>
+<turn n="21" speaker="A">
+<decl n="33" sp-act="state" polarity="negative" topic="fare-journey-enum" mode="exists-decl">
+<pause length="4s" /> there's not any advance purchase tickets on the 7 a m train <punc type="stop" />
+</decl>
+<decl n="34" sp-act="stateOpt" polarity="positive" topic="time-enum" mode="alternative-decl">
+<pause /> it's either 6 o'clock or 9 o'clock <punc type="stop" />
+</decl>
+</turn>
+<turn n="22" speaker="B">
+<no n="35" sp-act="negate">
+no <punc type="stop" />
+</no>
+<decl n="36" sp-act="reject" polarity="negative" mode="decl">
+that's no good <punc type="stop" />
+</decl>
+<dm n="37" sp-act="hesitate">
+<pause /> erm
+</dm>
+<dm n="38" sp-act="acknowledge" mode="tag">
+ok <punc type="stop" />
+</dm>
+<decl n="39" sp-act="reqInfo" polarity="positive" topic="fare" mode="query">
+<pause /> and the Super Saver <punc type="query" />
+</decl>
+<decl n="40" sp-act="reqConfirm" polarity="positive" topic="fare" mode="tag-query">
+<pause /> that is a Super Saver is it <punc type="query" />
+</decl>
+</turn>
+<turn n="23" speaker="A">
+<decl n="41" sp-act="correct" polarity="positive" topic="fare" mode="decl">
+that's the Super Advance <punc type="stop" />
+</decl>
+</turn>
+<turn n="24" speaker="B">
+<yes n="42" sp-act="acknowledge">
+yeah <punc type="stop" />
+</yes>
+<decl n="43" sp-act="state" polarity="positive" mode="decl">
+that's it <punc type="stop" />
+</decl>
+<decl n="44" sp-act="reqConfirm" polarity="negative" topic="fare-number" mode="tag-query">
+<pause /> you have a you have a Super Saver one as well don't you <punc type="query" />
+</decl>
+<decl n="45" sp-act="state-abandon" polarity="positive" mode="decl">
+<pause /> that's the <punc type="stop" />
+</decl>
+<q-yn n="46" sp-act="reqInfo" polarity="positive" mode="closed-query">
+<pause /> is that the same thing <punc type="query" />
+</q-yn>
+</turn>
+<turn n="25" speaker="A">
+<dm n="47" sp-act="apologise" mode="regret">
+<pause length="4s" /> sorry <punc type="query" />
+</dm>
+<decl n="48" sp-act="expressNonAwareness-abandon" polarity="negative" mode="report-nonawareness-decl">
+i don't know what you <punc type="stop" />
+</decl>
+<frag n="49" sp-act="reqInfo" polarity="positive" topic="fare" mode="query">
+Super Saver <punc type="query" />
+</frag>
+</turn>
+<turn n="26" speaker="B">
+<decl n="50" sp-act="answer-state" polarity="positive" topic="number" mode="exists-report-decl">
+ah there's two there's two types i'm told <punc type="stop" />
+</decl>
+<decl n="51" sp-act="elab-state" polarity="positive" topic="fare" mode="exists-decl">
+<pause /> there's the Super Saver and the Super Advance Saver <punc type="stop" />
+</decl>
+</turn>
+<turn n="27" speaker="A">
+<dm n="52" sp-act="acknowledge">
+right <punc type="stop" />
+</dm>
+<decl n="53" sp-act="state" polarity="positive" topic="fare" mode="frag">
+the Super Advance <punc type="level" />
+</decl>
+<decl n="54" sp-act="stateConstraint" polarity="positive" topic="booking-time" mode="constrain-decl">
+you've got to book beforehand <punc type="stop" />
+</decl>
+<decl n="55" sp-act="stateConstraint" polarity="positive" topic="availability-date" mode="constrain-decl">
+but that's only available in the dates and times <punc type="stop" />
+</decl>
+</turn>
+<turn n="28" speaker="B">
+<dm n="56" sp-act="acknowledge">
+right <punc type="stop" />
+</dm>
+</turn>
+<turn n="29" speaker="A">
+<dm n="57" sp-act="init">
+now <punct type="level" />
+</dm>
+<decl n="58" sp-act="state" polarity="negative" topic="time-fare" mode="decl">
+the Super Saver is not valid at that time in the morning <punc type="stop" />
+</decl>
+</turn>
+<turn n="30" speaker="B">
+<no n="59" sp-act="negate">
+no <punc type="stop" />
+</no>
+<dm n="60" sp-act="acknowledge">
+right <punc type="stop" />
+</dm>
+<dm n="61" sp-act="init">
+so <punc type="level" />
+</dm>
+<q-wh n="62" sp-act="reqInfo" polarity="positive" topic="journey" mode="request-query-open-query">
+how much is the cost of the train journey then please <punc type="query" />
+</q-wh>
+</turn>
+<turn n="31" speaker="A">
+<frag n="63" sp-act="answer-state" polarity="positive" topic="journey-time-enum" mode="frag">
+<pause length="2s" /> to travel on that 7 o'clock train <punc type="level" />
+</frag>
+<decl n="64" sp-act="elab-predict" polarity="positive" topic="fare-enum" mode="predict-decl">
+it's going to be 63 pounds return <punc type="stop" />
+</decl>
+<decl n="65" sp-act="state" polarity="positive" topic="fare" mode="decl">
+and that's your Standard Open <punc type="stop" />
+</decl>
+</turn>
+<turn n="32" speaker="B">
+<yes n="66" sp-act="acknowledge">
+yes <punc type="stop" />
+</yes>
+<frag n="67" sp-act="reqInfo" polarity="positive" topic="booking" mode="query">
+<pause /> and and to book a seat <punc type="query" />
+</frag>
+</turn>
+<turn n="33" speaker="A">
+<yes n="68" sp-act="answer-acknowledge">
+<pause /> yeah <punc type="stop" />
+</yes>
+<decl n="69" sp-act="elab-expressPossibility" polarity="positive" mode="benefit-poss1-decl">
+i can do that for you <punc type="stop" />
+</decl>
+</turn>
+<turn n="34" speaker="B">
+<frag n="70" sp-act="reqInfo" polarity="positive" topic="fare" mode="query">
+and er boo... er a seat on the return <punc type="query" />
+</frag>
+</turn>
+<turn n="35" speaker="A">
+<q-wh n="71" sp-act="reqInfo" polarity="positive" topic="fare-time" mode="report-open-query">
+and what was the time you were wanting on the return <punc type="query" />
+</q-wh>
+</turn>
+<turn n="36" speaker="B">
+<dm n="72" sp-act="hesitate">
+erm
+</dm>
+<frag n="73" sp-act="answer-refer" polarity="positive" mode="decl">
+17:30 <punc type="stop" />
+</frag>
+</turn>
+<turn n="37" speaker="A">
+<dm n="74" sp-act="init">
+<pause length="2s" /> now <punct type="level" />
+</dm>
+<q-yn n="75" sp-act="reqDirect" polarity="positive" topic="booking-journey" mode="benefit-preference2-closed-query">
+do you want me to book this ticket for you <punc type="query" />
+</q-yn>
+</turn>
+<turn n="38" speaker="B">
+<yes n="76" sp-act="direct-accept" mode="request">
+yes please <punc type="stop" />
+</yes>
+</turn>
+<turn n="39" speaker="A">
+<dm n="77" sp-act="init">
+now <punct type="level" />
+</dm>
+<q-yn n="78" sp-act="reqDirect" polarity="positive" topic="seat" mode="alternative-preference2-closed-query">
+would you like smoking or non-smoking <punc type="query" />
+</q-yn>
+</turn>
+<turn n="40" speaker="B">
+<dm n="79" sp-act="hesitate">
+erm
+</dm>
+<imp n="80" sp-act="hold" polarity="positive" mode="hold-decl">
+hold on <punc type="stop" />
+</imp>
+<q-yn n="81" sp-act="reqInfo" polarity="positive" mode="constrain-closed-query">
+does Stephen actually smoke <pause /> <event type="background voice says no" /> <punc type="query" />
+</q-yn>
+<no n="82" sp-act="negate">
+no <punc type="stop" />
+</no>
+<frag n="83" sp-act="direct-refer" polarity="positive" topic="seat" mode="request-decl">
+non-smoking please <punc type="stop" />
+</frag>
+</turn>
+<turn n="41" speaker="A">
+<dm n="84" sp-act="init">
+<pause length="2s" /> now <punct type="level" />
+</dm>
+<decl n="85" sp-act="answer-state" polarity="positive" topic="month-date" mode="frag">
+it's the 6th of October <punc type="level" />
+</decl>
+<frag n="86" sp-act="elab-state" polarity="positive" topic="time-location-journey-from-enum" mode="frag">
+travelling from Derby at 7 a m in the morning <punc type="level" />
+</frag>
+<frag n="87" sp-act="state" polarity="positive" topic="time-arrival" mode="decl">
+arriving in St Pancreas at 8:50 <punc type="stop" />
+</frag>
+<frag n="88" sp-act="state" polarity="positive" topic="location-time-from-enum-day-return" mode="decl">
+<pause /> returning the same day at 17:30 from London St Pancreas <punc type="stop" />
+</frag>
+<frag n="89" sp-act="state" polarity="positive" topic="location-time-arrival" mode="decl">
+arriving in Derby at 19:25 <punc type="stop" />
+</frag>
+<decl n="90" sp-act="state" polarity="positive" topic="seat-booking" mode="report-decl">
+<pause /> and i've booked forward facing non-smoking table seats <punc type="stop" />
+</decl>
+<decl n="91" sp-act="predict" polarity="positive" topic="number-journey-date" mode="benefit-decl">
+and the dates times and seat numbers will be printed on the tickets for you <punc type="stop" />
+</decl>
+</turn>
+<turn n="42" speaker="B">
+<dm n="92" sp-act="acknowledge">
+right <punc type="stop" />
+</dm>
+</turn>
+<turn n="43" speaker="A">
+<decl n="93" sp-act="stateCondition" polarity="positive" topic="journey-cancel" mode="constrain-condition-frag">
+if you have to cancel this ticket <punc type="level" />
+</decl>
+<decl n="94" sp-act="state" polarity="positive" topic="fare-refund-enum" mode="decl">
+it's a full refund less 5 pounds <punc type="stop" />
+</decl>
+<decl n="95" sp-act="stateCondition" polarity="positive" mode="constrain-condition-frag">
+<pause /> if you needed to change any times <punc type="level" />
+</decl>
+<decl n="96" sp-act="expressPossibility" polarity="positive" mode="poss2-decl">
+you can do so <punc type="stop" />
+</decl>
+<decl n="97" sp-act="stateCondition" polarity="positive" topic="miss" mode="condition-frag">
+if you miss any train <punc type="level" />
+</decl>
+<decl n="98" sp-act="expressPossibility" polarity="positive" topic="availability" mode="poss2-decl">
+you can get the next available service <punc type="stop" />
+</decl>
+</turn>
+<turn n="44" speaker="B">
+<yes n="99" sp-act="acknowledge">
+yes <punc type="stop" />
+</yes>
+</turn>
+<turn n="45" speaker="A">
+<dm n="100" sp-act="init">
+now <punct type="level" />
+</dm>
+<frag n="101" sp-act="uninterpretable" polarity="positive">
+<pause /> <overlap type="start" /> <unclear length="9 syllable" />
+</frag>
+</turn>
+<turn n="46" speaker="B">
+<frag n="102" sp-act="reqInfo" polarity="positive" topic="cancel" mode="condition-constrain-query">
+if you <overlap type="end" /> can... if you have to cancel <punc type="query" />
+</frag>
+<q-wh n="103" sp-act="reqInfo" polarity="positive" topic="time-cancel" mode="poss2-open-query">
+what's the latest you can cancel <punc type="query" />
+</q-wh>
+</turn>
+<turn n="47" speaker="A">
+<decl n="104" sp-act="answer-expressPossibility" polarity="positive" topic="cancel-time" mode="poss2-tag-disflu">
+you can cancel cancel that any time
+</decl>
+<dm n="105" sp-act="reqConfirm">
+<overlap type="start" /> right <punc type="level" />
+</dm>
+</turn>
+<turn n="48" speaker="B">
+<frag n="106" sp-act="confirm-uninterpretable" polarity="positive">
+<unclear length="9 syllable" /> <overlap type="end" />
+</frag>
+</turn>
+<turn n="49" speaker="A">
+<frag n="107" sp-act="refer" polarity="positive" topic="journey-day" mode="partial-decl">
+on the day of travel <punc type="stop" />
+</frag>
+<q-wh n="108" sp-act="reqConfirm-abandon" polarity="positive" mode="exclaim-partial-interruption">
+<pause /> whatever <punc type="incomplete" />
+</q-wh>
+</turn>
+<turn n="50" speaker="B">
+<yes n="109" sp-act="confirm-acknowledge">
+yeah <punc type="stop" />
+</yes>
+<dm n="110" sp-act="acknowledge" mode="tag">
+<overlap type="start" /> ok <punc type="stop" />
+</dm>
+</turn>
+<turn n="51" speaker="A">
+<frag n="111" sp-act="refer" polarity="positive" mode="decl">
+this <punc type="stop" />
+</frag>
+<decl n="112" sp-act="stateReason" polarity="positive" topic="fare-journey" mode="reason-decl">
+<overlap type="end" /> cos it's a Standard Open ticket <punc type="stop" />
+</decl>
+</turn>
+<turn n="52" speaker="B">
+<yes n="113" sp-act="acknowledge">
+yeah <punc type="stop" />
+</yes>
+</turn>
+<turn n="53" speaker="A">
+<frag n="114" sp-act="refer" polarity="positive" topic="fare-enum" mode="decl">
+63 pounds return <punc type="stop" />
+</frag>
+</turn>
+<turn n="54" speaker="B">
+<dm n="115" sp-act="acknowledge">
+mhm <punc type="stop" />
+</dm>
+</turn>
+<turn n="55" speaker="A">
+<frag n="116" sp-act="reqInfo" polarity="positive" topic="name-creditcard" mode="query">
+and the surname of the credit card holder <punc type="query" />
+</frag>
+</turn>
+<turn n="56" speaker="B">
+<frag n="117" sp-act="answer-refer" polarity="positive" mode="decl">
+<anonym type="name" /> <punc type="stop" />
+</frag>
+<frag n="118" sp-act="elab-refer" polarity="positive" mode="decl">
+<anonym type="letter" /> <anonym type="letter" /> <anonym type="letter" /> <anonym type="letter" /> <pause /> <anonym type="letter" /> <anonym type="letter" /> <anonym type="letter" /> <anonym type="letter" /> <anonym type="letter" /> <punc type="stop" />
+</frag>
+</turn>
+<turn n="57" speaker="A">
+<frag n="119" sp-act="reqInfo" polarity="positive" topic="name" mode="query">
+and the initial <punc type="query" />
+</frag>
+</turn>
+<turn n="58" speaker="B">
+<frag n="120" sp-act="answer-refer" polarity="positive" mode="decl">
+<anonym type="letter" /> <punc type="stop" />
+</frag>
+</turn>
+<turn n="59" speaker="A">
+<frag n="121" sp-act="reqInfo" polarity="positive" topic="name" mode="query">
+and the title <punc type="query" />
+</frag>
+</turn>
+<turn n="60" speaker="B">
+<decl n="122" sp-act="answer-state" polarity="positive" mode="decl">
+it's er Barclay card <punc type="stop" />
+</decl>
+<decl n="123" sp-act="elab-state" polarity="positive" topic="creditcard" mode="decl">
+it's Visa Silver <punc type="stop" />
+</decl>
+</turn>
+<turn n="61" speaker="A">
+<frag n="124" sp-act="refer-abandon" polarity="positive" mode="abandon">
+and the <punc type="incomplete" />
+</frag>
+<q-yn n="125" sp-act="reqInfo" polarity="positive" mode="alternative-closed-query">
+<pause /> is it a Mr or Mrs <punc type="query" />
+</q-yn>
+</turn>
+<turn n="62" speaker="B">
+<dm n="126" sp-act="hesitate">
+<pause />  erm
+</dm>
+<frag n="127" sp-act="answer-refer" polarity="positive" mode="decl">
+Mrs <punc type="stop" />
+</frag>
+</turn>
+<turn n="63" speaker="A">
+<frag n="128" sp-act="echo-refer" polarity="positive" mode="decl">
+Mrs <punc type="stop" />
+</frag>
+<decl n="129" sp-act="reqInfo" polarity="positive" topic="telephone-number-creditcard" mode="query">
+<pause /> and the credit card the contact telephone number <punc type="query" />
+</decl>
+</turn>
+<turn n="64" speaker="B">
+<frag n="130" sp-act="answer-refer" polarity="positive" topic="enum" mode="frag">
+0 1 6 double 2 <punc type="level" />
+</frag>
+</turn>
+<turn n="65" speaker="A">
+<dm n="131" sp-act="acknowledge">
+aha <punc type="stop" />
+</dm>
+</turn>
+<turn n="66" speaker="B">
+<frag n="132" sp-act="refer" polarity="positive" topic="enum" mode="decl">
+double 8 double 6 0 0 <punc type="stop" />
+</frag>
+</turn>
+<turn n="67" speaker="A">
+<dm n="133" sp-act="init">
+now <punct type="level" />
+</dm>
+<decl n="134" sp-act="reqInfo" polarity="positive" topic="creditcard-address" mode="query">
+the postcode to where the credit card is registered to <punc type="query" />
+</decl>
+</turn>
+<turn n="68" speaker="B">
+<dm n="135" sp-act="hesitate">
+er 
+</dm>
+<frag n="136" sp-act="refer" polarity="positive">
+<pause /> erm <anonym type="letter" /> <anonym type="letter" /> <anonym type="letter" /> <anonym type="letter" /> <anonym type="letter" /> Limited <punc type="stop" />
+</frag>
+</turn>
+<turn n="69" speaker="A">
+<dm n="137" sp-act="acknowledge">
+right <punc type="stop" />
+</dm>
+<q-yn n="138" sp-act="direct-reqInfo" polarity="positive" topic="address" mode="request-closed-query">
+have you got the got the postcode first of all please <punc type="query" />
+</q-yn>
+</turn>
+<turn n="70" speaker="B">
+<frag n="139" sp-act="refer" polarity="positive" mode="frag">
+<anonym type="letter" /> <anonym type="letter" /> 16 <punc type="level" />
+</frag>
+</turn>
+<turn n="71" speaker="A">
+<dm n="140" sp-act="acknowledge">
+aha <punc type="stop" />
+</dm>
+</turn>
+<turn n="72" speaker="B">
+<frag n="141" sp-act="refer" polarity="positive" topic="enum" mode="decl">
+2 <anonym type="letter" /> <anonym type="letter" /> <punc type="stop" />
+</frag>
+<imp n="142" sp-act="apologise" polarity="positive" mode="regret-decl">
+excuse a moment <vocal type="coughs" />  <punc type="stop" />
+</imp>
+<dm n="143" sp-act="exclaim">
+oh
+</dm>
+<frag n="144" sp-act="apologise" polarity="positive" mode="decl">
+sorry <punc type="stop" />
+</frag>
+</turn>
+<turn n="73" speaker="A">
+<dm n="145" sp-act="agree" mode="reassurance">
+that's ok <punc type="stop" />
+</dm>
+<dm n="146" sp-act="init">
+now <punct type="level" />
+</dm>
+<q-wh n="147" sp-act="reqInfo" polarity="positive" topic="name" mode="open-query">
+what was the name of the business <punc type="query" />
+</q-wh>
+</turn>
+<turn n="74" speaker="B">
+<dm n="148" sp-act="hesitate">
+em
+</dm>
+<frag n="149" sp-act="refer" polarity="positive" topic="spell">
+<anonym type="letter" /> <anonym type="letter" /> <anonym type="letter" /> <anonym type="letter" /> <anonym type="letter" /> Limited <punc type="stop" />
+</frag>
+</turn>
+<turn n="75" speaker="A">
+<dm n="150" sp-act="pardon" mode="regret">
+sorry <punc type="query" />
+</dm>
+<q-yn n="151" sp-act="reqConfirm" polarity="positive" mode="closed-query">
+is that <anonym type="letter" /> for <anonym type="alpha" /> <punc type="query" />
+</q-yn>
+</turn>
+<turn n="76" speaker="B">
+<yes n="152" sp-act="confirm-acknowledge">
+yeah <punc type="stop" />
+</yes>
+</turn>
+<turn n="77" speaker="A">
+<frag n="153" sp-act="reqConfirm" polarity="positive" mode="decl">
+<anonym type="letter" /> for <anonym type="alpha" /> <punc type="stop" />
+</frag>
+</turn>
+<turn n="78" speaker="B">
+<frag n="154" sp-act="confirm-refer" polarity="positive" mode="decl">
+<anonym type="alpha" />  and <anonym type="letter" /> for <anonym type="alpha" /> <punc type="stop" />
+</frag>
+</turn>
+<turn n="79" speaker="A">
+<q-wh n="155" sp-act="reqInfo" polarity="positive" topic="time" mode="open-query">
+and what was after that <punc type="query" />
+</q-wh>
+</turn>
+<turn n="80" speaker="B">
+<frag n="156" sp-act="answer-refer" polarity="positive" mode="decl">
+<anonym type="letter" /> <anonym type="letter" /> Limited <punc type="stop" />
+</frag>
+</turn>
+<turn n="81" speaker="A">
+<frag n="157" sp-act="echo-refer" polarity="positive" mode="decl">
+<anonym type="letter" /> <anonym type="letter" /> Limited <punc type="stop" />
+</frag>
+</turn>
+<turn n="82" speaker="B">
+<frag n="158" sp-act="refer" polarity="positive" topic="enum" mode="decl">
+<pause /> 60 <anonym type="street" /> Drive <punc type="stop" />
+</frag>
+</turn>
+<turn n="83" speaker="A">
+<dm n="159" sp-act="acknowledge">
+<pause />  aha <punc type="stop" />
+</dm>
+</turn>
+<turn n="84" speaker="B">
+<frag n="160" sp-act="refer" polarity="positive" mode="decl">
+<pause /> <anonym type="street" /> Road <punc type="stop" />
+</frag>
+<frag n="161" sp-act="refer" polarity="positive" mode="decl">
+<pause length="6s" /> Latterworth <punc type="stop" />
+</frag>
+</turn>
+<turn n="85" speaker="A">
+<dm n="162" sp-act="acknowledge" mode="tag">
+<pause length="2s" /> ok <punc type="stop" />
+</dm>
+</turn>
+<turn n="86" speaker="B">
+<frag n="163" sp-act="refer" polarity="positive" mode="decl">
+Leicestershire <punc type="stop" />
+</frag>
+</turn>
+<turn n="87" speaker="A">
+<dm n="164" sp-act="init">
+now <punct type="level" />
+</dm>
+<decl n="165" sp-act="predict" polarity="positive" topic="journey" mode="predict-decl">
+that's where the ticket will be posted out to <punc type="stop" />
+</decl>
+</turn>
+<turn n="88" speaker="B">
+<q-wh n="166" sp-act="reqInfo" polarity="positive" topic="time" mode="open-query">
+and when will we get that <punc type="query" />
+</q-wh>
+</turn>
+<turn n="89" speaker="A">
+<dm n="167" sp-act="init">
+well <punct type="level" />
+</dm>
+<decl n="168" sp-act="answer-predict" polarity="positive" topic="journey-time" mode="predict-decl">
+the ticket will go out in the first class post this afternoon <punc type="stop" />
+</decl>
+</turn>
+<turn n="90" speaker="B">
+<decl n="169" sp-act="reqConfirm" polarity="positive" topic="day" mode="suggest-query">
+so i should get it tomorrow <punc type="query" />
+</decl>
+</turn>
+<turn n="91" speaker="A">
+<frag n="170" sp-act="confirm-stateOpt" polarity="positive" topic="time-day" mode="alternative-tag-query">
+or Saturday <pause /> <overlap type="start" /> at the latest ok <punc type="query" />
+</frag>
+</turn>
+<turn n="92" speaker="B">
+<yes n="171" sp-act="confirm-acknowledge">
+yeah <punc type="stop" />
+</yes>
+<dm n="172" sp-act="acknowledge" mode="awareness">
+i see <punc type="stop" />
+</dm>
+<dm n="173" sp-act="approve">
+fine <punc type="stop" />
+</dm>
+<frag n="174" sp-act="thank" polarity="positive" mode="thank-decl">
+<overlap type="end" /> thank you <punc type="stop" />
+</frag>
+</turn>
+<turn n="93" speaker="A">
+<dm n="175" sp-act="init">
+now <punct type="level" />
+</dm>
+<decl n="176" sp-act="reqInfo" polarity="positive" topic="number-creditcard" mode="query">
+the credit card number is <punc type="query" />
+</decl>
+</turn>
+<turn n="94" speaker="B">
+<frag n="177" sp-act="answer-refer" polarity="positive" topic="enum" mode="frag">
+<pause /> 6 5 6 7 <punc type="level" />
+</frag>
+</turn>
+<turn n="95" speaker="A">
+<frag n="178" sp-act="echo-refer" polarity="positive" topic="enum" mode="frag">
+6 5 6 7 <punc type="level" />
+</frag>
+</turn>
+<turn n="96" speaker="B">
+<frag n="179" sp-act="refer" polarity="positive" topic="enum" mode="frag">
+5 6 7 6 <punc type="level" />
+</frag>
+</turn>
+<turn n="97" speaker="A">
+<frag n="180" sp-act="echo-refer" polarity="positive" topic="enum" mode="frag">
+5 6 7 6 <punc type="level" />
+</frag>
+</turn>
+<turn n="98" speaker="B">
+<frag n="181" sp-act="refer" polarity="positive" topic="enum" mode="frag">
+8 6 9 8 <punc type="level" />
+</frag>
+</turn>
+<turn n="99" speaker="A">
+<frag n="182" sp-act="echo-refer" polarity="positive" topic="enum" mode="frag">
+8 6 9 8 <punc type="level" />
+</frag>
+</turn>
+<turn n="100" speaker="B">
+<frag n="183" sp-act="refer" polarity="positive" topic="enum" mode="decl">
+2 6 6 8 <punc type="stop" />
+</frag>
+</turn>
+<turn n="101" speaker="A">
+<frag n="184" sp-act="echo-refer" polarity="positive" topic="enum" mode="decl">
+2 6 6 8 <punc type="stop" />
+</frag>
+<frag n="185" sp-act="reqInfo" polarity="positive" topic="creditcard" mode="query">
+and the expiry date <punc type="query" />
+</frag>
+</turn>
+<turn n="102" speaker="B">
+<frag n="186" sp-act="answer-refer" polarity="positive" topic="enum" mode="decl">
+8 99 <punc type="stop" />
+</frag>
+</turn>
+<turn n="103" speaker="A">
+<dm n="187" sp-act="init">
+now <punct type="level" />
+</dm>
+<decl n="188" sp-act="state" polarity="positive" topic="booking-number-journey" mode="decl">
+this is the reference number the ticket has been booked under <punc type="stop" />
+</decl>
+</turn>
+<turn n="104" speaker="B">
+<dm n="189" sp-act="acknowledge">
+mhm <punc type="stop" />
+</dm>
+</turn>
+<turn n="105" speaker="A">
+<decl n="190" sp-act="state" polarity="positive" mode="decl">
+and it's 0 <punc type="stop" />
+</decl>
+<decl n="191" sp-act="state" polarity="positive" mode="correct-decl">
+then it's treble <anonym type="letter" /> as in <anonym type="alpha" /> <punc type="stop" />
+</decl>
+</turn>
+<turn n="106" speaker="B">
+<dm n="192" sp-act="acknowledge">
+right <punc type="stop" />
+</dm>
+<frag n="193" sp-act="echo-refer" polarity="positive" topic="enum" mode="decl">
+<pause /> 0 treble <anonym type="letter" /> <punc type="stop" />
+</frag>
+</turn>
+<turn n="107" speaker="A">
+<dm n="194" sp-act="acknowledge">
+aha <punc type="stop" />
+</dm>
+</turn>
+<turn n="108" speaker="B">
+<dm n="195" sp-act="acknowledge">
+aha <punc type="stop" />
+</dm>
+</turn>
+<turn n="109" speaker="A">
+<frag n="196" sp-act="refer" polarity="positive" topic="enum" mode="frag">
+0 7 0 <punc type="level" />
+</frag>
+</turn>
+<turn n="110" speaker="B">
+<frag n="197" sp-act="echo-refer" polarity="positive" topic="enum" mode="frag">
+0 7 0 <punc type="level" />
+</frag>
+</turn>
+<turn n="111" speaker="A">
+<frag n="198" sp-act="refer" polarity="positive" mode="decl">
+<anonym type="letter" /> for <anonym type="alpha" /> <punc type="stop" />
+</frag>
+</turn>
+<turn n="112" speaker="B">
+<frag n="199" sp-act="echo-refer" polarity="positive">
+<unclear length="9 syllable" />
+</frag>
+</turn>
+<turn n="113" speaker="A">
+<decl n="200" sp-act="predict" polarity="positive" topic="journey-time" mode="predict-decl">
+and the ticket will be posted out first class post this afternoon to you <punc type="stop" />
+</decl>
+<dm n="201" sp-act="acknowledge" mode="tag">
+ok now <punc type="query" />
+</dm>
+</turn>
+<turn n="114" speaker="B">
+<yes n="202" sp-act="confirm-acknowledge">
+yeah <punc type="stop" />
+</yes>
+<dm n="203" sp-act="approve">
+lovely <punc type="stop" />
+</dm>
+</turn>
+<turn n="115" speaker="A">
+<dm n="204" sp-act="init">
+so <punc type="stop" />
+</dm>
+<frag n="205" sp-act="thank" mode="thank-intro">
+thank you for calling <punc type="stop" />
+</frag>
+</turn>
+<turn n="116" speaker="B">
+<q-yn n="206" sp-act="reqOpt" polarity="positive" topic="name" mode="request-closed-query">
+and can i put your name please <punc type="query" />
+</q-yn>
+</turn>
+<turn n="117" speaker="A">
+<decl n="207" sp-act="identifySelf" polarity="positive" topic="name" mode="decl">
+my name's Sandra <anonym type="name" /> <punc type="stop" />
+</decl>
+<decl n="208" sp-act="elab-state" polarity="positive" topic="journey" mode="constrain-decl">
+but it's also printed on the tickets as well <punc type="stop" />
+</decl>
+</turn>
+<turn n="118" speaker="B">
+<dm n="209" sp-act="acknowledge" mode="tag">
+ok <punc type="stop" />
+</dm>
+<frag n="210" sp-act="thank" polarity="positive" mode="thank-decl">
+thank you <punc type="stop" />
+</frag>
+</turn>
+<turn n="119" speaker="A">
+<frag n="211" sp-act="thank" mode="thank">
+thanks <punc type="stop" />
+</frag>
+<frag n="212" sp-act="bye" mode="farewell-closing">
+<overlap type="start" /> bye <punc type="stop" />
+</frag>
+</turn>
+<turn n="120" speaker="B">
+<frag n="213" sp-act="echo-bye" mode="farewell-closing">
+bye <overlap type="end" /> <punc type="stop" />
+</frag>
+</turn>
+</dialogue>

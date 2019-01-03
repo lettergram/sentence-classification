@@ -1,0 +1,247 @@
+<?xml version="1.0"?>
+<dialogue corpus="amex" lang="en" id="">
+<turn n="1" speaker="agent_A">
+<frag n="1" sp-act="greet" mode="greet-opening">
+hi
+</frag>
+<decl n="2" sp-act="identifySelf" polarity="positive" topic="time" mode="frag">
+this is A at American Express <punc type="level" />
+</decl>
+<q-yn n="3" sp-act="offer" polarity="positive" mode="closed-query">
+may i help you <punc type="query" />
+</q-yn>
+</turn>
+<turn n="2" speaker="caller">
+<frag n="4" sp-act="greet" mode="greet-opening">
+hi
+</frag>
+<address n="5" sp-act="refer" polarity="positive">
+A
+</address>
+<decl n="6" sp-act="identifySelf" polarity="positive" mode="frag">
+this is B <punc type="level" />
+</decl>
+<frag n="7" sp-act="refer" polarity="positive" topic="time" mode="partial-decl">
+Physical Sciences Business Office at uh WWW <punc type="stop" />
+</frag>
+</turn>
+<turn n="3" speaker="agent_A">
+<yes n="8" sp-act="acknowledge">
+yeah
+</yes>
+<q-wh n="9" sp-act="reqInfo" polarity="positive" mode="open-query">
+and uh what can i help you with <punc type="query" />
+</q-wh>
+</turn>
+<turn n="4" speaker="caller">
+<dm n="10" sp-act="hesitate">
+uh
+</dm>
+<decl n="11" sp-act="answer-state" polarity="positive" topic="country-to-location_US-location_int" mode="report-constrain-decl">
+i need to know uh business class round trip uh fare for uh San Francisco to uh Baron Switzerland <punc type="stop" />
+</decl>
+</turn>
+<turn n="5" speaker="agent_A">
+<dm n="12" sp-act="acknowledge">
+sure
+</dm>
+<dm n="13" sp-act="hold">
+one second <punc type="stop" />
+</dm>
+<q-yn n="14" sp-act="reqInfo" polarity="positive" mode="closed-query">
+is this for a proposal <punc type="query" />
+</q-yn>
+</turn>
+<turn n="6" speaker="caller">
+<dm n="15" sp-act="answer-acknowledge">
+right
+</dm>
+</turn>
+<turn n="7" speaker="agent_A">
+<decl n="16" sp-act="stateIntent-hold" polarity="positive" topic="verify-time" mode="intent-decl">
+i'm checking a couple different carriers just to compare them before i give you the fare on this <punc type="stop" />
+</decl>
+</turn>
+<turn n="8" speaker="caller">
+<dm n="17" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="9" speaker="agent_A">
+<decl n="18" sp-act="expressAwareness-hold" polarity="positive" topic="location" mode="awareness-decl">
+i seem to have a very slow computer here <punc type="stop" />
+</decl>
+</turn>
+<turn n="10" speaker="caller">
+<dm n="19" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="20" sp-act="agree" polarity="positive" mode="reassurance-tag-decl">
+that's all right <punc type="stop" />
+</decl>
+</turn>
+<turn n="11" speaker="agent_A">
+<dm n="21" sp-act="init">
+well
+</dm>
+<decl n="22" sp-act="state" polarity="positive" topic="number" mode="exists-decl">
+i have one fare <punc type="stop" />
+</decl>
+<imp n="23" sp-act="offer" polarity="positive">
+let me give you that
+</imp>
+<decl n="24" sp-act="stateIntent-hold" polarity="positive" topic="problem-verify" mode="intent-report-hold-poss1-condition-decl">
+and i'm just trying to see if i can verify it on another carrier <punc type="stop" />
+</decl>
+</turn>
+<turn n="12" speaker="caller">
+<dm n="25" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="13" speaker="agent_A">
+<dm n="26" sp-act="hesitate">
+uh
+</dm>
+<frag n="27" sp-act="state" polarity="positive" topic="number" mode="decl">
+one way fare would be 1567 <punc type="stop" />
+</frag>
+</turn>
+<turn n="14" speaker="caller">
+<frag n="28" sp-act="reqInfo" polarity="positive" mode="partial-query">
+w... round trip <punc type="query" />
+</frag>
+</turn>
+<turn n="15" speaker="agent_A">
+<decl n="29" sp-act="answer-state" polarity="positive" topic="enum" mode="decl">
+the round trip would be that times 2 plus 13 for taxes <punc type="stop" />
+</decl>
+</turn>
+<turn n="16" speaker="caller">
+<dm n="30" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="17" speaker="agent_A">
+<dm n="31" sp-act="hesitate">
+uh
+</dm>
+<decl n="32" sp-act="state" polarity="positive" mode="report-tag-frag">
+it looks like approximately right <punc type="level" />
+</decl>
+<dm n="33" sp-act="hesitate">
+uh
+</dm>
+<frag n="34" sp-act="state" polarity="positive">
+using TWA instead of American
+</frag>
+<decl n="35" sp-act="state" polarity="positive">
+i get 1589
+</decl>
+<frag n="36" sp-act="state" polarity="positive" mode="decl">
+a little bit higher <punc type="stop" />
+</frag>
+</turn>
+<turn n="18" speaker="caller">
+<dm n="37" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="19" speaker="agent_A">
+<dm n="38" sp-act="init">
+so
+</dm>
+<decl n="39" sp-act="state" polarity="positive" mode="disflu">
+it's it's in that ballpark <overlap type="start" /> <unclear />
+</decl>
+</turn>
+<turn n="20" speaker="caller">
+<dm n="40" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<frag n="41" sp-act="refer" polarity="positive" topic="enum" mode="decl">
+15 <overlap type="end" /> 57 times 2 plus 13 <punc type="stop" />
+</frag>
+</turn>
+<turn n="21" speaker="agent_A">
+<decl n="42" sp-act="state" polarity="negative" topic="number-location" mode="exists-decl">
+there isn't any one carrier that flies all the way in there <punc type="stop" />
+</decl>
+<decl n="43" sp-act="stateConstraint" polarity="positive" topic="to-airline-country-location_int" mode="alternative-constrain-decl">
+you need to connect somewhere like from TWA to Air France or Pan Am to Air France or something to get in to Baron <punc type="stop" />
+</decl>
+</turn>
+<turn n="22" speaker="caller">
+<dm n="44" sp-act="acknowledge">
+aha
+</dm>
+</turn>
+<turn n="23" speaker="agent_A">
+<decl n="45" sp-act="expressImPossibility" polarity="negative" mode="poss2-frag">
+and also you can't get business class all the way through <punc type="level" />
+</decl>
+<decl n="46" sp-act="state" polarity="positive" mode="constrain-decl">
+but they fare it business class all the way <punc type="stop" />
+</decl>
+</turn>
+<turn n="24" speaker="caller">
+<dm n="47" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="25" speaker="agent_A">
+<decl n="48" sp-act="state" polarity="positive" topic="location_int" mode="decl-disflu">
+you you you would get business class from the US to your European gateway city <punc type="stop" />
+</decl>
+<frag n="49" sp-act="refer" polarity="positive" topic="to-location_int" mode="partial">
+and then for the little hop to Baron
+</frag>
+<decl n="50" sp-act="expressOpinion" polarity="positive" mode="opinion-probability-decl">
+you would probably be in Coach <punc type="stop" />
+</decl>
+</turn>
+<turn n="26" speaker="caller">
+<yes n="51" sp-act="acknowledge">
+yeah
+</yes>
+<dm n="52" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="27" speaker="agent_A">
+<dm n="53" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="28" speaker="caller">
+<frag n="54" sp-act="state" polarity="positive" mode="decl">
+that helps <punc type="stop" />
+</frag>
+</turn>
+<turn n="29" speaker="agent_A">
+<dm n="55" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="56" sp-act="approve">
+great <punc type="stop" />
+</dm>
+</turn>
+<turn n="30" speaker="caller">
+<frag n="57" sp-act="thank" mode="thank">
+thanks a lot <punc type="stop" />
+</frag>
+</turn>
+<turn n="31" speaker="agent_A">
+<decl n="58" sp-act="state" polarity="positive">
+you're welcome <overlap type="start" />
+</decl>
+<frag n="59" sp-act="bye" mode="farewell-closing">
+bye bye
+</frag>
+</turn>
+<turn n="32" speaker="caller">
+<frag n="60" sp-act="echo-bye" mode="farewell-closing">
+bye bye
+</frag>
+</turn>
+</dialogue>

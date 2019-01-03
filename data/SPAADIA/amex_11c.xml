@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<dialogue corpus="amex" lang="en" id="11c">
+<turn n="1" speaker="agent_A">
+<frag n="1" sp-act="greet" mode="greet-opening">
+good afternoon
+</frag>
+<frag n="2" sp-act="refer" polarity="positive" mode="partial-frag">
+American Express <punc type="level" />
+</frag>
+<decl n="3" sp-act="identifySelf" polarity="positive" mode="decl">
+this is A <punc type="stop" />
+</decl>
+</turn>
+<turn n="2" speaker="caller">
+<address n="4" sp-act="echo-refer" polarity="positive">
+A
+</address>
+<decl n="5" sp-act="identifySelf" polarity="positive" mode="decl">
+this is B <punc type="stop" />
+</decl>
+<q-yn n="6" sp-act="direct-reqInfo" polarity="positive" mode="query">
+can you give me some fares to some strange places <punc type="query" />
+</q-yn>
+</turn>
+<turn n="3" speaker="agent_A">
+<dm n="7" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<frag n="8" sp-act="state" polarity="positive" mode="decl">
+depends on how strange <punc type="stop" />
+</frag>
+<no n="9" sp-act="negate">
+no
+</no>
+</turn>
+<turn n="4" speaker="caller">
+<dm n="10" sp-act="init">
+well
+</dm>
+<dm n="11" sp-act="init">
+let's see
+</dm>
+<q-wh n="12" sp-act="reqInfo" polarity="positive" topic="country-to-location-from-location_int" mode="closed-query">
+how about from London to Belgium <punc type="query" />
+</q-wh>
+</turn>
+<turn n="5" speaker="agent_A">
+<dm n="13" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="14" sp-act="init">
+let's see
+</dm>
+<frag n="15" sp-act="reqInfo" polarity="positive" topic="date">
+wh... and any particular date er <unclear /> <punc type="query" />
+</frag>
+</turn>
+<turn n="6" speaker="caller">
+<imp n="16" sp-act="answer-suggest" polarity="positive" topic="month" mode="decl">
+let's say mid-July <punc type="stop" />
+</imp>
+</turn>
+<turn n="7" speaker="agent_A">
+<dm n="17" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="18" sp-act="init" mode="tag">
+all right
+</dm>
+<frag n="19" sp-act="hold" polarity="positive" mode="hold">
+just a moment while it uh it looks up
+</frag>
+<decl n="20" sp-act="state" polarity="positive" mode="decl">
+sometimes international takes a little bit longer for them to compute <punc type="stop" />
+</decl>
+<dm n="21" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="22" sp-act="state-abandon" polarity="positive" mode="abandon">
+we've got uh <punc type="incomplete" />
+</decl>
+<q-yn n="23" sp-act="reqDirect" polarity="positive" topic="number" mode="alternative-preference2-closed-query">
+did you want round trip or one way <punc type="query" />
+</q-yn>
+</turn>
+<turn n="8" speaker="caller">
+<frag n="24" sp-act="direct-refer" polarity="positive" mode="partial-decl">
+round trip <punc type="stop" />
+</frag>
+</turn>
+<turn n="9" speaker="agent_A">
+<dm n="25" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="26" sp-act="hold" polarity="positive" topic="location_int-to-location" mode="intent-decl">
+i'm still waiting on the London to Brussels <punc type="stop" />
+</decl>
+<dm n="27" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="28" sp-act="init">
+here we go um <punc type="incomplete" />
+</dm>
+<imp n="29" sp-act="hold" polarity="positive" mode="condition-decl">
+let's see if we've got a valid carrier <punc type="stop" />
+</imp>
+<dm n="30" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="31" sp-act="state" polarity="positive" topic="enum-location_int" mode="decl">
+Air Europe has a flight round trip for 2 13 59 <punc type="stop" />
+</decl>
+<frag n="32" sp-act="refer" polarity="positive" mode="decl">
+no penalties <punc type="stop" />
+</frag>
+</turn>
+<turn n="10" speaker="caller">
+<dm n="33" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="34" sp-act="approve" polarity="positive" mode="decl">
+that sounds more like it <overlap type="start" /> <punc type="stop" />
+</decl>
+<dm n="35" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="11" speaker="agent_A">
+<dm n="36" sp-act="acknowledge" mode="tag">
+ok <overlap type="end" />
+</dm>
+</turn>
+<turn n="12" speaker="caller">
+<dm n="37" sp-act="hesitate">
+um
+</dm>
+<q-wh n="38" sp-act="reqInfo" polarity="positive" topic="location_int-to-location" mode="closed-query">
+how about London to Newcastle <punc type="query" />
+</q-wh>
+</turn>
+<turn n="13" speaker="agent_A">
+<dm n="39" sp-act="init">
+all righty <punc type="stop" />
+</dm>
+<dm n="40" sp-act="init" mode="tag">
+ok
+</dm>
+<decl n="41" sp-act="state" polarity="positive" topic="enum" mode="frag">
+British Air has a 174 14 round trip <punc type="level" />
+</decl>
+<decl n="42" sp-act="state" polarity="positive" topic="enum" mode="poss3-alternative">
+or the highest it could go would be 2 26 08 <unclear />
+</decl>
+<frag n="43" sp-act="refer" polarity="positive" mode="partial-frag">
+different classes of service <punc type="level" />
+</frag>
+<frag n="44" sp-act="state" polarity="negative" mode="alternative-decl">
+still no penalties e... either of them <punc type="stop" />
+</frag>
+</turn>
+<turn n="14" speaker="caller">
+<dm n="45" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<frag n="46" sp-act="abandon" polarity="positive" mode="interruption">
+th...
+</frag>
+</turn>
+<turn n="15" speaker="agent_A">
+<decl n="47" sp-act="reqInfo" polarity="positive" mode="query">
+that was it <punc type="query" />
+</decl>
+</turn>
+<turn n="16" speaker="caller">
+<decl n="48" sp-act="answer-state" polarity="positive" mode="report-constrain-decl">
+that's what i needed <punc type="stop" />
+</decl>
+</turn>
+<turn n="17" speaker="agent_A">
+<dm n="49" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="18" speaker="caller">
+<frag n="50" sp-act="thank" polarity="positive" mode="thank-decl">
+thank you very much <punc type="stop" />
+</frag>
+</turn>
+<turn n="19" speaker="agent_A">
+<dm n="51" sp-act="agree">
+sure
+</dm>
+</turn>
+<turn n="20" speaker="caller">
+<frag n="52" sp-act="bye" mode="farewell-closing">
+<overlap type="start" /> bye
+</frag>
+</turn>
+<turn n="21" speaker="agent_A">
+<frag n="53" sp-act="echo-bye" mode="farewell-closing">
+bye bye <overlap type="end" />
+</frag>
+</turn>
+</dialogue>

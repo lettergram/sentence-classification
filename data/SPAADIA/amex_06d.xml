@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<dialogue corpus="amex" lang="en" id="06d">
+<turn n="1" speaker="caller">
+<decl n="1" sp-act="state" polarity="positive" mode="decl">
+this is for B <punc type="stop" />
+</decl>
+</turn>
+<turn n="2" speaker="agent_A">
+<dm n="2" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<q-wh n="3" sp-act="reqInfo" polarity="positive" mode="open-query">
+what is she doing <punc type="query" />
+</q-wh>
+</turn>
+<turn n="3" speaker="caller">
+<dm n="4" sp-act="answer-acknowledge" mode="tag">
+ok
+</dm>
+<frag n="5" sp-act="refer" polarity="positive" topic="month" mode="partial-decl">
+on the uh 31st of May <punc type="stop" />
+</frag>
+</turn>
+<turn n="4" speaker="agent_A">
+<dm n="6" sp-act="acknowledge">
+aha
+</dm>
+</turn>
+<turn n="5" speaker="caller">
+<frag n="7" sp-act="refer" polarity="positive" topic="time-enum" mode="decl">
+out of SFO to DFW on American thirteen hundred leaving at 11 am <punc type="stop" />
+</frag>
+</turn>
+<turn n="6" speaker="agent_A">
+<dm n="8" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="9" sp-act="state" polarity="positive" mode="exists">
+i've got that
+</decl>
+<decl n="10" sp-act="reqConfirm" polarity="positive" topic="location_US-time-enum-arrival" mode="query">
+it arrives at 4:23  into Dallas <punc type="query" />
+</decl>
+</turn>
+<turn n="7" speaker="caller">
+<dm n="11" sp-act="confirm-acknowledge">
+right
+</dm>
+</turn>
+<turn n="8" speaker="agent_A">
+<dm n="12" sp-act="init" mode="tag">
+ok
+</dm>
+<frag n="13" sp-act="reqInfo" polarity="positive" mode="query">
+and then a return <punc type="query" />
+</frag>
+</turn>
+<turn n="9" speaker="caller">
+<frag n="14" sp-act="answer-state" polarity="positive" topic="month" mode="decl">
+returning on the 1st of June <punc type="stop" />
+</frag>
+</turn>
+<turn n="10" speaker="agent_A">
+<dm n="15" sp-act="acknowledge">
+aha
+</dm>
+</turn>
+<turn n="11" speaker="caller">
+<frag n="16" sp-act="state" polarity="positive" topic="enum-time">
+departing DFW at 6:40 pm on American 3 8 9
+</frag>
+</turn>
+<turn n="12" speaker="agent_A">
+<dm n="17" sp-act="acknowledge">
+okay
+</dm>
+<imp n="18" sp-act="hold" polarity="positive" mode="poss1-decl">
+let me see what sort of fare i can get on that <punc type="stop" />
+</imp>
+</turn>
+<turn n="13" speaker="caller">
+<dm n="19" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="14" speaker="agent_A">
+<decl n="20" sp-act="predict" polarity="positive" mode="predict-constrain-decl">
+the only thing that's going to apply is full coach <punc type="stop" />
+</decl>
+</turn>
+<turn n="15" speaker="caller">
+<dm n="21" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="16" speaker="agent_A">
+<decl n="22" sp-act="state" polarity="positive" topic="number-enum" mode="decl">
+and that's 946 one way <punc type="stop" />
+</decl>
+</turn>
+<turn n="17" speaker="caller">
+<dm n="23" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="18" speaker="agent_A">
+<dm n="24" sp-act="phatic">
+i mean
+</dm>
+<frag n="25" sp-act="correctSelf" polarity="positive" mode="partial-disflu">
+round trip <overlap type="start" /> round trip
+</frag>
+<dm n="26" sp-act="expressRegret">
+sorry
+</dm>
+</turn>
+<turn n="19" speaker="caller">
+<frag n="27" sp-act="thank" mode="thank">
+thanks a lot <punc type="stop" />
+</frag>
+</turn>
+<turn n="20" speaker="agent_A">
+<dm n="28" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<frag n="29" sp-act="thank" mode="thank">
+thanks
+</frag>
+<address n="30" sp-act="refer" polarity="positive" mode="decl">
+D <punc type="stop" />
+</address>
+</turn>
+<turn n="21" speaker="caller">
+<frag n="31" sp-act="bye" mode="farewell-closing">
+bye bye
+</frag>
+</turn>
+<turn n="22" speaker="agent_A">
+<frag n="32" sp-act="echo-bye" mode="farewell-closing">
+bye bye
+</frag>
+</turn>
+</dialogue>

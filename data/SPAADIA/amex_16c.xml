@@ -1,0 +1,325 @@
+<?xml version="1.0"?>
+<dialogue corpus="amex" lang="en" id="16c">
+<turn n="1" speaker="caller">
+<frag n="1" sp-act="greet" mode="greet-opening">
+hi
+</frag>
+<address n="2" sp-act="refer" polarity="positive" mode="frag">
+A <punc type="level" />
+</address>
+<decl n="3" sp-act="identifySelf" polarity="positive" mode="decl">
+this is B over in Dr C's office <punc type="stop" />
+</decl>
+</turn>
+<turn n="2" speaker="agent_A">
+<dm n="4" sp-act="acknowledge">
+aha
+</dm>
+</turn>
+<turn n="3" speaker="caller">
+<decl n="5" sp-act="reqInfo" polarity="positive" topic="to-location_US-district_US" mode="report-query-constrain-decl">
+and we need to get an estimate on how much uh for a round trip ticket to Little Rock Arkansas <backchannel content="oh" /> leaving from San Jose <punc type="stop" />
+</decl>
+</turn>
+<turn n="4" speaker="agent_A">
+<dm n="6" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="7" sp-act="hesitate">
+uh
+</dm>
+<q-yn n="8" sp-act="reqInfo" polarity="positive" topic="location-date" mode="exists-query">
+is there any particular date that you're looking for <punc type="query" />
+</q-yn>
+</turn>
+<turn n="5" speaker="caller">
+<dm n="9" sp-act="hesitate">
+uh
+</dm>
+<decl n="10" sp-act="answer-expressWish" polarity="positive" topic="time-month-date" mode="opinion-preference3-decl">
+he would like to leave um possibly the afternoon of the 28th of October <punc type="stop" />
+</decl>
+</turn>
+<turn n="6" speaker="agent_A">
+<dm n="11" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="12" sp-act="init">
+so
+</dm>
+<imp n="13" sp-act="hold" polarity="positive" topic="location">
+let's take a look here <pun type="stop" />
+</imp>
+<decl n="14" sp-act="state" polarity="positive" topic="enum" mode="decl">
+basic fare quote um prices can range anywhere from a full coach fare of what 1070 round trip  <backchannel content="mhm" /> all the way down to a non-refundable price of 358 dollars <punc type="stop" />
+</decl>
+<decl n="15" sp-act="state" polarity="positive" topic="time-day-availability-enum" mode="predict-condition-decl">
+it all depends on what's available at the time of his booking and if he's going to be staying over a Saturday night and if he's going to purchase the tickets at least 14 days prior to his departure and willing to take a penalty fare <punc type="stop" />
+</decl>
+</turn>
+<turn n="7" speaker="caller">
+<dm n="16" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="17" sp-act="predict" polarity="positive" topic="time-day" mode="predict-constrain-decl">
+he will be leaving uh returning actually on the the Thursday after <punc type="stop" />
+</decl>
+</turn>
+<turn n="8" speaker="agent_A">
+<dm n="18" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="19" sp-act="init">
+so
+</dm>
+<imp n="20" sp-act="hold" polarity="positive" topic="location" mode="decl">
+let me take a look here <punc type="stop" />
+</imp>
+<dm n="21" sp-act="exclaim">
+oh
+</dm>
+<decl n="22" sp-act="state" polarity="positive" topic="day">
+so he would be staying over a Saturday night <pun type="stop" />
+</decl>
+<decl n="23" sp-act="stateCondition" polarity="positive" topic="day-date-enum" mode="condition-decl">
+if he's leaving on the 28th <punc type="level" /> 
+</decl>
+<decl n="24" sp-act="state" polarity="positive" topic="day" mode="decl">
+that is a Saturday  <backchannel content="aha" />  <punc type="stop" />
+</decl>
+<decl n="25" sp-act="state" polarity="positive" topic="" mode="">
+that would qualify him as long as he purchased the tickets 14 days prior to that departure date <punc type="stop" />
+</decl>
+<decl n="26" sp-act="stateConstraint" polarity="positive" topic="month-date" mode="constrain-decl">
+so he would have to um have reservations made and ticketed by the 13th of uh October <punc type="stop" />
+</decl>
+</turn>
+<turn n="9" speaker="caller">
+<dm n="27" sp-act="acknowledge">
+aha
+</dm>
+</turn>
+<turn n="10" speaker="agent_A">
+<decl n="28" sp-act="state" polarity="positive" topic="availability" mode="decl">
+again this is provided that the flights are available <punc type="stop" />
+</decl>
+</turn>
+<turn n="11" speaker="caller">
+<dm n="29" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="12" speaker="agent_A">
+<decl n="30" sp-act="state" polarity="positive" topic="time" mode="frag">
+when he calls to make the reservation <punc type="level" />
+</decl>
+<dm n="31" sp-act="hesitate">
+um
+</dm>
+<decl n="32" sp-act="expressPossibility" polarity="positive" mode="benefit-poss1-decl">
+we can get him on a non-refundable fare for you know a fairly good price compared to 1070 <punc type="stop" />
+</decl>
+</turn>
+<turn n="13" speaker="caller">
+<dm n="33" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="14" speaker="agent_A">
+<decl n="34" sp-act="state" polarity="positive" topic="enum" mode="frag">
+1070 is completely non-penalty <punc type="level" />
+</decl>
+<decl n="35" sp-act="state" polarity="negative" topic="availability" mode="decl">
+and that is the lowest no-penalty available in that market <punc type="stop" />
+</decl>
+<dm n="36" sp-act="exclaim">
+oh
+</dm>
+<decl n="37" sp-act="correctSelf" polarity="positive">
+it's non-penalty
+</decl>
+<decl n="38" sp-act="state" polarity="positive" topic="availability-enum-day" mode="decl">
+and the non-refundable is uh 14 days prior to departure and provided that the flights are available <punc type="stop" />
+</decl>
+<frag n="39" sp-act="refer" polarity="positive" topic="availability" mode="decl">
+available <punc type="stop" />
+</frag>
+<dm n="40" sp-act="acknowledge">
+right
+</dm>
+<decl n="41" sp-act="state-abandon" polarity="positive">
+and it's um
+</decl>
+<decl n="42" sp-act="state" polarity="positive" topic="enum" mode="decl">
+that can be as low as um 358 and also 318 <punc type="stop" />
+</decl>
+<decl n="43" sp-act="state" polarity="positive" topic="number" mode="exists-decl">
+there's one <punc type="stop" />
+</decl>
+<decl n="44" sp-act="state" polarity="positive" topic="day" mode="decl">
+it depends on what you know day of the week we're looking at <punc type="stop" />
+</decl>
+<decl n="45" sp-act="stateCondition" polarity="positive" topic="day" mode="predict-condition-frag">
+if he's gonna travel on a Saturday <punc type="level" />
+</decl>
+<decl n="46" sp-act="state" polarity="positive" topic="enum" mode="decl">
+358 would apply <punc type="stop" />
+</decl>
+<decl n="47" sp-act="stateCondition" polarity="positive" topic="day" mode="condition-frag">
+if he were travelling midweek still staying over a Saturday night <punc type="level" />
+</decl>
+<decl n="48" sp-act="state" polarity="positive" topic="enum" mode="exists-decl">
+there's the 318 fare <punc type="stop" />
+</decl>
+<decl n="49" sp-act="state" polarity="positive" topic="enum" mode="decl">
+then the fare could range anywhere even higher than that 378 for a 25 percent penalty fare travelling mid-week <punc type="stop" />
+</decl>
+</turn>
+<turn n="15" speaker="caller">
+<dm n="50" sp-act="acknowledge">
+aha
+</dm>
+</turn>
+<turn n="16" speaker="agent_A">
+<dm n="51" sp-act="add">
+also
+</dm>
+<frag n="52" sp-act="state" polarity="positive" topic="day" mode="frag">
+staying over a Saturday night <punc type="level" />
+</frag>
+<decl n="53" sp-act="state" polarity="positive" topic="enum-day" mode="effect-alternative-decl">
+that's based on a 7 day advanced purchase or 418 round trip also 25 percent penalty <punc type="stop" />
+</decl>
+<dm n="54" sp-act="add">
+also
+</dm>
+<frag n="55" sp-act="refer" polarity="positive" topic="day-enum" mode="frag">
+7 day advanced purchase with a Saturday night stay over <punc type="level" />
+</frag>
+<frag n="56" sp-act="state" polarity="positive" topic="day" mode="constrain">
+but travelling on weekend days
+</frag>
+<decl n="57" sp-act="state" polarity="positive" mode="decl">
+and that would be pretty much the uh the breakdown <punc type="stop" />
+</decl>
+<dm n="58" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="59" sp-act="state" polarity="positive" topic="enum" mode="decl">
+the 418 is the highest for the for the discounted <punc type="stop" />
+</decl>
+<decl n="60" sp-act="state" polarity="positive" mode="decl">
+the highest for the lowest <punc type="stop" />
+</decl>
+</turn>
+<turn n="17" speaker="caller">
+<dm n="61" sp-act="acknowledge">
+right
+</dm>
+<dm n="62" sp-act="acknowledge">
+right
+</dm>
+</turn>
+<turn n="18" speaker="agent_A">
+<decl n="63" sp-act="state" polarity="positive" topic="location" mode="decl">
+and then it would jump from there to the full coach non-penalty for 1070 <punc type="stop" />
+</decl>
+</turn>
+<turn n="19" speaker="caller">
+<dm n="64" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="20" speaker="agent_A">
+<dm n="65" sp-act="acknowledge" mode="tag">
+<overlap type="start" /> ok <pun type="query" />
+</dm>
+</turn>
+<turn n="21" speaker="caller">
+<dm n="66" sp-act="init">
+so <overlap type="end" />
+</dm>
+<decl n="67" sp-act="expressPossibility" polarity="positive" topic="enum" mode="suggest-poss1-decl">
+i could tell him a ra... p... pretty much a range between 3 25 to 4 18 depending on the discount <punc type="stop" />
+</decl>
+</turn>
+<turn n="22" speaker="agent_A">
+<dm n="68" sp-act="acknowledge">
+right
+</dm>
+<decl n="69" sp-act="state" polarity="positive" topic="time" mode="decl">
+and the time <overlap type="start" /> of uh when he places and time of booking <overlap type="end" /> and yeah the actual reservation <punc type="stop" />
+</decl>
+</turn>
+<turn n="23" speaker="caller">
+<dm n="70" sp-act="acknowledge">
+right
+</dm>
+</turn>
+<turn n="24" speaker="caller">
+<dm n="71" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="72" sp-act="stateCondition" polarity="negative" mode="preference3-constrain-condition">
+but if he wants to go with the lowest no-penalty coach
+</decl>
+<decl n="73" sp-act="reqInfo" polarity="positive" mode="query">
+he's gotta pay <unclear /> <punc type="query" />
+</decl>
+</turn>
+<turn n="25" speaker="agent_A">
+<decl n="74" sp-act="answer-state" polarity="positive" mode="decl">
+the full coach <punc type="stop" />
+</decl>
+<yes n="75" sp-act="elab-acknowledge">
+yeah
+</yes>
+<decl n="76" sp-act="stateConstraint" polarity="negative" mode="constrain-decl">
+they don't offer unfortunately any discounts without penalties for that market <punc type="stop" />
+</decl>
+</turn>
+<turn n="26" speaker="caller">
+<dm n="77" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="27" speaker="agent_A">
+<dm n="78" sp-act="acknowledge" mode="tag">
+ok <pun type="query" />
+</dm>
+</turn>
+<turn n="28" speaker="caller">
+<decl n="79" sp-act="stateIntent" polarity="positive" mode="intent-decl">
+i'll let him know that <punc type="stop" />
+</decl>
+</turn>
+<turn n="29" speaker="agent_A">
+<dm n="80" sp-act="init">
+all righty
+</dm>
+<dm n="81" sp-act="agree">
+sure
+</dm>
+</turn>
+<turn n="30" speaker="caller">
+<frag n="82" sp-act="thank" mode="thank">
+thanks
+</frag>
+<address n="83" sp-act="refer" polarity="positive">
+A
+</address>
+</turn>
+<turn n="31" speaker="agent_A">
+<dm n="84" sp-act="acknowledge">
+aha
+</dm>
+<frag n="85" sp-act="bye" mode="farewell-closing">
+bye bye
+</frag>
+</turn>
+<turn n="32" speaker="caller">
+<frag n="86" sp-act="echo-bye" mode="farewell-closing">
+bye bye
+</frag>
+</turn>
+</dialogue>

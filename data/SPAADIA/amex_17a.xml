@@ -1,0 +1,387 @@
+<?xml version="1.0"?>
+<dialogue corpus="amex" lang="en" id="17a">
+<turn n="1" speaker="agent_A">
+<frag n="1" sp-act="refer" polarity="positive" mode="partial-frag">
+American Express <punc type="level" />
+</frag>
+<q-yn n="2" sp-act="hold-reqInfo" polarity="positive" mode="request-query">
+can you hold please <punc type="query" />
+</q-yn>
+</turn>
+<turn n="2" speaker="caller">
+<yes n="3" sp-act="acknowledge">
+yes
+</yes>
+</turn>
+<turn n="3" speaker="agent_A">
+<dm n="4" sp-act="init" mode="tag">
+ok
+</dm>
+<frag n="5" sp-act="thank" mode="thank">
+thanks for holding <punc type="level" />
+</frag>
+<decl n="6" sp-act="identifySelf" polarity="positive" mode="decl">
+this is A <punc type="stop" />
+</decl>
+</turn>
+<turn n="4" speaker="caller">
+<frag n="7" sp-act="greet" mode="greet-opening">
+hi
+</frag>
+<address n="8" sp-act="refer" polarity="positive" mode="frag">
+A <punc type="level" />
+</address>
+<decl n="9" sp-act="identifySelf" polarity="positive" mode="decl">
+this is B <punc type="stop" />
+</decl>
+</turn>
+<turn n="5" speaker="agent_A">
+<frag n="10" sp-act="greet" mode="greet-opening">
+hi
+</frag>
+<address n="11" sp-act="refer" polarity="positive" mode="decl">
+B <punc type="stop" />
+</address>
+</turn>
+<turn n="6" speaker="caller">
+<frag n="12" sp-act="greet" mode="greet-opening">
+hi <punc type="stop" />
+</frag>
+</turn>
+<turn n="7" speaker="agent_A">
+<dm n="13" sp-act="hesitate">
+uh
+</dm>
+<dm n="14" sp-act="init" mode="tag">
+ok
+</dm>
+<dm n="15" sp-act="hesitate">
+um
+</dm>
+</turn>
+<turn n="8" speaker="caller">
+<decl n="16" sp-act="state" polarity="positive" topic="location-month-from-date-district_US" mode="report-constrain-decl">
+i need to change um C D's coming back trip from Washington D C on the 19th of July <punc type="stop" />
+</decl>
+</turn>
+<turn n="9" speaker="agent_A">
+<dm n="17" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<imp n="18" sp-act="hold" polarity="positive" mode="decl">
+let me get his reservation <punc type="stop" />
+</imp>
+</turn>
+<turn n="10" speaker="caller">
+<dm n="19" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="11" speaker="agent_A">
+<dm n="20" sp-act="hesitate">
+uh
+</dm>
+<q-wh n="21" sp-act="reqInfo" polarity="positive" mode="open-query">
+what are we changing this to <punc type="query" />
+</q-wh>
+</turn>
+<turn n="12" speaker="caller">
+<dm n="22" sp-act="hesitate">
+um
+</dm>
+<frag n="23" sp-act="answer-state" polarity="positive" mode="constrain-frag">
+instead of 5:10 <punc type="level" />
+</frag>
+<decl n="24" sp-act="elab-expressWish" polarity="positive" topic="location_US-from-enum-airline" mode="preference3-decl">
+he wants to take the 1:40 from Dallas to on United <punc type="stop" />
+</decl>
+</turn>
+<turn n="13" speaker="agent_A">
+<dm n="25" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="26" sp-act="state" polarity="positive" topic="enum-airline" mode="effect-decl">
+that's United 1 9 5 on the 19th <punc type="stop" />
+</decl>
+<frag n="27" sp-act="state" polarity="positive" topic="location_US-time-enum" mode="partial-frag">
+departing Dallas at 1:40 p m <punc type="level" />
+</frag>
+<frag n="28" sp-act="state" polarity="positive" topic="location_US-enum-arrival" mode="partial-decl">
+arriving San Francisco 4:11 p m <punc type="stop" />
+</frag>
+<imp n="29" sp-act="hold" polarity="positive" mode="hold-decl">
+and let me just see <punc type="stop" />
+</imp>
+<frag n="30" sp-act="expressOpinion" polarity="positive" topic="verify" mode="predict-decl">
+looks like that's going to be airport check in on the seating <punc type="stop" />
+</frag>
+<dm n="31" sp-act="init">
+now
+</dm>
+<decl n="32" sp-act="state" polarity="positive" mode="decl">
+this ticket was issued <punc type="stop" />
+</decl>
+</turn>
+<turn n="14" speaker="caller">
+<dm n="33" sp-act="acknowledge">
+aha
+</dm>
+</turn>
+<turn n="15" speaker="agent_A">
+<dm n="34" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="35" sp-act="stateIntent" polarity="positive" topic="enum" mode="intent-decl">
+i'm going to request 27 B <punc type="stop" />
+</decl>
+</turn>
+<turn n="16" speaker="caller">
+<dm n="36" sp-act="acknowledge" mode="tag">
+ok <overlap type="start" />
+</dm>
+<q-yn n="37" sp-act="reqInfo" polarity="positive" mode="closed-query">
+is it an aisle <punc type="query" />
+</q-yn>
+</turn>
+<turn n="17" speaker="agent_A">
+<decl n="38" sp-act="answer-state" polarity="negative" mode="intent-doubt-constrain-condition-decl">
+but i'm not sure <overlap type="end" /> whether we're going to get it <punc type="stop" />
+</decl>
+<decl n="39" sp-act="elab-state" polarity="positive" topic="verify" mode="report-decl">
+it looks like it's airport check in <overlap type="start" /> on the flight <punc type="stop" />
+</decl>
+</turn>
+<turn n="18" speaker="caller">
+<dm n="40" sp-act="acknowledge" mode="awareness">
+i see <punc type="stop" />
+</dm>
+<dm n="41" sp-act="acknowledge" mode="tag">
+ok <overlap type="end" />
+</dm>
+</turn>
+<turn n="19" speaker="agent_A">
+<dm n="42" sp-act="hesitate">
+um
+</dm>
+<decl n="43" sp-act="predict" polarity="positive" mode="intent-constrain-frag">
+we're going to have to reissue the ticket <punc type="level" />
+</decl>
+<decl n="44" sp-act="stateReason" polarity="positive" topic="location-enum" mode="reason-decl">
+because there was a 25 percent penalty on that <punc type="stop" />
+</decl>
+<decl n="45" sp-act="predict" polarity="positive" mode="intent-constrain-decl">
+we're going to have to void that <punc type="stop" />
+</decl>
+</turn>
+<turn n="20" speaker="caller">
+<dm n="46" sp-act="acknowledge" mode="backchannel">
+mhm
+</dm>
+</turn>
+<turn n="21" speaker="caller">
+<decl n="47" sp-act="reqInfo" polarity="positive" mode="alternative-query">
+it'll still be the same amount or <punc type="query" />
+</decl>
+</turn>
+<turn n="22" speaker="agent_A">
+<dm n="48" sp-act="hesitate">
+uh
+</dm>
+<decl n="49" sp-act="stateIntent-hold" polarity="positive" topic="verify" mode="intent-decl">
+i'm checking that the fare <punc type="stop" />
+</decl>
+<frag n="50" sp-act="refer" polarity="positive">
+898
+</frag>
+<yes n="51" sp-act="acknowledge">
+yeah
+</yes>
+<decl n="52" sp-act="state" polarity="positive" mode="decl">
+it's still the same fare <punc type="stop" />
+</decl>
+</turn>
+<turn n="23" speaker="caller">
+<dm n="53" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="24" speaker="agent_A">
+<frag n="54" sp-act="refer" polarity="positive" mode="constrain-frag">
+but that ticket <punc type="level" />
+</frag>
+<q-yn n="55" sp-act="reqInfo" polarity="positive" mode="constrain-closed-query">
+must you have the ticket <punc type="query" />
+</q-yn>
+</turn>
+<turn n="25" speaker="caller">
+<no n="56" sp-act="answer-negate">
+no <punc type="stop" />
+</no>
+<decl n="57" sp-act="elab-state" polarity="negative" mode="report-decl">
+i don't <punc type="stop" />
+</decl>
+<frag n="58" sp-act="abandon" polarity="positive" mode="abandon">
+i <punc type="incomplete" />
+</frag>
+<decl n="59" sp-act="state" polarity="positive" topic="day" mode="decl">
+it's supposedly coming today <punc type="stop" />
+</decl>
+<decl n="60" sp-act="state" polarity="positive" mode="report-alternative-exists-decl">
+i haven't u... <backchannel content="ok" /> had a call or anything <punc type="stop" />
+</decl>
+</turn>
+<turn n="26" speaker="agent_A">
+<dm n="61" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="62" sp-act="stateIntent" polarity="positive" mode="intent-constrain">
+i'll have to call F <pun type="stop" />
+</decl>
+<decl n="63" sp-act="stateReason" polarity="positive" topic="day" mode="reason-frag">
+cos it has to be in today <punc type="level" />
+</decl>
+<decl n="64" sp-act="predict" polarity="positive" mode="alternative-predict-decl">
+or it will or he will be charged a penalty <punc type="stop" />
+</decl>
+</turn>
+<turn n="27" speaker="caller">
+<dm n="65" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="28" speaker="caller">
+<decl n="66" sp-act="state" polarity="positive" topic="day" mode="decl">
+it's by tomorrow <punc type="stop" />
+</decl>
+<decl n="67" sp-act="state" polarity="positive" topic="day" mode="frag-disflu">
+i i mean by Monday <punc type="level" />
+</decl>
+<frag n="68" sp-act="refer" polarity="positive" topic="day" mode="partial">
+by Monday
+</frag>
+<decl n="69" sp-act="expressImPossibility" polarity="negative" mode="poss1">
+we can't void it
+</decl>
+<frag n="70" sp-act="uninterpretable" polarity="positive" mode="closed">
+has it'll <unclear /> <overlap type="start" /> <pun type="query" />
+</frag>
+</turn>
+<turn n="29" speaker="caller">
+<dm n="71" sp-act="approve" mode="reassurance">
+that's fine <overlap type="end" /> <punc type="stop" />
+</dm>
+</turn>
+<turn n="30" speaker="caller">
+<dm n="72" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="31" speaker="agent_A">
+<dm n="73" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="74" sp-act="approve">
+great
+</dm>
+</turn>
+<turn n="32" speaker="agent_A">
+<dm n="75" sp-act="init">
+so
+</dm>
+<decl n="76" sp-act="predict" polarity="positive" mode="decl">
+the new ticket shall be sent <punc type="stop" />
+</decl>
+<q-yn n="77" sp-act="reqInfo" polarity="positive" topic="day" mode="closed-query">
+should i wait till Monday <punc type="query" />
+</q-yn>
+<q-yn n="78" sp-act="reqInfo" polarity="positive" mode="opinion-predict-closed-query">
+do you think it's going to change <punc type="query" />
+</q-yn>
+</turn>
+<turn n="33" speaker="caller">
+<decl n="79" sp-act="answer-state" polarity="positive" topic="day" mode="opinion-decl">
+i think Monday's fine <punc type="stop" />
+</decl>
+</turn>
+<turn n="34" speaker="agent_A">
+<q-yn n="80" sp-act="reqInfo-abandon" polarity="positive" mode="closed-abandon">
+is that <punc type="incomplete" />
+</q-yn>
+<imp n="81" sp-act="hold" polarity="positive" topic="day" mode="query">
+let me see what the last day for ticketing is <punc type="query" />
+</imp>
+</turn>
+<turn n="35" speaker="caller">
+<yes n="82" sp-act="answer-acknowledge">
+yeah
+</yes>
+<frag n="83" sp-act="elab-state" polarity="positive" topic="day" mode="decl">
+Monday's fine <punc type="stop" />
+</frag>
+</turn>
+<turn n="36" speaker="agent_A">
+<decl n="84" sp-act="state" polarity="positive" mode="frag">
+it changes so much <punc type="level" />
+</decl>
+<decl n="85" sp-act="state" polarity="positive" mode="frag">
+we issue so many tickets <punc type="level" />
+</decl>
+<frag n="86" sp-act="stateConstraint" polarity="positive" topic="day" mode="constrain-decl">
+have to wait to the very last day on some of these people <punc type="stop" />
+</frag>
+<dm n="87" sp-act="init" mode="tag">
+ok
+</dm>
+<q-wh n="88" sp-act="suggest" polarity="negative" mode="closed-query">
+why don't i just wait <punc type="query" />
+</q-wh>
+<decl n="89" sp-act="stateIntent" polarity="positive" topic="day" mode="intent-frag">
+i'm going to set these up to be issued on Monday <punc type="level" />
+</decl>
+<frag n="90" sp-act="refer" polarity="positive">
+that way
+</frag>
+<decl n="91" sp-act="stateCondition" polarity="positive" mode="condition">
+if he changes again
+</decl>
+<decl n="92" sp-act="state" polarity="positive" mode="constrain-decl">
+we don't have to keep reissuing tickets <punc type="stop" />
+</decl>
+</turn>
+<turn n="37" speaker="caller">
+<dm n="93" sp-act="agree">
+exactly <punc type="stop" />
+</dm>
+</turn>
+<turn n="38" speaker="agent_A">
+<dm n="94" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="39" speaker="caller">
+<frag n="95" sp-act="thank" polarity="positive" mode="thank-decl">
+thank you <punc type="stop" />
+</frag>
+</turn>
+<turn n="40" speaker="agent_A">
+<dm n="96" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<frag n="97" sp-act="thank" mode="thank">
+thanks
+</frag>
+<address n="98" sp-act="refer" polarity="positive" mode="decl">
+B <punc type="stop" />
+</address>
+</turn>
+<turn n="41" speaker="caller">
+<frag n="99" sp-act="bye" mode="farewell-closing">
+bye bye <punc type="stop" />
+</frag>
+</turn>
+<turn n="42" speaker="agent_A">
+<frag n="100" sp-act="echo-bye" mode="farewell-closing">
+bye <punc type="stop" />
+</frag>
+</turn>
+</dialogue>

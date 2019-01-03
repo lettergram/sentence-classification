@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<dialogue corpus="amex" lang="en" id="07a">
+<turn n="1" speaker="caller">
+<frag n="1" sp-act="greet" mode="greet">
+hello <punc type="stop" />
+</frag>
+</turn>
+<turn n="2" speaker="agent_A">
+<frag n="2" sp-act="greet" mode="greet-opening">
+hi
+</frag>
+<decl n="3" sp-act="identifySelf" polarity="positive" mode="decl">
+this is A with American Express Travel <punc type="stop" />
+</decl>
+</turn>
+<turn n="3" speaker="caller">
+<yes n="4" sp-act="acknowledge">
+yes
+</yes>
+<decl n="5" sp-act="state" polarity="positive" topic="country-time-enum" mode="report-decl">
+i spoke to you about 20 minutes ago about uh Japan around the world <punc type="stop" />
+</decl>
+</turn>
+<turn n="4" speaker="agent_A">
+<dm n="6" sp-act="exclaim">
+oh
+</dm>
+<dm n="7" sp-act="acknowledge">
+right
+</dm>
+</turn>
+<turn n="5" speaker="caller">
+<q-yn n="8" sp-act="direct-reqInfo" polarity="positive" mode="query">
+can you tell me what it costs for Business Class fo... for uh round trip <punc type="query" />
+</q-yn>
+<frag n="9" sp-act="reqInfo" polarity="positive" topic="country" mode="query">
+Japan versus Business Class uh <unclear /> around the world's flight <punc type="query" />
+</frag>
+</turn>
+<turn n="6" speaker="agent_A">
+<dm n="10" sp-act="answer-acknowledge" mode="tag">
+ok
+</dm>
+<decl n="11" sp-act="elab-expressNonAwareness" polarity="negative" mode="report-nonawareness-condition-frag">
+i don't know if they offer <punc type="level" />
+</decl>
+<decl n="12" sp-act="expressOpinion" polarity="negative" mode="report-opinion-decl">
+i don't think they offer a Business uh Class around the world <punc type="stop" />
+</decl>
+<decl n="13" sp-act="state" polarity="positive" mode="decl">
+it has to be economy <punc type="stop" />
+</decl>
+<dm n="14" sp-act="init" mode="tag">
+ok
+</dm>
+<decl n="15" sp-act="state" polarity="positive" mode="decl">
+i found out um restrictions also <punc type="stop" />
+</decl>
+<dm n="16" sp-act="state" polarity="positive" mode="decl">
+as far as you're inquiring about penalties and stuff <punc type="stop" />
+</dm>
+</turn>
+<turn n="7" speaker="caller">
+<dm n="17" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="8" speaker="agent_A">
+<dm n="18" sp-act="hesitate">
+um
+</dm>
+<dm n="19" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="20" sp-act="predict" polarity="positive" topic="location_US-location_int" mode="partial-decl">
+San Francisco Tokyo uh fare quote for business round trip would be 2114 <punc type="stop" />
+</decl>
+<decl n="21" sp-act="state" polarity="positive" mode="decl">
+and again the coach was 1714 <punc type="stop" />
+</decl>
+<frag n="22" sp-act="refer" polarity="positive" topic="enum" mode="partial-frag">
+and then for the 2099 that was economy <punc type="level" />
+</frag>
+<decl n="23" sp-act="state" polarity="positive" topic="location" mode="constrain-decl">
+but there it is also offered for business <punc type="stop" />
+</decl>
+<frag n="24" sp-act="state" polarity="positive" mode="decl">
+and first class the business around the world fare would be 2999 <punc type="stop" />
+</frag>
+<frag n="25" sp-act="state" polarity="positive" mode="decl">
+and first class 3999 <punc type="stop" />
+</frag>
+<decl n="26" sp-act="state" polarity="positive" topic="number" mode="decl">
+and that's again the same of of applications of four stop overs uh for minimum maximum of 15 <punc type="stop" />
+</decl>
+<decl n="27" sp-act="state" polarity="positive" topic="enum-day" mode="decl">
+and the purchase restrictions were 21 days in advance <punc type="stop" />
+</decl>
+<frag n="28" sp-act="state" polarity="positive" topic="enum-day-cancel" mode="alternative-frag">
+cancellation within uh or longer then 21 days prior to the departure <punc type="level" />
+</frag>
+<decl n="29" sp-act="state" polarity="positive" mode="decl">
+you get a full refund within 21 days of the flight <punc type="stop" />
+</decl>
+<decl n="30" sp-act="state" polarity="positive" topic="enum-day" mode="partial-decl">
+it's 25 percent penalty um attached to all all of those fares economy business and first <punc type="stop" />
+</decl>
+<frag n="31" sp-act="stateCondition" polarity="positive" mode="alternative-condition-frag">
+and if um bu... in case of illness or death or anything like that <punc type="level" />
+</frag>
+<decl n="32" sp-act="state" polarity="positive" topic="enum" mode="decl">
+it is uh waivable the 25 percent <punc type="stop" />
+</decl>
+</turn>
+<turn n="9" speaker="caller">
+<frag n="33" sp-act="reqInfo" polarity="positive" mode="constrain-query">
+but that even <overlap type="end" /> applies to these Apex and stuff <punc type="query" />
+</frag>
+</turn>
+<turn n="10" speaker="agent_A">
+<dm n="34" sp-act="exclaim">
+oh
+</dm>
+<yes n="35" sp-act="acknowledge">
+yeah
+</yes>
+</turn>
+<turn n="11" speaker="caller">
+<dm n="36" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="12" speaker="agent_A">
+<yes n="37" sp-act="acknowledge">
+yeah
+</yes>
+<decl n="38" sp-act="state" polarity="positive" mode="decl">
+it applies to any type of fare <punc type="stop" />
+</decl>
+</turn>
+<turn n="13" speaker="caller">
+<dm n="39" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="40" sp-act="init">
+well
+</dm>
+<frag n="41" sp-act="thank" mode="thank">
+thanks for that information
+</frag>
+<decl n="42" sp-act="expressOpinion" polarity="negative" mode="report-decl">
+i <overlap type="start" /> don't think  <backchannel content="sure" />  i'd be interested in the business class <punc type="stop" />
+</decl>
+<decl n="43" sp-act="state" polarity="positive" mode="report-opinion-frag">
+it costs more than i thought <punc type="level" />
+</decl>
+<decl n="44" sp-act="state" polarity="positive" mode="intent-constrain-decl">
+but the guy i'm going with will be flying business and i'll be sitting in the <overlap type="start" /> back of the plane  <backchannel content="oh" /> with the cheaper cheap fare <punc type="stop" />
+</decl>
+</turn>
+<turn n="14" speaker="agent_A">
+<yes n="45" sp-act="acknowledge">
+yeah
+</yes>
+<frag n="46" sp-act="state" polarity="positive" mode="decl">
+there you go <punc type="stop" />
+</frag>
+<dm n="47" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="15" speaker="caller">
+<frag n="48" sp-act="thank" polarity="positive" mode="thank-benefit-decl">
+th... thanks for your help <punc type="stop" />
+</frag>
+</turn>
+<turn n="16" speaker="agent_A">
+<dm n="49" sp-act="agree">
+sure
+</dm>
+<frag n="50" sp-act="bye" mode="farewell-closing">
+bye bye
+</frag>
+</turn>
+<turn n="17" speaker="caller">
+<frag n="51" sp-act="echo-bye" mode="farewell-closing">
+bye bye
+</frag>
+</turn>
+</dialogue>

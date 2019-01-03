@@ -1,0 +1,649 @@
+<?xml version="1.0"?>
+<dialogue corpus="amex" lang="en" id="07b">
+<turn n="1" speaker="agent_A">
+<frag n="1" sp-act="greet" mode="greet-opening">
+good afternoon
+</frag>
+<frag n="2" sp-act="refer" polarity="positive" mode="partial-frag">
+American Express <punc type="level" />
+</frag>
+<decl n="3" sp-act="identifySelf" polarity="positive" mode="decl">
+this is A <punc type="stop" />
+</decl>
+</turn>
+<turn n="2" speaker="caller">
+<address n="4" sp-act="echo-refer" polarity="positive">
+A
+</address>
+<dm n="5" sp-act="hesitate">
+uh
+</dm>
+<decl n="6" sp-act="identifySelf" polarity="positive" mode="decl">
+this is B again <punc type="stop" />
+</decl>
+<decl n="7" sp-act="state" polarity="positive" topic="from-to-location" mode="report-decl">
+and i talked to C <punc type="stop" /> D <punc type="stop" /> again <backchannel content="mhm" /> about going from Hong Kong to Moscow <punc type="stop" />
+</decl>
+<dm n="8" sp-act="hesitate">
+um
+</dm>
+<decl n="9" sp-act="expressOpinion" polarity="positive" topic="location-airport_int" mode="decl">
+he made me feel like there had to be some other options besides going through Heathrow <punc type="stop" />
+</decl>
+</turn>
+<turn n="5" speaker="agent_A">
+<dm n="10" sp-act="acknowledge" mode="tag">
+ok <overlap type="start" /> uh
+</dm>
+</turn>
+<turn n="6" speaker="caller">
+<decl n="11" sp-act="expressOpinion" polarity="positive" topic="location_int-to-location" mode="poss2-frag">
+there <overlap type="end" /> had to be several different cities you can go through like Beijing to Helsinki <punc type="level" />
+</decl>
+<decl n="12" sp-act="expressOpinion" polarity="positive" topic="location">
+there has to be some other options <overlap type="start" /> <unclear />
+</decl>
+</turn>
+<turn n="7" speaker="agent_A">
+<dm n="13" sp-act="hesitate">
+um
+</dm>
+<dm n="14" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="15" sp-act="init">
+well
+</dm>
+<frag n="16" sp-act="refer-abandon" polarity="positive" mode="frag">
+on <punc type="level" />
+</frag>
+<decl n="17" sp-act="state" polarity="positive" topic="location_int-to-from" mode="frag">
+what i do is i ask for connections er flights from Hong Kong to Moscow <punc type="level" />
+</decl>
+<decl n="18" sp-act="state" polarity="positive" topic="availability" mode="benefit-decl">
+and that's what it's giving me as available connections <punc type="stop" />
+</decl>
+</turn>
+<turn n="8" speaker="caller">
+<dm n="19" sp-act="acknowledge" mode="tag">
+<overlap type="start" /> ok
+</dm>
+</turn>
+<turn n="9" speaker="agent_A">
+<decl n="20" sp-act="state" polarity="positive" topic="availability" mode="benefit-decl">
+it's <overlap type="end" /> giving me all the legal connections available <punc type="stop" />
+</decl>
+<decl n="21" sp-act="state" polarity="positive" topic="airport_int">
+and that's what i'm getting is through Heathrow <overlap type="start" /> <unclear />
+</decl>
+</turn>
+<turn n="10" speaker="caller">
+<dm n="22" sp-act="acknowledge">
+okay
+</dm>
+<dm n="23" sp-act="init">
+so
+</dm>
+<decl n="24" sp-act="stateCondition" polarity="positive" topic="to-location_int" mode="condition-frag">
+i... <overlap type="end" /> if somebody was in some other city and wanted to go to Moscow <punc type="level" />
+</decl>
+<decl n="25" sp-act="expressOpinion-reqConfirm" polarity="negative" topic="location" mode="tag-decl">
+there has to be other options doesn't <overlap type="start" /> there <punc type="stop" />
+</decl>
+</turn>
+<turn n="11" speaker="agent_A">
+<dm n="26" sp-act="exclaim">
+oh <overlap type="end" /> 
+</dm>
+<decl n="27" sp-act="expressAwareness" mode="awareness">
+i see what you mean <punc type="stop" />
+</decl>
+<frag n="28" sp-act="reqInfo" polarity="positive" topic="location_int" mode="query">
+departing from a different city rather than <overlap type="start" /> Hong Kong <punc type="query" />
+</frag>
+</turn>
+<turn n="12" speaker="caller">
+<yes n="29" sp-act="answer-state">
+yeah <overlap type="end" />
+</yes>
+</turn>
+<turn n="13" speaker="agent_A">
+<dm n="30" sp-act="exclaim">
+oh
+</dm>
+<dm n="31" sp-act="agree">
+sure <punc type="stop" />
+</dm>
+</turn>
+<turn n="14" speaker="caller">
+<frag n="32" sp-act="refer" polarity="positive" topic="location_int">
+sa... i... t... Helsinki
+</frag>
+<decl n="33" sp-act="expressOpinion" polarity="positive" topic="location-location_int" mode="decl">
+and also there has to be some other airlines too uh that are flying into Moscow besides <punc type="stop" />
+</decl>
+<decl n="34" sp-act="state" polarity="positive" topic="airline" mode="constrain-decl">
+you only gave me <overlap type="start" /> British Airways <punc type="stop" />
+</decl>
+</turn>
+<turn n="15" speaker="agent_A">
+<dm n="35" sp-act="init">
+well <overlap type="end" />
+</dm>
+<dm n="36" sp-act="init">
+well
+</dm>
+<frag n="37" sp-act="referReason" polarity="positive" mode="reason-partial-decl">
+because of the connections <punc type="stop" />
+</frag>
+<imp n="38" sp-act="direct" polarity="positive">
+see
+</imp>
+<frag n="39" sp-act="refer" polarity="positive" topic="location_int-to-from" mode="partial">
+from Hong Kong to Moscow
+</frag>
+<decl n="40" sp-act="state-abandon" polarity="positive" topic="location" mode="exists-frag">
+there are other <punc type="level" />
+</decl>
+<decl n="41" sp-act="abandon" polarity="positive" mode="frag">
+what i <punc type="level" />
+</decl>
+<dm n="42" sp-act="acknowledge" mode="tag">
+ok <overlap type="start" /> 
+</dm>
+<decl n="43" sp-act="state" polarity="positive" topic="day" mode="decl">
+this is <unclear /> the entire day <punc type="stop" />
+</decl>
+</turn>
+<turn n="16" speaker="caller">
+<frag n="44" sp-act="refer-abandon" mode="disflu-abandon">
+you you
+</frag>
+<decl n="45" sp-act="reqConfirm" polarity="positive" mode="disflu">
+what you did was you gave me <overlap type="end" /> you gave me the best <overlap type="start" /> situation <punc type="query" />
+</decl>
+</turn>
+<turn n="17" speaker="agent_A">
+<dm n="46" sp-act="answer-acknowledge">
+right <overlap type="end" />
+</dm>
+<frag n="47" sp-act="elab-state" polarity="positive" topic="day-month-date" mode="report">
+and for the entire day for i picked on th... on the 24th of June um th... the entire day
+</frag>
+<decl n="48" sp-act="state" polarity="positive" topic="enum" mode="decl">
+we've got the first thing that that comes up is that 9:30 pm flight <overlap type="start" /> otherwise <punc type="stop" />
+</decl>
+</turn>
+<turn n="18" speaker="caller">
+<q-yn n="49" sp-act="reqInfo" polarity="positive" mode="opinion-closed-query">
+are we <overlap type="end" /> saying that maybe uh that something was filled <punc type="query" />
+</q-yn>
+<dm n="50" sp-act="phatic">
+i mean
+</dm>
+<decl n="51" sp-act="reqInfo" polarity="negative" mode="exists-query">
+there is another option that we wouldn't <overlap type="start" /> be aware of <punc type="query" />
+</decl>
+</turn>
+<turn n="19" speaker="agent_A">
+<no n="52" sp-act="answer-state">
+no <overlap type="end" /> 
+</no>
+<no n="53" sp-act="elab">
+no
+</no>
+</turn>
+<turn n="20" speaker="caller">
+<dm n="54" sp-act="exclaim">
+oh
+</dm>
+<dm n="55" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="21" speaker="agent_A">
+<decl n="56" sp-act="stateCondition" polarity="positive" mode="condition">
+if it was sold out
+</decl>
+<decl n="57" sp-act="state" polarity="positive" mode="decl">
+it would show it to me <punc type="stop" />
+</decl>
+</turn>
+<turn n="22" speaker="caller">
+<dm n="58" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="59" sp-act="state" polarity="positive" mode="report-decl">
+that's what i was wondering <punc type="stop" />
+</decl>
+</turn>
+<turn n="23" speaker="agent_A">
+<dm n="60" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<yes n="61" sp-act="acknowledge">
+yeah
+</yes>
+<dm n="62" sp-act="init">
+so um 
+</dm>
+<decl n="63" sp-act="state" polarity="positive" topic="airline" mode="exists-constrain-decl">
+the only other option i have would be a Cathay Pacific flight <punc type="stop" />
+</decl>
+<frag n="64" sp-act="state" polarity="positive" topic="time-enum-location_int" mode="decl">
+departing at Hong Kong at 10:55 p m <punc type="stop" />
+</frag>
+<decl n="65" sp-act="state" polarity="positive" topic="enum-time-to-location-location_int-arrival-airport_int" mode="decl">
+it arrives into London to Gatwick airport at 4 at 5:50 5:40 <punc type="stop" />
+</decl>
+<imp n="85" sp-act="apologise" polarity="positive" mode="regret">
+excuse me
+</imp>
+<frag n="67" sp-act="refer-correctSelf" polarity="" topic="time">
+a m
+</frag>
+<decl n="68" sp-act="state" polarity="positive" topic="location-location_int-airport_int" mode="decl">
+and then he'd connect to a British Air flight out of London Heathrow airport <punc type="stop" />
+</decl>
+<frag n="69" sp-act="refer" polarity="positive" topic="location_int" mode="partial-decl">
+and into th... Moscow <punc type="stop" />
+</frag>
+<dm n="70" sp-act="init">
+so
+</dm>
+<decl n="71" sp-act="state" polarity="positive" topic="airport_int" mode="frag">
+he'd be going into Gatwick and leaving out of Heathrow <punc type="level" />
+</decl>
+<frag n="72" sp-act="stateConstraint" polarity="positive" topic="number" mode="constrain-partial-decl">
+meaning he'd <overlap type="start" /> have to get between the two <punc type="stop" />
+</frag>
+</turn>
+<turn n="24" speaker="caller">
+<yes n="73" sp-act="acknowledge">
+yes
+</yes>
+<decl n="74" sp-act="expressAwareness" polarity="positive" mode="awareness">
+i know
+</decl>
+<decl n="75" sp-act="state" polarity="positive" topic="airport_int" mode="report-constrain-decl-disflu">
+i i indicated i said the only <overlap type="end" /> thing that was given to me was a flight that goes into He... you know was flights going into Heathrow <punc type="stop" />
+</decl>
+</turn>
+<turn n="25" speaker="agent_A">
+<dm n="76" sp-act="acknowledge">
+right
+</dm>
+</turn>
+<turn n="26" speaker="caller">
+<decl n="77" sp-act="state" polarity="positive" mode="report-frag">
+he says <punc type="level" />
+</decl>
+<dm n="78" sp-act="init">
+well
+</dm>
+<imp n="79" sp-act="direct" polarity="positive" topic="location_int">
+try Helsinki
+</imp>
+<imp n="80" sp-act="direct" polarity="positive" topic="location_int" mode="decl">
+try Beijing <punc type="stop" />
+</imp>
+<dm n="81" sp-act="init">
+you know
+</dm>
+<frag n="82" sp-act="expressOpinion" polarity="positive" topic="location-location_int">
+there has to be some other options to getting into Moscow <overlap type="start" />
+</frag>
+<dm n="83" sp-act="init">
+so <punc type="incomplete" />
+</dm>
+</turn>
+<turn n="27" speaker="agent_A">
+<dm n="84" sp-act="acknowledge" mode="tag">
+ok <overlap type="end" />
+</dm>
+</turn>
+<turn n="28" speaker="caller">
+<decl n="85" sp-act="expressNonAwareness" polarity="negative" mode="report-nonawareness-disflu">
+i i don't know
+</decl>
+<decl n="86" sp-act="state" polarity="positive" topic="location" mode="report">
+and al... also he said there has to be other airlines
+</decl>
+<decl n="87" sp-act="state" polarity="positive" mode="report-disflu">
+and i he mentioned a couple
+</decl>
+<decl n="88" sp-act="state" polarity="positive" mode="report-disflu">
+i i remembered a couple
+</decl>
+<q-yn n="89" sp-act="reqConfirm" polarity="positive" mode="closed-query">
+Aer... is it Aeroflight <punc type="query" />
+</q-yn>
+</turn>
+<turn n="29" speaker="agent_A">
+<dm n="90" sp-act="confirm-acknowledge">
+okay
+</dm>
+<dm n="91" sp-act="init">
+let's see <punc type="stop" />
+</dm>
+</turn>
+<turn n="30" speaker="caller">
+<frag n="92" sp-act="refer" polarity="positive" topic="location_int">
+and Singapore
+</frag>
+<q-yn n="93" sp-act="reqInfo" polarity="positive" topic="location_int" mode="closed-query">
+do... does Singapore has a airline <punc type="query" />
+</q-yn>
+</turn>
+<turn n="31" speaker="agent_A">
+<imp n="94" sp-act="init" polarity="positive">
+see
+</imp>
+<imp n="95" sp-act="init" polarity="positive">
+see
+</imp>
+<decl n="96" sp-act="answer-state" polarity="positive" topic="time-location_int" mode="frag">
+this is what when i ask for for Hong Kong <punc type="level" />
+</decl>
+<decl n="97" sp-act="stateIntent" polarity="positive" topic="problem" mode="intent-decl">
+thi... that's what i'm trying to explain <punc type="stop" />
+</decl>
+<decl n="98" sp-act="state" polarity="positive" mode="suggest-poss1-constrain-frag">
+we could try building our own connection <overlap type="start" /> but <punc type="level" />
+</decl>
+</turn>
+<turn n="32" speaker="caller">
+<yes n="99" sp-act="acknowledge">
+yeah <overlap type="end" />
+</yes>
+</turn>
+<turn n="33" speaker="agent_A">
+<decl n="100" sp-act="state" polarity="positive" topic="country-time-location_int">
+when i ask Hong Kong Soviet Union
+</decl>
+<decl n="101" sp-act="state" polarity="positive" mode="benefit-decl">
+that's what it's giving me <punc type="stop" />
+</decl>
+</turn>
+<turn n="34" speaker="caller">
+<yes n="102" sp-act="acknowledge">
+yeah
+</yes>
+<dm n="103" sp-act="agree" mode="reassurance-tag">
+that's right <overlap type="start" /> 
+</dm>
+<dm n="104" sp-act="init">
+now
+</dm>
+</turn>
+<turn n="35" speaker="agent_A">
+<yes n="105" sp-act="acknowledge">
+yeah <overlap type="end" />
+</yes>
+</turn>
+<turn n="36" speaker="caller">
+<dm n="106" sp-act="hesitate">
+uh
+</dm>
+<decl n="107" sp-act="suggest-expressPossibility" polarity="positive" mode="opinion-poss1-decl">
+perhaps we can build our own like you say <punc type="stop" />
+</decl>
+</turn>
+<turn n="37" speaker="agent_A">
+<yes n="108" sp-act="acknowledge">
+yeah
+</yes>
+<decl n="109" sp-act="state" polarity="positive" mode="opinion-disflu">
+that's maybe that's what he's talking about <punc type="stop" />
+</decl>
+<frag n="110" sp-act="stateOpt" polarity="positive" mode="alternative-decl">
+or depart from a different city <punc type="stop" />
+</frag>
+<decl n="111" sp-act="stateCondition" polarity="positive" topic="number" mode="preference3-condition-frag">
+if he wants to go for like a three point connection <punc type="level" />
+</decl>
+<dm n="112" sp-act="phatic">
+i mean
+</dm>
+<decl n="113" sp-act="stateOpt" polarity="positive" topic="availability-number-location" mode="exists-decl">
+there are three point connections available <punc type="stop" />
+</decl>
+</turn>
+<turn n="38" speaker="caller">
+<dm n="114" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<frag n="115" sp-act="refer-abandon" polarity="positive" mode="frag-interruption">
+<overlap type="start" /> he <punc type="level" />
+</frag>
+</turn>
+<turn n="39" speaker="agent_A">
+<frag n="116" sp-act="refer-abandon" polarity="positive" mode="interruption">
+such as <overlap type="end" /> <punc type="level" />
+</frag>
+</turn>
+<turn n="40" speaker="caller">
+<frag n="117" sp-act="state" polarity="positive" mode="decl">
+just wants me to get all the options down for him <punc type="stop" />
+</frag>
+</turn>
+<turn n="41" speaker="agent_A">
+<dm n="118" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="42" speaker="caller">
+<decl n="119" sp-act="expressPossibility" polarity="positive" mode="poss3-decl">
+so he can make a decision <punc type="stop" />
+</decl>
+</turn>
+<turn n="43" speaker="agent_A">
+<dm n="120" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<frag n="121" sp-act="state" polarity="positive" topic="location_int-to">
+again asking for Hong Kong to uh  <backchannel content="unclear" /> Moscow
+</frag>
+<decl n="122" sp-act="state" polarity="positive" mode="exists-decl">
+there's a <overlap type="start" /> flight <punc type="stop" />
+</decl>
+</turn>
+<turn n="44" speaker="caller">
+<imp n="123" sp-act="suggest" polarity="positive" mode="decl-disflu">
+let's let's <overlap type="end" /> go to another city first <punc type="stop" />
+</imp>
+<decl n="124" sp-act="expressOpinion" polarity="positive" topic="problem" mode="opinion-decl">
+maybe that's what he's trying to say <punc type="stop" />
+</decl>
+<decl n="125" sp-act="stateCondition" polarity="positive" topic="to-number-location_int" mode="poss2-constrain-condition-decl">
+un... unless you can find a three point by going to Moscow <punc type="stop" />
+</decl>
+</turn>
+<turn n="45" speaker="agent_A">
+<yes n="126" sp-act="acknowledge">
+yeah
+</yes>
+<decl n="127" sp-act="expressPossibility" polarity="positive" mode="poss1-decl">
+i can <punc type="stop" />
+</decl>
+</turn>
+<turn n="46" speaker="caller">
+<dm n="128" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="47" speaker="agent_A">
+<frag n="129" sp-act="refer-abandon" polarity="positive" topic="from-location_int" mode="partial-frag">
+from Hong Kong which is eh <punc type="level" />
+</frag>
+<decl n="130" sp-act="stateOpt" polarity="positive" topic="to-location_int-airport_int" mode="intent">
+what i'm saying is that uh <punc type="level" /> the next possibility would be Hong Kong to Bangkok to Heathrow to Moscow <punc type="stop" />
+</decl>
+<decl n="131" sp-act="stateOpt" polarity="positive" topic="availability" mode="decl">
+that's the next availability that's coming up <punc type="stop" />
+</decl>
+<decl n="132" sp-act="state" polarity="positive" topic="time-from-enum-location_int" mode="decl">
+and that would be a flight that leaves at 6 p m from Hong Kong <punc type="stop" />
+</decl>
+<frag n="133" sp-act="state" polarity="positive" topic="to-location_int">
+and goes on to Bangkok
+</frag>
+<decl n="134" sp-act="state" polarity="positive" topic="to-airport_int" mode="decl">
+and then he would take another flight to Heathrow <punc type="stop" />
+</decl>
+<frag n="135" sp-act="state" polarity="positive" topic="to-from-location_int-airport_int">
+and then another ho... flight from Heathrow to Moscow <overlap type="start" /> <unclear />
+</frag>
+</turn>
+<turn n="48" speaker="caller">
+<dm n="136" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="137" sp-act="state" polarity="positive" mode="exists-decl">
+i've got that down as an option <punc type="stop" />
+</decl>
+<dm n="138" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="49" speaker="agent_A">
+<dm n="139" sp-act="acknowledge" mode="tag">
+ok <punc type="stop" />
+</dm>
+<decl n="140" sp-act="state" polarity="positive" topic="location_int" mode="exists">
+otherwise there's um more through Bangkok <punc type="stop" />
+</decl>
+<decl n="141" sp-act="state" polarity="positive" topic="to-location_int-airport_int" mode="exists-decl">
+there's different carriers Bangkok to Heathrow to Moscow <punc type="stop" />
+</decl>
+<frag n="142" sp-act="refer" polarity="positive" mode="constrain-partial-frag">
+as to other carriers aside from that <punc type="level" />
+</frag>
+<decl n="143" sp-act="state" polarity="positive" topic="location_int-to-location_US-number-location" mode="exists-decl">
+there's one Hong Kong to Tokyo to London to Moscow <punc type="stop" />
+</decl>
+<decl n="144" sp-act="predict" polarity="positive" topic="location_int-location">
+everything's going to end up London Moscow <overlap type="start" />
+</decl>
+<decl n="145" sp-act="abandon" polarity="positive" mode="interruption">
+it's just a matter of <punc type="incomplete" />
+</decl>
+</turn>
+<turn n="50" speaker="caller">
+<dm n="146" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<imp n="147" sp-act="suggest" polarity="positive" topic="to-location_int" mode="report-decl">
+let's <overlap type="end" /> try the suggestion about going to Helsinki <punc type="stop" />
+</imp>
+</turn>
+<turn n="51" speaker="agent_A">
+<decl n="148" sp-act="reqConfirm" polarity="positive" topic="location_int-from" mode="query-alternative-query">
+you mean departing from Helsinki to uh or Hong Kong <overlap type="start" /> Helsinki <punc type="query" />
+</decl>
+</turn>
+<turn n="52" speaker="caller">
+<q-yn n="149" sp-act="reqInfo" polarity="positive" topic="to-location_int" mode="closed-query">
+<unclear /> can he go <overlap type="end" /> to Hong Kong <punc type="query" />
+</q-yn>
+<dm n="150" sp-act="exclaim">
+oh
+</dm>
+<dm n="151" sp-act="acknowledge" mode="awareness">
+i see
+</dm>
+<decl n="152" sp-act="stateConstraint" polarity="positive" mode="constrain">
+you always have to go
+</decl>
+<decl n="153" sp-act="expressImPossibility-abandon" polarity="negative" topic="location_int" mode="poss2-decl-interruption">
+you can't go straight through Hong Kong to <punc type="incomplete" />
+</decl>
+</turn>
+<turn n="53" speaker="agent_A">
+<frag n="154" sp-act="answer-state" polarity="positive" topic="location_int">
+to then go through Helsinki then
+</frag>
+<decl n="155" sp-act="elab-abandon" polarity="positive">
+that would <punc type="incomplete" /> 
+</decl>
+<decl n="156" sp-act="stateConstraint" polarity="positive" mode="constrain-decl">
+we'd have to build our own connection <punc type="stop" />
+</decl>
+</turn>
+<turn n="54" speaker="caller">
+<dm n="157" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+</turn>
+<turn n="55" speaker="agent_A">
+<decl n="158" sp-act="state-abandon" polarity="positive" mode="constrain-decl">
+that would be where we'd have to ask for <punc type="incomplete" />
+</decl>
+<decl n="159" sp-act="state-abandon" polarity="positive" mode="frag">
+we would force <punc type="level" />
+</decl>
+<decl n="160" sp-act="state" polarity="positive" mode="effect-decl">
+that's called forcing a connection <punc type="stop" />
+</decl>
+<decl n="161" sp-act="suggest-expressPossibility" polarity="positive" topic="location_int" mode="poss1-decl">
+i can ask for um flights through Helsinki <punc type="stop" />
+</decl>
+<dm n="162" sp-act="init">
+now
+</dm>
+<imp n="163" sp-act="direct" polarity="negative" mode="decl">
+see
+</imp>
+<decl n="164" sp-act="state" polarity="negative">
+it's not going to come out <punc type="stop" />
+</decl>
+<dm n="165" sp-act="init">
+let me see
+</dm>
+<frag n="166" sp-act="refer" polarity="positive" mode="decl">
+24 <punc type="stop" />
+</frag>
+</turn>
+<turn n="56" speaker="caller">
+<dm n="167" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<imp n="168" sp-act="suggest" polarity="positive" mode="decl">
+let me call you back <punc type="stop" />
+</imp>
+</turn>
+<turn n="57" speaker="agent_A">
+<dm n="169" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="170" sp-act="abandon" polarity="positive" mode="reason-interruption">
+cos that's <overlap type="start" /> it's <punc type="incomplete" />
+</decl>
+</turn>
+<turn n="58" speaker="caller">
+<dm n="171" sp-act="acknowledge" mode="tag">
+ok <overlap type="end" />
+</dm>
+</turn>
+<turn n="59" speaker="agent_A">
+<frag n="172" sp-act="expressOpinion" polarity="negative">
+doesn't look like its <overlap type="start" /> going <unclear />
+</frag>
+</turn>
+<turn n="60" speaker="caller">
+<dm n="173" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<decl n="174" sp-act="stateConstraint" polarity="positive" mode="report-constrain-decl">
+that's <overlap type="end" /> what i need to find out <punc type="stop" />
+</decl>
+<frag n="175" sp-act="thank" polarity="positive" mode="thank">
+thank you
+</frag>
+</turn>
+<turn n="61" speaker="agent_A">
+<dm n="176" sp-act="acknowledge">
+aha
+</dm>
+</turn>
+</dialogue>

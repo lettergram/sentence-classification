@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<dialogue corpus="amex" lang="en" id="18d">
+<turn n="1" speaker="agent_A">
+<frag n="1" sp-act="refer" polarity="positive" mode="partial-frag">
+<unclear /> Agency Services <punc type="level" />
+</frag>
+<decl n="2" sp-act="identifySelf" polarity="positive" mode="intro-decl">
+this is A <punc type="stop" /> speaking <punc type="stop" />
+</decl>
+</turn>
+<turn n="2" speaker="caller">
+<yes n="3" sp-act="acknowledge">
+yeah
+</yes>
+<frag n="4" sp-act="greet" mode="greet-opening">
+hi
+</frag>
+<address n="5" sp-act="refer" polarity="positive" mode="decl">
+A <punc type="stop" />
+</address>
+<decl n="6" sp-act="identifySelf" polarity="positive" topic="time" mode="decl">
+this is B <punc type="stop" /> at American Express <punc type="stop" />
+</decl>
+</turn>
+<turn n="3" speaker="agent_A">
+<frag n="7" sp-act="greet" mode="greet-opening">
+hi
+</frag>
+<address n="8" sp-act="refer" polarity="positive" mode="decl">
+B <punc type="stop" />
+</address>
+</turn>
+<turn n="4" speaker="caller">
+<q-yn n="9" sp-act="direct-reqInfo" polarity="positive" mode="request-query">
+could you pull up a reservation for me please <punc type="query" />
+</q-yn>
+</turn>
+<turn n="5" speaker="agent_A">
+<dm n="10" sp-act="agree">
+certainly <punc type="stop" />
+</dm>
+<decl n="11" sp-act="state" polarity="positive" topic="enum-location_US-to-month-date" mode="decl">
+it's flight 9 2 7 on the 26th of July Dallas to Denver <punc type="stop" />
+</decl>
+<decl n="12" sp-act="state" polarity="positive" topic="name" mode="decl">
+and the last name is C <punc type="stop" />
+</decl>
+<frag n="13" sp-act="refer" polarity="positive">
+<anonym type="spell" />
+</frag>
+</turn>
+<turn n="7" speaker="caller">
+<frag n="14" sp-act="echo" polarity="positive" mode="query">
+<anonym type="spell" />  <punc type="query" />
+</frag>
+<q-yn n="15" sp-act="reqConfirm" polarity="positive" mode="closed-query">
+which is this D <punc type="query" />
+</q-yn>
+</turn>
+<turn n="8" speaker="agent_A">
+<dm n="16" sp-act="confirm-state">
+right
+</dm>
+<frag n="17" sp-act="elab-echo" polarity="positive" mode="decl">
+D <punc type="stop" />
+</frag>
+</turn>
+<turn n="9" speaker="caller">
+<dm n="18" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="19" sp-act="hesitate">
+uh
+</dm>
+<decl n="20" sp-act="stateIntent" polarity="positive" mode="intent-preference1-poss1-condition-frag">
+i want to see if i can get seats for him on those flights <punc type="level" />
+</decl>
+<frag n="21" sp-act="refer" polarity="positive" mode="condition-decl">
+non-smoking aisles if possible <punc type="stop" />
+</frag>
+<dm n="22" sp-act="approve">
+great
+</dm>
+<frag n="23" sp-act="thank" polarity="positive" mode="thank-benefit-decl">
+thank you very much for your help <punc type="stop" />
+</frag>
+</turn>
+<turn n="12" speaker="agent_A">
+<frag n="24" sp-act="thank" polarity="positive" mode="thank-decl">
+thank you <punc type="stop" />
+</frag>
+</turn>
+<turn n="13" speaker="caller">
+<frag n="25" sp-act="bye" mode="farewell-closing">
+bye bye
+</frag>
+</turn>
+<turn n="14" speaker="agent_A">
+<frag n="26" sp-act="echo-bye" mode="farewell-closing">
+bye
+</frag>
+</turn>
+</dialogue>

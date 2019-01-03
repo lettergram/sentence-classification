@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<dialogue corpus="amex" lang="en" id="13b">
+<turn n="1" speaker="agent_A">
+<frag n="1" sp-act="refer" polarity="positive" mode="partial-frag">
+American Express <punc type="level" />
+</frag>
+<frag n="2" sp-act="identifySelf" polarity="positive" mode="intro-decl">
+A speaking <punc type="stop" />
+</frag>
+</turn>
+<turn n="2" speaker="caller">
+<frag n="3" sp-act="greet" mode="greet-opening">
+hi
+</frag>
+<address n="4" sp-act="refer">
+A <punc type="stop" />
+</address>
+<frag n="5" sp-act="identifySelf" polarity="positive" mode="decl">
+B C again <punc type="stop" />
+</frag>
+</turn>
+<turn n="3" speaker="agent_A">
+<frag n="6" sp-act="greet" mode="greet-opening">
+hi
+</frag>
+<address n="7" sp-act="refer" polarity="positive" mode="decl">
+Mr C <punc type="stop" />
+</address>
+</turn>
+<turn n="4" speaker="caller">
+<decl n="8" sp-act="stateIntent" polarity="positive" topic="enum-verify" mode="intent-report-preference1-condition-decl">
+i uh wanted to check to see if it was possible to reput me back on that 2 2 9 flight <punc type="stop" />
+</decl>
+</turn>
+<turn n="5" speaker="agent_A">
+<dm n="9" sp-act="hesitate">
+uh
+</dm>
+<dm n="10" sp-act="hold">
+one second here <punc type="stop" />
+</dm>
+<decl n="11" sp-act="state" polarity="positive" mode="intent-decl">
+i'm showing that flight as being sold out completely <punc type="stop" />
+</decl>
+</turn>
+<turn n="6" speaker="caller">
+<frag n="12" sp-act="echo-reqConfirm" polarity="positive" mode="query">
+sold out completely  <punc type="query" />
+</frag>
+<dm n="13" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<dm n="14" sp-act="init">
+well
+</dm>
+<imp n="15" sp-act="direct" polarity="positive" mode="decl">
+keep me where i am then <punc type="stop" />
+</imp>
+</turn>
+<turn n="7" speaker="agent_A">
+<dm n="16" sp-act="init">
+all righty
+</dm>
+</turn>
+<turn n="8" speaker="caller">
+<dm n="17" sp-act="acknowledge" mode="tag">
+ok
+</dm>
+<frag n="18" sp-act="thank" mode="thank">
+thanks
+</frag>
+</turn>
+<turn n="9" speaker="agent_A">
+<dm n="19" sp-act="agree">
+sure thing <punc type="stop" />
+</dm>
+</turn>
+<turn n="10" speaker="caller">
+<frag n="20" sp-act="bye" mode="farewell-closing">
+<overlap type="start" /> bye
+</frag>
+</turn>
+<turn n="11" speaker="agent_A">
+<frag n="21" sp-act="echo-bye" mode="farewell-closing">
+bye <overlap type="end" />
+</frag>
+</turn>
+</dialogue>
