@@ -8,9 +8,12 @@ The goal of this project is to classify sentences, based on type:
 - Exclamation (Exclamatory Sentence)
 - Command (Imperative Sentence)
 
-Each of the above broad sentence categories can be expanded and can be made more indepth.
+Each of the above broad sentence categories can be expanded and can be made more indepth. The way these networks and scripts are designed it should be possible expand to classify other sentence types, provided the data is provided.
 
-This was developed for a guide on [austingwalters.com](https://austingwalters.com). Feel free to add PRs to update, improve, etc.
+This was developed for a guide on building practical/applied neural networks on [austingwalters.com](https://austingwalters.com), as well as practial applications at [Metacortex](https://metacortex.me/).
+
+Please, feel free to add PRs to update, improve, and use freely!
+
 
 ---------------------
 
