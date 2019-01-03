@@ -1,6 +1,6 @@
 '''
 Written by Austin Walters
-Last Edit: December 12, 2018
+Last Edit: January 2, 2019
 For use on austingwalters.com
 
 A CNN to classify a sentence as one 
@@ -66,20 +66,16 @@ print(num_classes, 'classes')
 print('Pad sequences (samples x time)')
 x_train = sequence.pad_sequences(x_train, maxlen=maxlen)
 x_test = sequence.pad_sequences(x_test, maxlen=maxlen)
-print('x_train shape:', x_train.shape)
-print('x_test shape:', x_test.shape)
 
 
 print('Convert class vector to binary class matrix '
       '(for use with categorical_crossentropy)')
 y_train = keras.utils.to_categorical(y_train, num_classes)
 y_test = keras.utils.to_categorical(y_test, num_classes)
-print('y_train shape:', y_train.shape)
-print('y_test shape:', y_test.shape)
 
 if not load_model_flag:
 
-    print('Build model...')
+    print('Constructing model!')
 
     model = Sequential()
 
@@ -119,7 +115,7 @@ if not load_model_flag:
 
 else:
 
-    print('Loading model...')
+    print('Loading model!')
 
     # load json and create model
     json_file = open(model_name + '.json', 'r')
@@ -140,7 +136,6 @@ else:
 score = model.evaluate(x_test, y_test,
                        batch_size=batch_size, verbose=1)
 
-print('Test score:', score[0])
 print('Test accuracy:', score[1])
 
 test_comments, test_comments_category = get_custom_test_comments()
@@ -153,16 +148,11 @@ x_test, _, y_test, _ = encode_data(test_comments, test_comments_category,
 x_test = sequence.pad_sequences(x_test, maxlen=maxlen)
 y_test = keras.utils.to_categorical(y_test, num_classes)
 
-print('x_test shape:', x_test.shape)
-print('y_test shape:', y_test.shape)
-
-
 score = model.evaluate(x_test, y_test,
                        batch_size=batch_size, verbose=1)
 
 
 print('Manual test')
-print('Test score:', score[0])
 print('Test accuracy:', score[1])
 
 # Show predictions

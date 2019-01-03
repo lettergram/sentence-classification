@@ -1,6 +1,6 @@
 '''
 Written by Austin Walters
-Last Edit: December 12, 2018 
+Last Edit: January 2, 2019
 For use on austingwalters.com
 
 A naive method of classifying sentences
@@ -16,7 +16,7 @@ print("Loading Data...")
 comments, comment_categories = gen_test_comments()
 
 question_dict = {
-    "who","what","where","when","why","how","which","?"
+    "who","what","where","when","why","how","which","can", "?"
 }
 
 command_dict = {
