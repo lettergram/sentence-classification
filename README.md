@@ -10,7 +10,7 @@ The goal of this project is to classify sentences, based on type:
 
 Each of the above broad sentence categories can be expanded and can be made more indepth. The way these networks and scripts are designed it should be possible expand to classify other sentence types, provided the data is provided.
 
-This was developed for a guide on building practical/applied neural networks on [austingwalters.com](https://austingwalters.com), as well as practial applications at [Metacortex](https://metacortex.me/).
+This was developed for applications at [Metacortex](https://metacortex.me) and is accompanied by a guide on building practical/applied neural networks on [austingwalters.com](https://austingwalters.com).
 
 Please, feel free to add PRs to update, improve, and use freely!
 
@@ -49,7 +49,7 @@ With some hyperparameter tuning:
 | Dict | 85% | **Fastest** | **Fastest** |
 | CNN | **99.40%** | Fast (200 μs/step) | Very Fast (26 μs/step) |
 | MLP | 96.5% | **Very Fast (60 μs/step)** | Very Fast (42 μs/step)|
-| FastText (1-gram)| 94.40% | Fast (117 μs/step) | **Very Fast (13 μs/step)** |
+| FastText (1-gram)| 94.40% | Fast (117 μs/step) | **Very Fast (26 μs/step)** |
 | FastText (2-gram)| 95.59% | Fast (196 μs/step) | **Very Fast (26 μs/step)** |
 | RNN (LSTM) | **98.49%** | Very Slow (7000 μs/step) | Very Slow (1000 μs/step)|
 
