@@ -18,7 +18,7 @@ Please, feel free to add PRs to update, improve, and use freely!
 
 ## Supplemental Material
 
-This repository was created in conjunction with a guide titled[]Nueral Networks to Production, From an Engineer](https://austingwalters.com/neural-networks-to-production-from-an-engineer/).
+This repository was created in conjunction with a guide titled [Nueral Networks to Production, From an Engineer](https://austingwalters.com/neural-networks-to-production-from-an-engineer/).
 
 Below is the guides table of contents:
 
