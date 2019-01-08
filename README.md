@@ -64,8 +64,8 @@ With some hyperparameter tuning:
 | Model | Accuracy | Train Speed | Classification Speed |
 | -------- | ----------- | --------- | ----------------- |
 | Dict | 85% | **Fastest** | **Fastest** |
-| CNN | **99.40%** | Fast (200 μs/step) | Very Fast (26 μs/step) |
-| MLP | 96.5% | **Very Fast (60 μs/step)** | Very Fast (42 μs/step)|
+| CNN | **99.40%** | Fast (200 μs/step) | **Very Fast (26 μs/step)** |
+| MLP | 95.5% | **Very Fast (60 μs/step)** | Very Fast (42 μs/step)|
 | FastText (1-gram)| 94.40% | Fast (117 μs/step) | **Very Fast (26 μs/step)** |
 | FastText (2-gram)| 95.59% | Fast (196 μs/step) | **Very Fast (26 μs/step)** |
 | RNN (LSTM) | **98.49%** | Very Slow (7000 μs/step) | Very Slow (1000 μs/step)|
