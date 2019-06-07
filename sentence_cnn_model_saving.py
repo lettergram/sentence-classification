@@ -39,7 +39,7 @@ if len(arguments) == 1:
     model_name = arguments[0]
     load_model_flag = os.path.isfile(model_name+".json")
 print(model_name)
-print("Load Model?", (not load_model_flag))
+print("Load Model?", (load_model_flag))
 
 # Model configuration
 max_words = 15000
