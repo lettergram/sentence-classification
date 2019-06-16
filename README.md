@@ -16,6 +16,34 @@ Please, feel free to add PRs to update, improve, and use freely!
 
 ---------------------
 
+## To Install
+
+* Install CUDA and CuDNN if you have a GPU (on your system of choice)
+* Install requirements (on python 3, python 2.x *will not work*)
+
+```
+pip3 install -r requirements.txt --user
+```
+
+## To execute:
+
+Pretrained model:
+
+```
+python3 sentence_cnn_model_saving.py models/cnn
+```
+
+To build your own model:
+
+```
+python3 sentence_cnn_model_saving.py models/<model name>
+```
+
+The models/<model name> will load any pretrained model with said name, or retrain it.
+
+See supplemental material for full guide.
+
+
 ## Supplemental Material
 
 This repository was created in conjunction with a guide titled [Neural Networks to Production, From an Engineer](https://austingwalters.com/neural-networks-to-production-from-an-engineer/).
