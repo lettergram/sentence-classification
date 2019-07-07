@@ -20,7 +20,7 @@ import numpy as np
 import keras
 
 from sentence_types import load_encoded_data
-from sentence_types import encode_data
+from sentence_types import encode_data, import_embedding
 from sentence_types import get_custom_test_comments
 
 from keras.preprocessing import sequence
@@ -42,7 +42,6 @@ print(model_name)
 print("Load Model?", (load_model_flag))
 
 # Model configuration
-max_words = 15000
 maxlen = 500
 batch_size = 64
 embedding_dims = 75
@@ -60,13 +59,17 @@ x_train, x_test, y_train, y_test = load_encoded_data(data_split=0.8,
                                                      embedding_name=embedding_name,
                                                      pos_tags=pos_tags_flag)
 
+word_encoding, category_encoding = import_embedding(embedding_name)
+
+max_words   = len(word_encoding) + 1
 num_classes = np.max(y_train) + 1
+
+print(max_words, 'words')
 print(num_classes, 'classes')
 
 print('Pad sequences (samples x time)')
 x_train = sequence.pad_sequences(x_train, maxlen=maxlen)
 x_test = sequence.pad_sequences(x_test, maxlen=maxlen)
-
 
 print('Convert class vector to binary class matrix '
       '(for use with categorical_crossentropy)')
@@ -100,10 +103,8 @@ if not load_model_flag:
                   optimizer='adam',
                   metrics=['accuracy'])
     
-    model.fit(x_train, y_train,
-              batch_size=batch_size,
-              epochs=epochs,
-              validation_data=(x_test, y_test))
+    model.fit(x_train, y_train, batch_size=batch_size,
+              epochs=epochs, validation_data=(x_test, y_test))
 
     model_json = model.to_json()
     with open(model_name + ".json", "w") as json_file:
@@ -133,8 +134,7 @@ else:
                   metrics=['accuracy'])
 
 
-score = model.evaluate(x_test, y_test,
-                       batch_size=batch_size, verbose=1)
+score = model.evaluate(x_test, y_test, batch_size=batch_size, verbose=1)
 
 print('Test accuracy:', score[1])
 

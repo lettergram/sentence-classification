@@ -32,12 +32,12 @@ def encode_phrases(comments, word_encoding=None, add_pos_tags_flag=False):
     :return word_decoding: hashmap of the embedded value to word
     '''
 
-    word_decoding = {}     # will store a has to reviews words
-    count = 0
+    word_decoding = { ' ': 0}     # will store a has to reviews words
+    count = 1
     encoded_comments = []
 
     if word_encoding == None:
-        word_encoding = {} # will store a hash of words
+        word_encoding = { 0: ' '} # will store a hash of words
     else:
         # Will preload word_decoding if word_encoding exists
         for word in word_encoding:
@@ -177,29 +177,31 @@ def gen_test_comments(max_samples=999999999):
     
     with open('data/train-v2.0.json', 'r') as qa:
         parsed = json.load(qa)
-        
+
     statement_count = 0
     question_count  = 0
     command_count   = 0
-
+        
     # Pulls all data from the SQuAD 2.0 Dataset, adds to our dataset
     for i in range(len(parsed["data"])):
         for j in range(len(parsed["data"][i]["paragraphs"])):
             statements = parsed["data"][i]["paragraphs"][j]["context"]
-            if random.randint(0,9) % 4 == 0:
-                statement = statements
-                if statement_count < max_samples:
+            if random.randint(0,9) % 4 == 0:                
+                statement = statements                
+                if statement_count < max_samples and statement not in tagged_comments:
                     tagged_comments[statement] = "statement"
-                    statement_count += 1
+                    statement_count += 1                    
             else:
+                
                 for statement in statements.split("."):
                     if len(statement) <= 2:
                         continue
                     if random.randint(0,9) % 3 == 0:                        
                         statement += "."
-                    if statement_count < max_samples:
+                    if statement_count < max_samples and statement not in tagged_comments:
                         tagged_comments[statement] = "statement"
                         statement_count += 1
+                        
             for k in range(len(parsed["data"][i]["paragraphs"][j]["qas"])):
             
                 question = parsed["data"][i]["paragraphs"][j]["qas"][k]["question"]
@@ -210,7 +212,7 @@ def gen_test_comments(max_samples=999999999):
                 if random.randint(0,9) % 2 == 0:
                     question = statements.split(".")[0]+". "+question
                     
-                if question_count < max_samples:
+                if question_count < max_samples and question not in tagged_comments:
                     tagged_comments[question] = "question"                
                     question_count += 1
 
@@ -219,37 +221,39 @@ def gen_test_comments(max_samples=999999999):
         with open('data/SPAADIA/' + doc, 'r') as handle:
             conversations = BeautifulSoup(handle, features="xml")
             for imperative in conversations.findAll("imp"):
-                if command_count < max_samples:
                     imperative = imperative.get_text().replace("\n", "")
-                    tagged_comments[imperative] = "command"
-                    command_count += 1
+                    if command_count < max_samples and imperative not in tagged_comments:
+                        tagged_comments[imperative] = "command"
+                        command_count += 1
             for declarative in conversations.findAll("decl"):
-                if statement_count < max_samples:
                     declarative = declarative.get_text().replace("\n", "")
-                    tagged_comments[declarative] = "statement"
-                    statement_count += 1
+                    if statement_count < max_samples and declarative not in tagged_comments:
+                        tagged_comments[declarative] = "statement"
+                        statement_count += 1
             for question in conversations.findAll("q-yn"):
-                if question_count < max_samples:
                     question = question.get_text().replace("\n", "")
-                    tagged_comments[question] = "question"
-                    question_count += 1
+                    if question_count < max_samples and question not in tagged_comments:
+                        tagged_comments[question] = "question"
+                        question_count += 1
             for question in conversations.findAll("q-wh"):
-                if question_count < max_samples:
                     question = question.get_text().replace("\n", "")
-                    tagged_comments[question] = "question"
-                    question_count += 1
+                    if question_count < max_samples and question not in tagged_comments:
+                        tagged_comments[question] = "question"
+                        question_count += 1
 
     # Pulls all the data from the manually generated imparatives dataset
     with open('data/imperatives.csv', 'r') as imperative_file:
         for row in imperative_file:
             imperative = row.replace("\n", "")
-            tagged_comments[imperative] = "command"
-            command_count += 1
+            if command_count < max_samples and imperative not in tagged_comments:
+                tagged_comments[imperative] = "command"
+                command_count += 1
 
             # Also add without punctuation
             imperative = re.sub('[^a-zA-Z0-9 \.]', '', row)
-            tagged_comments[imperative] = "command"
-            command_count += 1
+            if command_count < max_samples and imperative not in tagged_comments:
+                tagged_comments[imperative] = "command"
+                command_count += 1
         
     test_comments          = []
     test_comments_category = []
@@ -258,14 +262,12 @@ def gen_test_comments(max_samples=999999999):
     comments = list(tagged_comments.items())
     random.shuffle(comments)
 
-
     ###
     ### Balance the dataset
     ###
     local_statement_count = 0
     local_question_count  = 0
     local_command_count   = 0
-
     
     min_count = min([question_count, statement_count, command_count])
 
@@ -288,7 +290,6 @@ def gen_test_comments(max_samples=999999999):
         test_comments.append(comment.rstrip())
         test_comments_category.append(category)
 
-    
     print("\n-------------------------")
     print("command", command_count)
     print("statement", statement_count)
