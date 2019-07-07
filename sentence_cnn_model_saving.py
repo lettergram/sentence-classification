@@ -48,7 +48,7 @@ embedding_dims = 75
 filters = 100
 kernel_size = 5
 hidden_dims = 350
-epochs = 7
+epochs = 2
 
 # Add parts-of-speech to data
 pos_tags_flag = True
