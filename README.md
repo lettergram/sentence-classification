@@ -68,9 +68,9 @@ The dataset is created from parsing out the [SQuAD](https://rajpurkar.github.io/
 
 The samples in the dataset:
 
-* Command 1672
-* Statement 81065
-* Question 131219
+* Command 1111
+* Statement 80167
+* Question 131001
 
 Note: Questions in this case are only one sentence, statements are a single sentence or more. They are classified correctly, but don't include sentences prior to questions. 
 
@@ -102,7 +102,7 @@ With some hyperparameter tuning:
 
 * GTX 1080
 * 32 Gb RAM
-* 12x 3.6 Ghz cores (AMD)
+* 8x 3.6 Ghz cores (AMD)
 * Arch Linux, up to date on 12/16/2018
 
 ## CNN Hyperparameter tuning
