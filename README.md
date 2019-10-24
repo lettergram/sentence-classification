@@ -30,13 +30,13 @@ pip3 install -r requirements.txt --user
 Pretrained model:
 
 ```
-python3 sentence_cnn_model_saving.py models/cnn
+python3 sentence_cnn_save.py models/cnn
 ```
 
 To build your own model:
 
 ```
-python3 sentence_cnn_model_saving.py models/<model name>
+python3 sentence_cnn_save.py models/<model name>
 ```
 
 The models/<model name> will load any pretrained model with said name, or retrain it.
@@ -85,7 +85,8 @@ With the above, we are able to get the following accuracy:
 | MLP | 95.5% | **Very Fast (60 μs/step)** | Very Fast (42 μs/step)|
 | FastText (1-gram)| 94.40% | Fast (83 μs/step) | **Very Fast (26 μs/step)** |
 | FastText (2-gram)| 95.59% | Fast (196 μs/step) | **Very Fast (26 μs/step)** |
-| RNN (LSTM) | **98.49%** | Very Slow (7000 μs/step) | Very Slow (1000 μs/step)|
+| RNN (LSTM) | 98.49% | Very Slow (7000 μs/step) | Very Slow (1000 μs/step)|
+| CNN + LSTM | **99.55%** | Very Slow (3000 μs/step) | Very Slow (722 μs/step)|
 
 With some hyperparameter tuning:
 
@@ -96,7 +97,8 @@ With some hyperparameter tuning:
 | MLP | 95.5% | **Very Fast (60 μs/step)** | Very Fast (42 μs/step)|
 | FastText (1-gram)| 94.40% | Fast (117 μs/step) | **Very Fast (26 μs/step)** |
 | FastText (2-gram)| 95.59% | Fast (196 μs/step) | **Very Fast (26 μs/step)** |
-| RNN (LSTM) | **98.49%** | Very Slow (7000 μs/step) | Very Slow (1000 μs/step)|
+| RNN (LSTM) | 98.49% | Very Slow (7000 μs/step) | Very Slow (1000 μs/step)|
+| CNN + LSTM | **99.55%** | Very Slow (3000 μs/step) | Very Slow (722 μs/step)|
 
 #### Computer Configuration:
 
