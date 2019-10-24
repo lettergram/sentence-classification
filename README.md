@@ -82,13 +82,13 @@ With the above, we are able to get the following accuracy:
 | -------- | ----------- | --------- | ----------------- |
 | Dict | 85% | **Fastest** | **Fastest** |
 | CNN | **97.80%** | Fast (185 μs/step) | Very Fast (35 μs/step) |
+| CNN (2-layer) | **99.76%** | Fast (210 μs/step) | **Very Fast (28 μs/step)** |	
 | MLP | 95.5% | **Very Fast (60 μs/step)** | Very Fast (42 μs/step)|
 | FastText (1-gram)| 94.40% | Fast (83 μs/step) | **Very Fast (26 μs/step)** |
 | FastText (2-gram)| 95.59% | Fast (196 μs/step) | **Very Fast (26 μs/step)** |
 | RNN (LSTM) | 98.49% | Very Slow (7000 μs/step) | Very Slow (1000 μs/step)|
 | CNN + LSTM | **99.55%** | Very Slow (3000 μs/step) | Very Slow (722 μs/step)|
 | CNN + GRU | **99.75%** | Very Slow (2000 μs/step) | Very Slow (591 μs/step)|
-| CNN (2-layer) | **99.76%** | Fast (210 μs/step) | **Very Fast (28 μs/step)** |
 
 With some hyperparameter tuning:
 
@@ -96,13 +96,13 @@ With some hyperparameter tuning:
 | -------- | ----------- | --------- | ----------------- |
 | Dict | 85% | **Fastest** | **Fastest** |
 | CNN | **99.40%** | Fast (200 μs/step) | **Very Fast (26 μs/step)** |
+| CNN (2-layer) | **99.76%** | Fast (210 μs/step) | **Very Fast (28 μs/step)** |
 | MLP | 95.5% | **Very Fast (60 μs/step)** | Very Fast (42 μs/step)|
 | FastText (1-gram)| 94.40% | Fast (117 μs/step) | **Very Fast (26 μs/step)** |
 | FastText (2-gram)| 95.59% | Fast (196 μs/step) | **Very Fast (26 μs/step)** |
 | RNN (LSTM) | 98.49% | Very Slow (7000 μs/step) | Very Slow (1000 μs/step)|
 | CNN + LSTM | **99.55%** | Very Slow (3000 μs/step) | Very Slow (722 μs/step)|
 | CNN + GRU | **99.75%** | Very Slow (2000 μs/step) | Very Slow (591 μs/step)|
-| CNN (2-layer) | **99.76%** | Fast (210 μs/step) | **Very Fast (28 μs/step)** |
 
 #### Computer Configuration:
 
