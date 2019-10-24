@@ -1,6 +1,6 @@
 '''
 Written by Austin Walters
-Last Edit: January 2, 20189
+Last Edit: October 23, 2019
 For use on austingwalters.com
 
 A FastText to classify a sentence as one
@@ -39,8 +39,11 @@ def create_ngram_set(input_list, ngram_value=2):
 
     >>> create_ngram_set([1, 4, 9, 4, 1, 4], ngram_value=3)
     [(1, 4, 9), (4, 9, 4), (9, 4, 1), (4, 1, 4)]
-    """
-    return set(zip(*[input_list[i:] for i in range(ngram_value)]))
+    """    
+    gram_list = []
+    for i in range(ngram_value):
+        gram_list.append(input_list[i:])
+    return set(zip(*gram_list))
 
 
 def add_ngram(sequences, token_indice, ngram_range=2):
