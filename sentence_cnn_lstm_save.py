@@ -1,6 +1,6 @@
 '''
 Written by Austin Walters
-Last Edit: January 2, 2019
+Last Edit: October 24, 2019
 For use on austingwalters.com
 
 A CNN  to classify a sentence as one 

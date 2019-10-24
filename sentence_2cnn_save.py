@@ -1,13 +1,13 @@
 '''
 Written by Austin Walters
-Last Edit: January 2, 2019
+Last Edit: October 24, 2019
 For use on austingwalters.com
 
 A CNN  to classify a sentence as one 
 of the common sentance types:
 Question, Statement, Command, Exclamation
 
-It utilizes a convolutional + LSTM layer
+It utilizes a 2-layer convolutional network
 
 Heavily Inspired by Keras Examples: 
 https://github.com/keras-team/keras
