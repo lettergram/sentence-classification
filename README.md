@@ -87,6 +87,7 @@ With the above, we are able to get the following accuracy:
 | FastText (1-gram)| 94.40% | Fast (83 μs/step) | **Very Fast (26 μs/step)** |
 | FastText (2-gram)| 95.59% | Fast (196 μs/step) | **Very Fast (26 μs/step)** |
 | RNN (LSTM) | 98.49% | Very Slow (7000 μs/step) | Very Slow (1000 μs/step)|
+| RNN (GRU) | **99.73%** | Very Slow (2000 μs/step) | Very Slow (1000 μs/step)|
 | CNN + LSTM | **99.55%** | Very Slow (3000 μs/step) | Very Slow (722 μs/step)|
 | CNN + GRU | **99.75%** | Very Slow (2000 μs/step) | Very Slow (591 μs/step)|
 
@@ -101,6 +102,7 @@ With some hyperparameter tuning:
 | FastText (1-gram)| 94.40% | Fast (117 μs/step) | **Very Fast (26 μs/step)** |
 | FastText (2-gram)| 95.59% | Fast (196 μs/step) | **Very Fast (26 μs/step)** |
 | RNN (LSTM) | 98.49% | Very Slow (7000 μs/step) | Very Slow (1000 μs/step)|
+| RNN (GRU) | **99.73%** | Very Slow (2000 μs/step) | Very Slow (1000 μs/step)|
 | CNN + LSTM | **99.55%** | Very Slow (3000 μs/step) | Very Slow (722 μs/step)|
 | CNN + GRU | **99.75%** | Very Slow (2000 μs/step) | Very Slow (591 μs/step)|
 
