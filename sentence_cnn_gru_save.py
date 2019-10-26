@@ -44,14 +44,14 @@ print(model_name)
 print("Load Model?", (load_model_flag))
 
 # Model configuration
-maxlen = 500
+maxlen = 300
 batch_size = 64
-embedding_dims = 75
+embedding_dims = 50
 pool_size = 4
-filters = 100
+filters = 150
 kernel_size = 5
 epochs = 2
-gru_units = 120
+gru_units = 25
 
 # Add parts-of-speech to data
 pos_tags_flag = True
@@ -95,8 +95,8 @@ if not load_model_flag:
                      activation='relu',
                      strides=1))
     
-    model.add(MaxPooling1D(pool_size=pool_size))
-
+    model.add(MaxPooling1D(pool_size=pool_size))    
+    
     model.add(GRU(gru_units))
     
     model.add(Dense(num_classes, activation='softmax'))

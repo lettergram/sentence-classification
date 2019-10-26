@@ -115,7 +115,12 @@ def get_custom_test_comments():
         "Eat your cereal.",
         "Usually the prior sentence is not classified properly.",
         "Don't forget about your homework!",
-        "Can the model identify a sentence without a question mark"        
+        "Can the model identify a sentence without a question mark",
+        "Everything speculated here is VC money and financial bubble with unrelaible financial values. Zomato, uber, paytm, flipkart throw discounts at the rate of losses. May be few can survive at the end. This hurts a lot for SMB too.",
+        "I am trying to keep tabs on electric two-wheeler startup industry in India. Ather energy is emerging as a big name. Anyone knows how they are doing?",
+        "generally a pretty intuitive way to accomplish a task. Want to trash an app Drag it to the trash Want to print a PDF",
+        "Make sure ownership is clear and minimizing opportunities for such problematic outcomes in the second place",
+        "Stop the video and walk away."
     ]
     
     test_comments_category = [
@@ -133,7 +138,12 @@ def get_custom_test_comments():
         "command",
         "statement",
         "command",
-        "question"
+        "question",
+        "statement",
+        "question",
+        "question",
+        "statement",
+        "command"
     ]
 
     return test_comments, test_comments_category

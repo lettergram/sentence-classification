@@ -44,18 +44,17 @@ print(model_name)
 print("Load Model?", (load_model_flag))
 
 # Model configuration
-maxlen = 500
+maxlen = 300
 batch_size = 64
-embedding_dims = 75
-pool_size = 4
+embedding_dims = 50
+pool_size = 3
+stride = 1
 filters = 100
 kernel_size = 5
-hidden_dims = 30
-epochs = 2
+epochs = 5
 
 # Add parts-of-speech to data
 pos_tags_flag = True
-
 
 # Export & load embeddings
 x_train, x_test, y_train, y_test = load_encoded_data(data_split=0.8,
@@ -88,15 +87,17 @@ if not load_model_flag:
     model.add(Embedding(max_words, embedding_dims,
                         input_length=maxlen))
     
-    model.add(Dropout(0.25))
+    model.add(Dropout(0.2))
     
     model.add(Conv1D(filters,
                      kernel_size,
                      padding='valid',
                      activation='relu',
-                     strides=1))
+                     strides=stride))
     
     model.add(MaxPooling1D(pool_size=pool_size))
+
+    model.add(Dropout(0.1))
 
     model.add(Conv1D(filters//2,
                      kernel_size//2,
