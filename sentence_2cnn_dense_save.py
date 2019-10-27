@@ -46,12 +46,13 @@ print("Load Model?", (load_model_flag))
 # Model configuration
 maxlen = 300
 batch_size = 64
-embedding_dims = 75
+embedding_dims = 50
 pool_size = 3
 stride = 1
-filters = 75
+filters = 50
 kernel_size = 5
-epochs = 2
+hidden_dims = 50
+epochs = 3
 
 # Add parts-of-speech to data
 pos_tags_flag = True
@@ -107,6 +108,10 @@ if not load_model_flag:
     
     model.add(GlobalMaxPooling1D())
     
+    model.add(Dense(hidden_dims))
+    model.add(Dropout(0.2))
+    model.add(Activation('relu'))    
+    
     model.add(Dense(num_classes, activation='softmax'))
 
     model.compile(loss='binary_crossentropy',
@@ -150,8 +155,8 @@ print('Test accuracy:', score[1])
 
 test_comments, test_comments_category = get_custom_test_comments()
 
-x_test, _, y_test, _ = encode_data(test_comments, test_comments_category,
-                                   data_split=1.0,
+_, x_test, _, y_test = encode_data(test_comments, test_comments_category,
+                                   data_split=0.0,
                                    embedding_name=embedding_name,
                                    add_pos_tags_flag=pos_tags_flag)
 
@@ -171,8 +176,17 @@ predictions = model.predict(x_test, batch_size=batch_size, verbose=1)
 real = []
 test = []
 for i in range(0, len(predictions)):
-    real.append(y_test[i].argmax(axis=0))
-    test.append(predictions[i].argmax(axis=0))
+    real_label      = y_test[i].argmax(axis=0)
+    predicted_label = predictions[i].argmax(axis=0)    
+    real.append(real_label)
+    test.append(predicted_label)
+
+    if real_label != predicted_label:
+        print("\n------- Incorrectly Labeled ----------")
+        print("Predicted", predicted_label,
+              "-", real_label, "real")
+        print(test_comments[i])
+        print("--------------------------------------\n")
 
 print("Predictions")
 print("Real", real)
