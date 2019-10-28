@@ -33,7 +33,7 @@ from keras.layers import Conv1D, MaxPooling1D, GlobalMaxPooling1D
 from keras.preprocessing.text import Tokenizer
 
 # Use can load a different model if desired
-model_name      = "models/2cnn"
+model_name      = "models/2cnndense"
 embedding_name  = "data/default"
 load_model_flag = False
 arguments       = sys.argv[1:len(sys.argv)]
@@ -46,13 +46,13 @@ print("Load Model?", (load_model_flag))
 # Model configuration
 maxlen = 300
 batch_size = 64
-embedding_dims = 50
+embedding_dims = 75
 pool_size = 3
 stride = 1
-filters = 50
-kernel_size = 5
+filters = 100
+kernel_size = 7
 hidden_dims = 50
-epochs = 3
+epochs = 2
 
 # Add parts-of-speech to data
 pos_tags_flag = True

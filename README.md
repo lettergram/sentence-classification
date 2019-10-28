@@ -89,7 +89,8 @@ With the above, we are able to get the following accuracy:
 | RNN (LSTM) | 98.49% | Very Slow (7000 μs/step) | Very Slow (1000 μs/step)|
 | RNN (GRU) | **99.73%** | Very Slow (2000 μs/step) | Very Slow (1000 μs/step)|
 | CNN + LSTM | **99.55%** | Very Slow (3000 μs/step) | Very Slow (722 μs/step)|
-| CNN + GRU | **99.75%** | Very Slow (2000 μs/step) | Very Slow (591 μs/step)|
+| CNN + GRU | **99.82%** | Very Slow (2000 μs/step) | Very Slow (591 μs/step)|
+| CNN + MLP | **99.75%** | Slow (1000 μs/step) | **Fast (97 μs/step)** |	
 
 With some hyperparameter tuning:
 
@@ -105,6 +106,7 @@ With some hyperparameter tuning:
 | RNN (GRU) | **99.73%** | Very Slow (2000 μs/step) | Very Slow (1000 μs/step)|
 | CNN + LSTM | **99.55%** | Very Slow (3000 μs/step) | Very Slow (722 μs/step)|
 | CNN + GRU | **99.82%** | Very Slow (2000 μs/step) | Very Slow (340 μs/step)|
+| CNN + MLP | **99.75%** | Slow (1000 μs/step) | **Fast (97 μs/step)** |	
 
 #### Computer Configuration:
 
