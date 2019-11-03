@@ -59,6 +59,7 @@ Below is the guides table of contents:
 * [FastText for sentence classification (FastText)](https://austingwalters.com/fasttext-for-sentence-classification/)
 * [Hyperparameter tuning for sentence classification](https://austingwalters.com/hyperparameter-tuning-for-sentence-classification/)
 
+Additional, (more complex models) are available in the *advanced_modeling* directory. Eventually, posts should come out of them.
 
 ---------------------
 
