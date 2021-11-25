@@ -17,23 +17,25 @@ import os
 import sys
 
 import numpy as np
-import keras
 
 from sentence_types import load_encoded_data
 from sentence_types import encode_data, import_embedding
 from sentence_types import get_custom_test_comments
 
-from keras.preprocessing import sequence
-from keras.models import Sequential, model_from_json
-from keras.layers import Dense, Dropout, Activation, Embedding
-from keras.layers import Conv1D, GlobalMaxPooling1D
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras import layers
+from tensorflow.keras.preprocessing import sequence
+from tensorflow.keras.models import Sequential, model_from_json
+from tensorflow.keras.layers import Dense, Dropout, Activation, Embedding
+from tensorflow.keras.layers import Conv1D, GlobalMaxPooling1D
 
-from keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.text import Tokenizer
 
 # Use can load a different model if desired
 model_name      = "models/cnn"
 embedding_name  = "data/default"
-load_model_flag = False
+load_model_flag = True
 arguments       = sys.argv[1:len(sys.argv)]
 if len(arguments) == 1:
     model_name = arguments[0]
@@ -80,7 +82,7 @@ if not load_model_flag:
 
     print('Constructing model!')
 
-    model = Sequential()
+    model = tf.keras.Sequential()
 
     model.add(Embedding(max_words, embedding_dims,
                         input_length=maxlen))
