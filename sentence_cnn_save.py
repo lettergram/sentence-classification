@@ -17,19 +17,19 @@ import os
 import sys
 
 import numpy as np
-import keras
 
 from sentence_types import load_encoded_data
 from sentence_types import encode_data, import_embedding
 from sentence_types import get_custom_test_comments
 
 import tensorflow as tf
+from tensorflow import keras
 from tf.keras.preprocessing import sequence
 from tf.keras.models import Sequential, model_from_json
 from tf.keras.layers import Dense, Dropout, Activation, Embedding
 from tf.keras.layers import Conv1D, GlobalMaxPooling1D
 
-from keras.preprocessing.text import Tokenizer
+from tf.keras.preprocessing.text import Tokenizer
 
 # Use can load a different model if desired
 model_name      = "models/cnn"
