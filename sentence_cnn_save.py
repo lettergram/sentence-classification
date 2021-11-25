@@ -23,10 +23,11 @@ from sentence_types import load_encoded_data
 from sentence_types import encode_data, import_embedding
 from sentence_types import get_custom_test_comments
 
-from keras.preprocessing import sequence
-from keras.models import Sequential, model_from_json
-from keras.layers import Dense, Dropout, Activation, Embedding
-from keras.layers import Conv1D, GlobalMaxPooling1D
+import tensorflow as tf
+from tf.keras.preprocessing import sequence
+from tf.keras.models import Sequential, model_from_json
+from tf.keras.layers import Dense, Dropout, Activation, Embedding
+from tf.keras.layers import Conv1D, GlobalMaxPooling1D
 
 from keras.preprocessing.text import Tokenizer
 
