@@ -22,13 +22,15 @@ from sentence_types import load_encoded_data
 from sentence_types import encode_data, import_embedding
 from sentence_types import get_custom_test_comments
 
+import tensorflow as tf
 from tensorflow import keras
-from keras.preprocessing import sequence
-from keras.models import Sequential, model_from_json
-from keras.layers import Dense, Dropout, Activation, Embedding
-from keras.layers import Conv1D, GlobalMaxPooling1D
+from tensorflow.keras import layers
+from tensorflow.keras.preprocessing import sequence
+from tensorflow.keras.models import Sequential, model_from_json
+from tensorflow.keras.layers import Dense, Dropout, Activation, Embedding
+from tensorflow.keras.layers import Conv1D, GlobalMaxPooling1D
 
-from keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.text import Tokenizer
 
 # Use can load a different model if desired
 model_name      = "models/cnn"
@@ -80,7 +82,7 @@ if not load_model_flag:
 
     print('Constructing model!')
 
-    model = Sequential()
+    model = tf.keras.Sequential()
 
     model.add(Embedding(max_words, embedding_dims,
                         input_length=maxlen))
