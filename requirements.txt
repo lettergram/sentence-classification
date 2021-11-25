@@ -7,3 +7,5 @@ nltk==3.4.5
 Keras==2.2.4
 Keras-Applications==1.0.6
 Keras-Preprocessing==1.1.2
+folium==0.2.1
+imgaug<0.2.7,>=0.2.5
