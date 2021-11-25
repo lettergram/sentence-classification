@@ -1,7 +1,7 @@
 h5py==3.1.0
 beautifulsoup4==4.6.3
 lxml==4.6.3
-numpy==1.15.4
+numpy==1.19.2
 tensorflow==2.5.2
 nltk==3.4.5
 Keras==2.2.4
