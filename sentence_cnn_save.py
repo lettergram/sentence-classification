@@ -35,7 +35,7 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 # Use can load a different model if desired
 model_name      = "models/cnn"
 embedding_name  = "data/default"
-load_model_flag = False
+load_model_flag = True
 arguments       = sys.argv[1:len(sys.argv)]
 if len(arguments) == 1:
     model_name = arguments[0]
