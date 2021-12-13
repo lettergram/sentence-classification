@@ -1,6 +1,6 @@
 h5py==2.8.0
 beautifulsoup4==4.6.3
-lxml==4.6.3
+lxml==4.6.5
 numpy==1.15.4
 tensorflow==2.4.0
 nltk==3.4.5
